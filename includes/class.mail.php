@@ -361,9 +361,9 @@ class dk_speakout_Mail
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
-            'grant_type' => 'client_credentials',
-            'client_id' => 'ugdVfKvdSD',
-            'client_secret' => 'oHT3qowmSImPQDvQZdEHjo0OWDM5i15M'
+            'grant_type'    => 'client_credentials',
+            'client_id'     => $clientID
+            'client_secret' => $clientSecret
         ]));
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
