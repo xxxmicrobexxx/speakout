@@ -95,7 +95,7 @@ class dk_speakout_Petition
     public $hide_email_field = 0;
     public $cleverreach_enable = 0;
     public $cleverreach_clientID = 0;
-    public $cleverreach_client_secret = 0;
+    public $cleverreach_clientSecret = 0;
     public $cleverreach_groupID = 0;
     public $cleverreach_source = "SpeakOut! Petition";
     public $mailchimp_enable = 0;
@@ -274,7 +274,7 @@ public function create()
         'hide_email_field'              => $this->hide_email_field,
         'cleverreach_enable'            => $this->cleverreach_enable,
         'cleverreach_clientID'          => $this->cleverreach_clientID,
-        'cleverreach_client_secret'     => $this->cleverreach_client_secret,
+        'cleverreach_clientSecret'     => $this->cleverreach_clientSecret,
         'cleverreach_groupID'           => $this->cleverreach_groupID,
         'cleverreach_source'            => $this->cleverreach_source,
         'mailchimp_enable'              => $this->mailchimp_enable,
@@ -427,7 +427,7 @@ public function update( $id )
         'hide_email_field'              => $this->hide_email_field,
         'cleverreach_enable'            => $this->cleverreach_enable,
         'cleverreach_clientID'          => $this->cleverreach_clientID,
-        'cleverreach_client_secret'     => $this->cleverreach_client_secret,
+        'cleverreach_clientSecret'     => $this->cleverreach_clientSecret,
         'cleverreach_groupID'           => $this->cleverreach_groupID,
         'cleverreach_source'            => $this->cleverreach_source,
         'mailchimp_enable'              => $this->mailchimp_enable,
@@ -829,7 +829,7 @@ public function populate_from_post()
         $this->cleverreach_clientID = sanitize_text_field( $_POST['cleverreach-clientID'] );
     }
     if ( isset( $_POST['cleverreach-client-secret'] ) ) {
-        $this->cleverreach_client_secret = sanitize_text_field( $_POST['cleverreach-client-secret'] );
+        $this->cleverreach_clientSecret = sanitize_text_field( $_POST['cleverreach-client-secret'] );
     }
     if ( isset( $_POST['cleverreach-groupID'] ) ) {
         $this->cleverreach_groupID = sanitize_text_field( $_POST['cleverreach-groupID'] );
@@ -930,7 +930,10 @@ public function populate_from_post()
         $this->thank_signer = 1 ;
     }
     if ( isset( $_POST['thank_signer_content'] ) ) {
-        $this->thank_signer_content = sanitize_text_field( $_POST['thank_signer_content'] );
+        $signer_content = $_POST['thank_signer_content'] ;
+        $signer_content = htmlspecialchars($signer_content, ENT_QUOTES, 'UTF-8');
+        //$signer_content = nl2br($signer_content);
+        $this->thank_signer_content =  $signer_content ;
     }
 }
 
@@ -1179,7 +1182,7 @@ public function retrieveActiveCampaignFields( $url, $apikey)
 		$this->url_target           = $petition->url_target;
 		$this->cleverreach_enable     = $petition->cleverreach_enable;
         $this->cleverreach_clientID    = $petition->cleverreach_clientID;
-        $this->cleverreach_client_secret    = $petition->cleverreach_client_secret;
+        $this->cleverreach_clientSecret    = $petition->cleverreach_clientSecret;
         $this->cleverreach_groupID     = $petition->cleverreach_groupID;
         $this->cleverreach_source    = $petition->cleverreach_source;
         $this->mailchimp_enable     = $petition->mailchimp_enable;

@@ -106,7 +106,7 @@ function dk_speakout_install() {
             `open_editable_message_button` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL DEFAULT 'Read or Edit the Petition',
             `cleverreach_enable` TINYINT NULL DEFAULT '0', 
             `cleverreach_clientID` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,  
-            `cleverreach_client_secret` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
+            `cleverreach_clientSecret` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `cleverreach_groupID` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `cleverreach_source` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT 'Speakout! Petition',
             `mailchimp_enable` TINYINT NULL DEFAULT '0', 
@@ -140,7 +140,7 @@ function dk_speakout_install() {
             `sendy_server` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `sendy_list_id` VARCHAR(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `thank_signer` TINYINT DEFAULT '0' NULL,
-            `thank_signer_content` LONGTEXT DEFAULT 'Dear %firstname%,\r\n\r\nThanks for signing our petition, your participation makes a difference\r\n\r\nYours sincerely\r\n\r\n%petition_title%' NULL,
+            `thank_signer_content` LONGTEXT DEFAULT 'Dear %first_name%,\r\n\r\nThanks for signing our petition, your participation makes a difference\r\n\r\nYours sincerely\r\n\r\n%petition_title%' NULL,
 			UNIQUE KEY  `id` (`id`)
 		) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci ;
 
@@ -300,8 +300,8 @@ function dk_speakout_update() {
         $sql_update = "ALTER TABLE $db_petitions        
             ADD `cleverreach_enable` TINYINT NULL DEFAULT '0' AFTER `open_editable_message_button`, 
             ADD `cleverreach_clientID` VARCHAR(24) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL AFTER `cleverreach_enable` ,  
-            ADD `cleverreach_client_secret` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL AFTER `cleverreach_clientID`,
-            ADD `cleverreach_groupID` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL AFTER `cleverreach_client_secret`,
+            ADD `cleverreach_clientSecret` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL AFTER `cleverreach_clientID`,
+            ADD `cleverreach_groupID` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL AFTER `cleverreach_clientSecret`,
             ADD `cleverreach_source` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL DEFAULT 'SpeakOut! Petition' AFTER `cleverreach_groupID`";
         $wpdb->query( $sql_update );
      }    

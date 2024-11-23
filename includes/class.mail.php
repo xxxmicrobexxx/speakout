@@ -20,6 +20,7 @@ class dk_speakout_Mail
         }
 
 	    $Parsedown = new Parsedown();
+	    $options  = get_option( 'dk_speakout_options' );
 
 		$subject = stripslashes( $petition->email_subject );
 
@@ -113,7 +114,14 @@ class dk_speakout_Mail
 		        
 		// send the petition email
 		self::send( $petition->target_email, $subject, $email_message, $headers );
-
+		
+		//if enabled, send thank you email to signer
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";   
+		$headers .= "From: " . $from  . "\r\n";
+        $headers .= 'Reply-To: ' . $from . "\r\n" .'X-Mailer: PHP/' . phpversion() . "\r\n";
+        
+        self::send( $signature->email, "SUbject signer", $petition->thank_signer_content, $headers );
 		
         if ( $options['webhooks'] == 'on' ) {
             $id = $petition->target_email;
