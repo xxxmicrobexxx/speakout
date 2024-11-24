@@ -222,7 +222,9 @@ if( ! class_exists( 'SpeakOutUpdateChecker' ) ) {
 		}
 	}
 
-	new SpeakOutUpdateChecker($dk_speakout_version);
+	// disabled auto-update as it was causing problems for a handful of SpeakOut! users.
+	// Until I can solve this I will notify all Pro users by email of updates
+	// new SpeakOutUpdateChecker($dk_speakout_version);
 }
 
 
