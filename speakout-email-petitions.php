@@ -222,7 +222,9 @@ if( ! class_exists( 'SpeakOutUpdateChecker' ) ) {
 		}
 	}
 
-	new SpeakOutUpdateChecker($dk_speakout_version);
+	// updating disabled for now as it was causing problems for a handful of users
+	//  Until I can solve this, I will send an email to all users when an update is available.
+	// new SpeakOutUpdateChecker($dk_speakout_version);
 }
 
 
