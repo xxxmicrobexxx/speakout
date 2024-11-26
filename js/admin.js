@@ -389,7 +389,8 @@ jQuery(document).ready(function ($) {
 
         $('.dk-speakout-error').removeClass('dk-speakout-error');
         var errors = 0,
-            emailRegEx = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/,
+            //emailRegEx = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/,
+            emailRegEx = /^([\w+-.]+@([\w-]+\.)+[\w-]{2,6})?$/,
             email = $('#dk-speakout-edit-petition #target_email').val(),
             emailCC = $('#dk-speakout-edit-petition #target_email_CC').val(),
             subject = $('#dk-speakout-edit-petition #email_subject').val(),
