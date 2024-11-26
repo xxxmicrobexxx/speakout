@@ -599,6 +599,10 @@ jQuery(document).ready(function() {
 					<th scope="row"><label for="webhooks"><?php _e( 'Webhooks enabled', 'speakout' ); ?></label></th>
 					<td><input type="checkbox" id="webhooks" name="webhooks" <?php if ( $the_settings->webhooks == 'on' ) echo 'checked="checked"'; ?> value = "on" /> <a href="https://speakoutpetitions.com/webhooks" target="_blank">?</a></td>
 				</tr>
+				<tr valign="top">
+					<th scope="row"><label for="updater"><?php _e( 'Enable Wordpress updater', 'speakout' ); ?></label></th>
+					<td><input type="checkbox" id="updater" name="updater" <?php if ( $the_settings->updater == 'on' ) echo 'checked="checked"'; ?> value = "on" /> <a href="https://speakoutpetitions.com/wpupdater" target="_blank">?</a></td>
+				</tr>
 			</table>
 		</div>
 		

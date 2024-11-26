@@ -86,6 +86,8 @@ class dk_speakout_Settings
     public $sigtab_display_time;
     public $sigtab_IP_address;
     public $webhooks = "off";
+    public $mailchimp_debug_enabled = "off";
+    public $updater = "off";
 
 	/**
 	 * Retrieves the plugin options and populates this object
@@ -160,6 +162,8 @@ class dk_speakout_Settings
         $this->sigtab_display_time          = $options['sigtab_display_time'];
         $this->sigtab_IP_address            = $options['sigtab_IP_address'];
         $this->webhooks                     = $options['webhooks'];
+        $this->mailchimp_debug_enabled      = $options['mailchimp_debug_enabled'];
+        $this->updater                      = $options['updater'];
     
 		$this->_read_signaturelist_columns();
 	}
@@ -240,6 +244,8 @@ class dk_speakout_Settings
             'sigtab_display_time'       => $this->sigtab_display_time,
             'sigtab_IP_address'         => $this->sigtab_IP_address,
             'webhooks'                  => $this->webhooks,
+            'mailchimp_debug_enabled'   => $this->mailchimp_debug_enabled,
+            'updater'                   => $this->updater,
 		);
 
 		update_option( 'dk_speakout_options', $options );
@@ -352,7 +358,9 @@ class dk_speakout_Settings
         $this->sigtab_date_signed        =  $_POST['sigtab_date_signed'] ;
         $this->sigtab_display_time       = sanitize_text_field( $_POST['sigtab_display_time'] );
         $this->sigtab_IP_address         = sanitize_text_field( $_POST['sigtab_IP_address'] );
-        $this->webhooks                  = $_POST['webhooks'] ;
+        $this->webhooks                  = $_POST['webhooks'];
+        $this->mailchimp_debug_enabled   = $_POST['mailchimp_debug_enabled'];
+        $this->updater                   = $_POST['updater'];
         	}
 	
 	/**
