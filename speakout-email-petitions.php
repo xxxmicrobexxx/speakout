@@ -15,7 +15,7 @@ Requires PHP: 7.4
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Version: 105.3.0
+Version: 105.3.1
 {Plugin Name} is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
@@ -31,7 +31,7 @@ For the full text of the GNU General Public License see {License URI}.
 
 global $wpdb, $db_petitions, $db_signatures, $dk_speakout_version;
 
-$dk_speakout_version = '105.3.0';
+$dk_speakout_version = '105.3.1';
 
 $db_petitions  = $wpdb->prefix . 'dk_speakout_petitions';
 $db_signatures = $wpdb->prefix . 'dk_speakout_signatures';
@@ -68,6 +68,8 @@ else {
 	include_once( dirname( __FILE__ ) . '/includes/signaturelist.php' );
 	include_once( dirname( __FILE__ ) . '/includes/confirmations.php' );
 }
+
+$options  = get_option( 'dk_speakout_options' );
 
 add_filter( 'plugin_row_meta', 'speakout_support_and_faq_links', 10, 4 );
 function speakout_support_and_faq_links( $links_array, $plugin_file_name, $plugin_data, $status ){	
@@ -222,9 +224,10 @@ if( ! class_exists( 'SpeakOutUpdateChecker' ) ) {
 		}
 	}
 
-	// disabled auto-update as it was causing problems for a handful of SpeakOut! users.
-	// Until I can solve this I will notify all Pro users by email of updates
-	// new SpeakOutUpdateChecker($dk_speakout_version);
+    // if updater enabled in settings check for latest version
+	if($options['updater'] == "on"){
+	    new SpeakOutUpdateChecker($dk_speakout_version);
+	}
 }
 
 
