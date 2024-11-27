@@ -32,7 +32,7 @@
                             $selected = $petition->id == $pid ? "SELECTED" : "";
                             $signatureCount = " (" . $the_signatures->count( $petition->id, "", "" ) . ")";
                         ?>
-                            <option value="<?php echo abs( $petition->id ); ?>" <?php echo $selected; ?>><?php echo esc_html( $petition->title ) . $signatureCount; ?></option>
+                            <option value="<?php echo abs( $petition->id ); ?>" <?php echo $selected; ?>><?php echo esc_html( stripslashes( $petition->title ) ) . $signatureCount; ?></option>
                         <?php endforeach; ?>
                     </select>
                 </form>

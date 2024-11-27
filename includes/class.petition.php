@@ -828,8 +828,8 @@ public function populate_from_post()
     if ( isset( $_POST['cleverreach-clientID'] ) ) {
         $this->cleverreach_clientID = sanitize_text_field( $_POST['cleverreach-clientID'] );
     }
-    if ( isset( $_POST['cleverreach-client-secret'] ) ) {
-        $this->cleverreach_clientSecret = sanitize_text_field( $_POST['cleverreach-client-secret'] );
+    if ( isset( $_POST['cleverreach-clientSecret'] ) ) {
+        $this->cleverreach_clientSecret = sanitize_text_field( $_POST['cleverreach-clientSecret'] );
     }
     if ( isset( $_POST['cleverreach-groupID'] ) ) {
         $this->cleverreach_groupID = sanitize_text_field( $_POST['cleverreach-groupID'] );

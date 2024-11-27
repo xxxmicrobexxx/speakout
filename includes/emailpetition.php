@@ -74,7 +74,7 @@ function dk_speakout_petitiontitle_shortcode( $attr ) {
 
     $petition_exists = $petition->retrieve( $id );
     if ( $petition_exists ) {
-        return "<span class='petitionTitle'>" . $petition->title . "</span>";
+        return "<span class='petitionTitle'>" . stripslashes ( $petition->title ) . "</span>";
     } else {
         return '';
     }
@@ -105,7 +105,7 @@ function dk_speakout_petitionmessage_shortcode( $attr ) {
             include_once( 'parsedown.php' );
         }
         $Parsedown = new Parsedown();
-        return "<span class='petitionMessage'>" . $Parsedown->text( $petition->petition_message ). "</span>";
+        return "<span class='petitionMessage'>" . $Parsedown->text( stripslashes($petition->petition_message) ). "</span>";
     } else {
         return '';
     }
@@ -615,8 +615,8 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
                         
                     $petition_form .= '
     							<div class="dk-speakout-full dk-speakout-message-editable" id="dk-speakout-message-editable-' . $petition->id . '">
-    								<p class="dk-speakout-greeting">' . $petition->greeting . '</p>
-    								<textarea name="dk-speakout-message" class="dk-speakout-message-' . $petition->id . '" ' . $height . ' rows="8">' .  wp_kses( $petition->petition_message, $kses_array )   . '</textarea>';
+    								<p class="dk-speakout-greeting">' . stripslashes($petition->greeting) . '</p>
+    								<textarea name="dk-speakout-message" class="dk-speakout-message-' . $petition->id . '" ' . $height . ' rows="8">' .  wp_kses( stripslashes($petition->petition_message), $kses_array )   . '</textarea>';
                     $petition_form .= "<div id='dk_speakout_markdown'>" . __( 'You can add formatting using markdown syntax' ) . " - <a href='https://www.markdownguide.org/basic-syntax/' target='_blank'>" . __( "read more" ) . "</a></div>";
 
 
@@ -630,8 +630,8 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
                         
                         $petition_form .= '
     							<div class="dk-speakout-full dk-speakout-message" ' . $height . ' id="dk-speakout-message-' . $petition->id . '">
-    								<p class="dk-speakout-greeting">' . $petition->greeting . '</p>
-    								' .  $Parsedown->text( wp_kses( $petition->petition_message, $kses_array ) ) . '
+    								<p class="dk-speakout-greeting">' . stripslashes($petition->greeting) . '</p>
+    								' .  $Parsedown->text( wp_kses( stripslashes($petition->petition_message), $kses_array ) ) . '
     								<p class="dk-speakout-caps">%%' . __( 'your signature', 'speakout' ) . '%%</p>';
 
 
