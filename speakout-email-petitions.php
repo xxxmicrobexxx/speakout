@@ -29,12 +29,13 @@ GNU General Public License for more details.
 For the full text of the GNU General Public License see {License URI}.
 */
 
-global $wpdb, $db_petitions, $db_signatures, $dk_speakout_version;
+global $wpdb, $db_petitions, $db_signatures, $dk_speakout_version, $options;
 
 $dk_speakout_version = '105.3.3';
 
 $db_petitions  = $wpdb->prefix . 'dk_speakout_petitions';
 $db_signatures = $wpdb->prefix . 'dk_speakout_signatures';
+$options  = get_option( 'dk_speakout_options' );
 
 // enable localizations
 add_action( 'init', 'dk_speakout_translate' );
@@ -69,8 +70,6 @@ else {
 	include_once( dirname( __FILE__ ) . '/includes/confirmations.php' );
 }
 
-$options  = get_option( 'dk_speakout_options' );
-
 add_filter( 'plugin_row_meta', 'speakout_support_and_faq_links', 10, 4 );
 function speakout_support_and_faq_links( $links_array, $plugin_file_name, $plugin_data, $status ){	
 	if ( strpos( $plugin_file_name, basename(__FILE__) ) ) {
@@ -85,7 +84,7 @@ function speakout_support_and_faq_links( $links_array, $plugin_file_name, $plugi
 }
 
 // updater code
-if( ! class_exists( 'SpeakOutUpdateChecker' ) ) {
+if( !class_exists( 'SpeakOutUpdateChecker' ) ) {
 
 	class SpeakOutUpdateChecker{
 
@@ -93,6 +92,7 @@ if( ! class_exists( 'SpeakOutUpdateChecker' ) ) {
 		public $version;
 		public $cache_key;
 		public $cache_allowed;
+		
 
 		public function __construct( $dk_speakout_version ) {
 			$this->plugin_slug = plugin_basename( __DIR__ );
