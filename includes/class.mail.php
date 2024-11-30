@@ -394,7 +394,7 @@ class dk_speakout_Mail
         $tokenData = json_decode($response, true);
 
         if (!isset($tokenData['access_token'])) {
-                mail(get_option('admin_email'), "CleverReach Failure", "Failed to authorise conection to server in SpeakOut! plugin. Response: " . $response);
+            mail(get_option('admin_email'), "CleverReach Failure", "Failed to authorise conection to server in SpeakOut! plugin. Response: " . $response);
             return false; // Handle failure gracefully
         }
 
@@ -446,6 +446,55 @@ class dk_speakout_Mail
                 curl_close($ch);
             } else {
                 mail(get_option('admin_email'), "CleverReach Subscription Failure", "Failed to add subscriber in SpeakOut! plugin. Response: " . $response);
+                curl_close($ch);
+            }
+        }
+        
+        /* send double opt in */
+         // Subscriber data
+        $subscriberData = [
+            'timeout' => 60,  
+            'email' => $email,
+            'doidata' => array(
+                'user_ip' => $_SERVER['REMOTE_ADDR'],
+                'referer' => $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'],
+                'user_agent' => $_SERVER['HTTP_USER_AGENT']
+            ),
+            'headers' => array(
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Bearer ' . $accessToken
+                )
+            ];
+
+        $ch = curl_init();
+
+        $apiUrl = "https://rest.cleverreach.com/v3/groups.json/{$groupId}/receivers";
+        $apiUrl = "https://rest.cleverreach.com/v3/forms.json/398605/send/activate";
+
+        curl_setopt($ch, CURLOPT_URL, $apiUrl);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/json',
+            'Authorization: Bearer ' . $accessToken,
+        ]);
+
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($subscriberData));
+
+        // Execute the request
+        $response = curl_exec($ch);
+
+        if (curl_errno($ch)) {
+            mail(get_option('admin_email'), "CleverReach Failure", "Failed to send Double Opt In email in SpeakOut! plugin. Response: " . $response . " | line: 487");
+            curl_close($ch); // Close before terminating the process
+        } else {
+            // Decode the response
+            $result = json_decode($response, true);
+
+            if (isset($result['id'])) {
+                curl_close($ch);
+            } else {
+                mail(get_option('admin_email'), "CleverReach  Failure", "Failed to send Double Opt In email in SpeakOut! plugin. Response: " . $response. " | line: 496");
                 curl_close($ch);
             }
         }
