@@ -823,7 +823,7 @@
                     </div>
                     
                     <div class="margin-20-left cleverreach-fields dk-speakout-subsection <?php if( $petition->cleverreach_enable != 1 ) echo 'dk-speakout-hidden'; ?>">	
-                        <div class="infoText">All fields are required. More info <a href="https://speakoutpetitions.com/faqconc/cleverreach/" target="_new">here</a>.</div>
+                        <div class="infoText">All fields are required. More info <a href="https://speakoutpetitions.com/cleverreach/" target="_new">here</a>.</div>
                         <label for="cleverreach-clientID"><?php _e( 'Client ID ', 'speakout'); ?></label>
                         <input type="text" id="cleverreach-clientID" name="cleverreach-clientID" value="<?php echo $petition->cleverreach_clientID; ?>" size="16"  <?php if ( $petition->cleverreach_enable == 1 ) echo ' required="required"'; ?> /><br> 
                         
