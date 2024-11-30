@@ -406,7 +406,7 @@ class dk_speakout_Mail
         // Subscriber data
         $subscriberData = [
             'email' => $email,
-            'source' => $honorific ."|". $firstname ."|". $lastname ."|". $source, // Indicate the source of this subscriber
+            'source' => $source, // Indicate the source of this subscriber
             'global_attributes' => array(
                 'salutation'=>$honorific,
                 'firstname'=>$firstname,
