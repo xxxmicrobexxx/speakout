@@ -247,7 +247,7 @@
 
                 //depending on how many petitions, we craft the info
                 if ( $options[ 'sigtab_petition_info' ] == "on" ) {
-                    $petitioncontent = '<td style="white-space:nowrap">' . esc_html( $signature->title );
+                    $petitioncontent = '<td style="white-space:nowrap">' . stripslashes( $petition->title );
                     if ( $petitions_list && count( $petitions_list ) > 1 ) {
                         $petitioncontent .= "(#" . $signature->petitions_id . ")";
                     }
