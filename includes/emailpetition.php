@@ -165,7 +165,8 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
             $progress_width = isset( $attr[ 'progresswidth' ] ) ? $attr[ 'progresswidth' ] : $progress_width;
 
             if ( !$expired ) {
-                
+                //$userdata = dk_speakout_SpeakOut::userinfo();
+
                 // compose the petition form
                 $petitionReadTitle = $petition->is_editable ? $petition->open_editable_message_button : $petition->open_message_button;
 
