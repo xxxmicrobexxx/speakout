@@ -165,8 +165,7 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
             $progress_width = isset( $attr[ 'progresswidth' ] ) ? $attr[ 'progresswidth' ] : $progress_width;
 
             if ( !$expired ) {
-                $userdata = dk_speakout_SpeakOut::userinfo();
-
+                
                 // compose the petition form
                 $petitionReadTitle = $petition->is_editable ? $petition->open_editable_message_button : $petition->open_message_button;
 
@@ -380,11 +379,11 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
                 }
 
                 $petition_form .= '	<div class="dk-speakout-full">
-    								<input autocomplete="given-name" name="dk-speakout-first-name" id="dk-speakout-first-name-' . $petition->id . '" value="' . $userdata[ 'firstname' ] . '" type="text" placeholder="' . __( 'First Name', 'speakout' ) . '" required="required"  />
+    								<input autocomplete="given-name" name="dk-speakout-first-name" id="dk-speakout-first-name-' . $petition->id . '" type="text" placeholder="' . __( 'First Name', 'speakout' ) . '" required="required"  />
     							</div>
     							
     							<div class="dk-speakout-full">
-    								<input autocomplete="family-name" name="dk-speakout-last-name" id="dk-speakout-last-name-' . $petition->id . '" value="' . $userdata[ 'lastname' ] . '" type="text" placeholder="' . __( 'Last Name', 'speakout' ) . '" required="required"  />
+    								<input autocomplete="family-name" name="dk-speakout-last-name" id="dk-speakout-last-name-' . $petition->id . '" type="text" placeholder="' . __( 'Last Name', 'speakout' ) . '" required="required"  />
     							</div>';
 
                 //display custom fields in middle
@@ -457,7 +456,7 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
                 // if only collecting signatures it is possible to hide email field.
                 if ( $petition->hide_email_field != 1 ) {
                     $petition_form .= '<div class="dk-speakout-full">
-    								<input autocomplete="email" name="dk-speakout-email" id="dk-speakout-email-' . $petition->id . '" value="' . $userdata[ 'email' ] . '" type="email"  placeholder="' . __( 'Email', 'speakout' ) . '" required="required"  />
+    								<input autocomplete="email" name="dk-speakout-email" id="dk-speakout-email-' . $petition->id . '" type="email"  placeholder="' . __( 'Email', 'speakout' ) . '" required="required"  />
     							</div>';
                 }
 
