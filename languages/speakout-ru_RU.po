@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SpeakOut! Email Petitions\n"
-"POT-Creation-Date: 2023-04-03 09:34+1000\n"
-"PO-Revision-Date: 2023-04-03 09:34+1000\n"
-"Last-Translator: Steve D <info@123host.com.au>\n"
+"POT-Creation-Date: 2024-12-03 14:35+1000\n"
+"PO-Revision-Date: 2024-12-03 14:37+1000\n"
+"Last-Translator: Steve <Hello@SpeakOutPetitions.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: speakout-email-petitions.php\n"
@@ -22,15 +22,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/addnew.php:38 includes/addnew.php:64
+#: includes/addnew.php:37 includes/addnew.php:63
 msgid "Edit Petition"
 msgstr "Редактировать инициативу"
 
-#: includes/addnew.php:42 includes/addnew.php:68 includes/addnew.php:116
+#: includes/addnew.php:41 includes/addnew.php:67 includes/addnew.php:115
 msgid "Update Petition"
 msgstr "Обновление петиции"
 
-#: includes/addnew.php:50
+#: includes/addnew.php:49
 #, php-format
 msgid ""
 "Petition created. Use %1$s %2$s %3$s to display in a page or post. Use %1$s "
@@ -41,15 +41,15 @@ msgstr ""
 "должности. Используйте %1$s %4$s %3$s для отображения списка подписей или "
 "%1$s %5$s %3$s  чтобы отобразить только количество подписи."
 
-#: includes/addnew.php:85
+#: includes/addnew.php:84
 msgid "Duplicate Petition"
 msgstr "Дублирующая петиция"
 
-#: includes/addnew.php:89
+#: includes/addnew.php:88
 msgid "Save Duplicate Petition"
 msgstr "Сохранить дубликат петиции"
 
-#: includes/addnew.php:97
+#: includes/addnew.php:96
 #, php-format
 msgid ""
 "Petition created - you can edit it here. Use %1$s %2$s %3$s to display in a "
@@ -58,23 +58,23 @@ msgstr ""
 "Петиция создана - вы можете отредактировать ее здесь. Используйте %1$s %2$s "
 "%3$s для отображения на странице или в публикации."
 
-#: includes/addnew.php:112
+#: includes/addnew.php:111
 msgid "Edit New Petition"
 msgstr "Редактировать новую петицию"
 
-#: includes/addnew.php:117
+#: includes/addnew.php:116
 msgid "Petition "
 msgstr "Ходатайство "
 
-#: includes/addnew.php:124
+#: includes/addnew.php:123
 msgid "Add New Petition"
 msgstr "Добавить новую инициативу"
 
-#: includes/addnew.php:128
+#: includes/addnew.php:127
 msgid "Create Petition"
 msgstr "Создать петицию"
 
-#: includes/addnew.php:130
+#: includes/addnew.php:129
 msgid "Add me to your mailing list"
 msgstr "Добавить меня в свой список рассылки"
 
@@ -102,7 +102,7 @@ msgid "3rd Party Integrations"
 msgstr "Интеграция 3-й стороны"
 
 #: includes/addnew.view.php:29 includes/help.php:6 includes/help.php:85
-#: includes/settings.view.php:338 includes/widget.php:88
+#: includes/settings.view.php:368 includes/widget.php:88
 msgid "Title"
 msgstr "Заглавие"
 
@@ -127,7 +127,7 @@ msgid "CC Email"
 msgstr "CC Email"
 
 #: includes/addnew.view.php:56 includes/help.php:9 includes/help.php:80
-#: includes/settings.view.php:319
+#: includes/settings.view.php:349
 msgid "Email Subject"
 msgstr "Субъект E-mail"
 
@@ -139,321 +139,342 @@ msgstr "Приветствие"
 msgid "Petition Message"
 msgstr "Сообщение о петиции"
 
-#: includes/addnew.view.php:67
+#: includes/addnew.view.php:84 includes/addnew.view.php:244
 msgid "You can personalise the message by inserting tags"
 msgstr "Вы можете персонализировать сообщение, вставив теги"
 
-#: includes/addnew.view.php:68
+#: includes/addnew.view.php:85
 msgid "You or the signer can format the message using Markdown syntax - see"
 msgstr ""
 "Вы или подписавший можете отформатировать сообщение с помощью синтаксиса "
 "Markdown - см"
 
-#: includes/addnew.view.php:70
+#: includes/addnew.view.php:87
 msgid "Petition Footer (below signature)"
 msgstr "Нижний колонтитул (ниже подписи)"
 
-#: includes/addnew.view.php:75 includes/help.php:13
-msgid "Twitter Message"
-msgstr "Сообщение Twitter"
+#: includes/addnew.view.php:92
+msgid "X (Twitter) Message"
+msgstr "X (Твиттер) Сообщение"
 
-#: includes/addnew.view.php:100
+#: includes/addnew.view.php:117
 msgid "Don't collect email address"
 msgstr "Не собирать адрес электронной почты"
 
-#: includes/addnew.view.php:101
+#: includes/addnew.view.php:118
 msgid "This cannot be reversed"
 msgstr "Это не может быть обращено вспять"
 
-#: includes/addnew.view.php:108 includes/help.php:17
+#: includes/addnew.view.php:125 includes/help.php:17
 msgid "Allow public anonymous"
 msgstr "Разрешить публичные анонимные"
 
-#: includes/addnew.view.php:117 includes/help.php:18
+#: includes/addnew.view.php:134 includes/help.php:18
 msgid "Confirm signatures"
 msgstr "Подтверждение подписей"
 
-#: includes/addnew.view.php:120
+#: includes/addnew.view.php:137
 msgid "Return URL"
 msgstr "URL возврата"
 
-#: includes/addnew.view.php:129
+#: includes/addnew.view.php:146
 msgid "Allow message to be edited"
 msgstr "Разрешить редактирование сообщения"
 
-#: includes/addnew.view.php:137 includes/help.php:20
+#: includes/addnew.view.php:154 includes/help.php:20
 msgid "Set signature goal"
 msgstr "Задайте цель"
 
-#: includes/addnew.view.php:140 includes/petitions.view.php:19
+#: includes/addnew.view.php:157 includes/petitions.view.php:19
 #: includes/petitions.view.php:29
 msgid "Goal"
 msgstr "გოლი"
 
-#: includes/addnew.view.php:143
+#: includes/addnew.view.php:160
 msgid "Auto increase goal"
 msgstr "Автоматическое увеличение цели"
 
-#: includes/addnew.view.php:144
+#: includes/addnew.view.php:161
 msgid "by"
 msgstr "от"
 
-#: includes/addnew.view.php:145
+#: includes/addnew.view.php:162
 msgid "when count"
 msgstr "при подсчете"
 
-#: includes/addnew.view.php:145 includes/emailpetition.php:661
+#: includes/addnew.view.php:162 includes/emailpetition.php:717
 #: includes/widget.php:207
 msgid "of goal"
 msgstr "цели"
 
-#: includes/addnew.view.php:153 includes/help.php:22
+#: includes/addnew.view.php:170 includes/help.php:22
 msgid "Set expiration date"
 msgstr "Установить срок годности"
 
-#: includes/addnew.view.php:157
+#: includes/addnew.view.php:174
 msgid "Jan"
 msgstr "Янв"
 
-#: includes/addnew.view.php:158
+#: includes/addnew.view.php:175
 msgid "Feb"
 msgstr "Фев"
 
-#: includes/addnew.view.php:159
+#: includes/addnew.view.php:176
 msgid "Mar"
 msgstr "Мартт"
 
-#: includes/addnew.view.php:160
+#: includes/addnew.view.php:177
 msgid "Apr"
 msgstr "Апр"
 
-#: includes/addnew.view.php:161
+#: includes/addnew.view.php:178
 msgid "May"
 msgstr "Май"
 
-#: includes/addnew.view.php:162
+#: includes/addnew.view.php:179
 msgid "Jun"
 msgstr "Июнь"
 
-#: includes/addnew.view.php:163
+#: includes/addnew.view.php:180
 msgid "Jul"
 msgstr "Июль"
 
-#: includes/addnew.view.php:164
+#: includes/addnew.view.php:181
 msgid "Aug"
 msgstr "Авг"
 
-#: includes/addnew.view.php:165
+#: includes/addnew.view.php:182
 msgid "Sep"
 msgstr "Сен"
 
-#: includes/addnew.view.php:166
+#: includes/addnew.view.php:183
 msgid "Oct"
 msgstr "Окт"
 
-#: includes/addnew.view.php:167
+#: includes/addnew.view.php:184
 msgid "Nov"
 msgstr "Нов"
 
-#: includes/addnew.view.php:168
+#: includes/addnew.view.php:185
 msgid "Dec"
 msgstr "Дек"
 
-#: includes/addnew.view.php:184
+#: includes/addnew.view.php:201
 msgid "Redirect after successful sign"
 msgstr "Перенаправить после успешного знака"
 
-#: includes/addnew.view.php:187
+#: includes/addnew.view.php:204
 msgid "Full URL"
 msgstr "Полный URL"
 
-#: includes/addnew.view.php:189
+#: includes/addnew.view.php:206
 msgid "Delay?"
 msgstr "Задержки?"
 
-#: includes/addnew.view.php:190
+#: includes/addnew.view.php:207
 msgid "milliseconds"
 msgstr "миллисекунд"
 
-#: includes/addnew.view.php:191
+#: includes/addnew.view.php:208
 msgid "Open in new window (target='_blank')"
 msgstr "Открыть в новом окне (таргет''_blank')"
 
-#: includes/addnew.view.php:205
+#: includes/addnew.view.php:217
+msgid "Email to signer?"
+msgstr "Отправить электронное письмо подписанту?"
+
+#: includes/addnew.view.php:220
+msgid "Email content"
+msgstr "Содержимое письма"
+
+#: includes/addnew.view.php:257
 msgid "Text to open/close petition message"
 msgstr "Текст для открытия/закрытия сообщения петиции"
 
-#: includes/addnew.view.php:210
+#: includes/addnew.view.php:262
 msgid "Text to open/close editable petition message"
 msgstr "Текст для открытия/закрытия редактируемого сообщения петиции"
 
-#: includes/addnew.view.php:219 includes/help.php:27
+#: includes/addnew.view.php:271 includes/help.php:27
 msgid "Display opt-in checkbox"
 msgstr "Показать флажок"
 
-#: includes/addnew.view.php:222 includes/addnew.view.php:287
-#: includes/addnew.view.php:322 includes/addnew.view.php:357
-#: includes/addnew.view.php:393 includes/addnew.view.php:434
-#: includes/addnew.view.php:465 includes/addnew.view.php:494
+#: includes/addnew.view.php:274 includes/addnew.view.php:339
+#: includes/addnew.view.php:374 includes/addnew.view.php:409
+#: includes/addnew.view.php:445 includes/addnew.view.php:486
+#: includes/addnew.view.php:517 includes/addnew.view.php:546
+#: includes/addnew.view.php:575 includes/addnew.view.php:603
 msgid "Label"
 msgstr "Этикетка"
 
-#: includes/addnew.view.php:230
+#: includes/addnew.view.php:282
 msgid "Display petition message"
 msgstr "Отображение сообщения петиции"
 
-#: includes/addnew.view.php:237 includes/help.php:28
+#: includes/addnew.view.php:289 includes/help.php:28
 msgid "Display address fields"
 msgstr "Поле отображаемых адресов"
 
-#: includes/addnew.view.php:244 includes/help.php:88
-#: includes/settings.view.php:355
+#: includes/addnew.view.php:296 includes/help.php:88
+#: includes/settings.view.php:385
 msgid "Display"
 msgstr "Дисплей"
 
-#: includes/addnew.view.php:245 includes/addnew.view.php:298
-#: includes/addnew.view.php:333 includes/addnew.view.php:368
-#: includes/addnew.view.php:404 includes/addnew.view.php:432
+#: includes/addnew.view.php:297 includes/addnew.view.php:350
+#: includes/addnew.view.php:385 includes/addnew.view.php:420
+#: includes/addnew.view.php:456 includes/addnew.view.php:484
 msgid "Required"
 msgstr "Обязательно"
 
-#: includes/addnew.view.php:251 includes/addnew.view.php:597
-#: includes/emailpetition.php:426 includes/settings.view.php:456
-#: includes/signatures.view.php:134
+#: includes/addnew.view.php:303 includes/addnew.view.php:706
+#: includes/emailpetition.php:468 includes/settings.view.php:492
+#: includes/signatures.view.php:150
 msgid "Street"
 msgstr "Улица"
 
-#: includes/addnew.view.php:256 includes/csv.php:54
-#: includes/emailpetition.php:443 includes/settings.view.php:377
-#: includes/settings.view.php:460 includes/signatures.view.php:135
+#: includes/addnew.view.php:308 includes/csv.php:55
+#: includes/emailpetition.php:485 includes/settings.view.php:407
+#: includes/settings.view.php:496 includes/signatures.view.php:151
 #: includes/widget.php:434
 msgid "City"
 msgstr "город"
 
-#: includes/addnew.view.php:261 includes/emailpetition.php:450
-#: includes/settings.view.php:380 includes/widget.php:440
+#: includes/addnew.view.php:313 includes/emailpetition.php:492
+#: includes/settings.view.php:410 includes/widget.php:440
 msgid "State / Province"
 msgstr "Штат / Провинция"
 
-#: includes/addnew.view.php:266
+#: includes/addnew.view.php:318
 msgid "Postal Code - see settings for EU style"
 msgstr "Почтовый код - см. настройки для стиля ЕС"
 
-#: includes/addnew.view.php:271 includes/addnew.view.php:629
-#: includes/csv.php:57 includes/emailpetition.php:491
-#: includes/settings.view.php:386 includes/settings.view.php:472
-#: includes/signatures.view.php:138 includes/widget.php:476
+#: includes/addnew.view.php:323 includes/addnew.view.php:738
+#: includes/csv.php:58 includes/emailpetition.php:533
+#: includes/settings.view.php:416 includes/settings.view.php:508
+#: includes/signatures.view.php:154 includes/widget.php:476
 msgid "Country"
 msgstr "Страна"
 
-#: includes/addnew.view.php:283
+#: includes/addnew.view.php:335
 msgid "Display custom field 1"
 msgstr "Отображение настраиваемого поля 1"
 
-#: includes/addnew.view.php:300 includes/addnew.view.php:335
-#: includes/addnew.view.php:370 includes/addnew.view.php:406
-#: includes/addnew.view.php:447 includes/addnew.view.php:475
-#: includes/addnew.view.php:504
+#: includes/addnew.view.php:352 includes/addnew.view.php:387
+#: includes/addnew.view.php:422 includes/addnew.view.php:458
+#: includes/addnew.view.php:499 includes/addnew.view.php:527
+#: includes/addnew.view.php:556 includes/addnew.view.php:585
+#: includes/addnew.view.php:613
 msgid "Location"
 msgstr "Местоположение"
 
-#: includes/addnew.view.php:301 includes/addnew.view.php:336
-#: includes/addnew.view.php:371 includes/addnew.view.php:407
-#: includes/addnew.view.php:448 includes/addnew.view.php:476
-#: includes/addnew.view.php:505
+#: includes/addnew.view.php:353 includes/addnew.view.php:388
+#: includes/addnew.view.php:423 includes/addnew.view.php:459
+#: includes/addnew.view.php:500 includes/addnew.view.php:528
+#: includes/addnew.view.php:557 includes/addnew.view.php:586
+#: includes/addnew.view.php:614
 msgid "Top"
 msgstr "Верх"
 
-#: includes/addnew.view.php:303 includes/addnew.view.php:338
-#: includes/addnew.view.php:373 includes/addnew.view.php:409
-#: includes/addnew.view.php:450 includes/addnew.view.php:478
-#: includes/addnew.view.php:507
+#: includes/addnew.view.php:355 includes/addnew.view.php:390
+#: includes/addnew.view.php:425 includes/addnew.view.php:461
+#: includes/addnew.view.php:502 includes/addnew.view.php:530
+#: includes/addnew.view.php:559 includes/addnew.view.php:588
+#: includes/addnew.view.php:616
 msgid "Above email"
 msgstr "Над электронной почтой"
 
-#: includes/addnew.view.php:305 includes/addnew.view.php:340
-#: includes/addnew.view.php:375 includes/addnew.view.php:411
-#: includes/addnew.view.php:453 includes/addnew.view.php:481
-#: includes/addnew.view.php:510
+#: includes/addnew.view.php:357 includes/addnew.view.php:392
+#: includes/addnew.view.php:427 includes/addnew.view.php:463
+#: includes/addnew.view.php:505 includes/addnew.view.php:533
+#: includes/addnew.view.php:562 includes/addnew.view.php:591
+#: includes/addnew.view.php:619
 msgid "Bottom"
 msgstr "Низ"
 
-#: includes/addnew.view.php:308 includes/addnew.view.php:343
-#: includes/addnew.view.php:378 includes/addnew.view.php:414
-#: includes/addnew.view.php:428
+#: includes/addnew.view.php:360 includes/addnew.view.php:395
+#: includes/addnew.view.php:430 includes/addnew.view.php:466
+#: includes/addnew.view.php:480
 msgid "Include with petition"
 msgstr "Включить с петицией"
 
-#: includes/addnew.view.php:310 includes/addnew.view.php:345
-#: includes/addnew.view.php:380 includes/addnew.view.php:416
+#: includes/addnew.view.php:362 includes/addnew.view.php:397
+#: includes/addnew.view.php:432 includes/addnew.view.php:468
 msgid "Trim when displaying"
 msgstr "Обрезка при отображении"
 
-#: includes/addnew.view.php:318
+#: includes/addnew.view.php:370
 msgid "Display custom field 2"
 msgstr "Отображение настраиваемого поля 2"
 
-#: includes/addnew.view.php:353
+#: includes/addnew.view.php:405
 msgid "Display custom field 3"
 msgstr "Отображение настраиваемого поля 3"
 
-#: includes/addnew.view.php:389
+#: includes/addnew.view.php:441
 msgid "Display custom field 4"
 msgstr "Отображение настраиваемого поля 4"
 
-#: includes/addnew.view.php:424
+#: includes/addnew.view.php:476
 msgid "Display custom drop-down"
 msgstr "Отображение пользовательского раскрывающегося списка"
 
-#: includes/addnew.view.php:444
+#: includes/addnew.view.php:496
 msgid "Values"
 msgstr "Значения"
 
-#: includes/addnew.view.php:461
+#: includes/addnew.view.php:513
 msgid "Display custom checkbox 1"
 msgstr "Отображение пользовательского флажка 1"
 
-#: includes/addnew.view.php:490
+#: includes/addnew.view.php:542
 msgid "Display custom checkbox 2"
 msgstr "Отображение пользовательского флажка 2"
 
-#: includes/addnew.view.php:520 includes/help.php:30
+#: includes/addnew.view.php:571
+msgid "Display custom checkbox 3"
+msgstr "Отображать пользовательский чекбокс 3"
+
+#: includes/addnew.view.php:599
+msgid "Display custom checkbox 4"
+msgstr "Отображать пользовательский флажок 4"
+
+#: includes/addnew.view.php:629 includes/help.php:30
 msgid "Display custom message"
 msgstr "Отображать собственное сообщение"
 
-#: includes/addnew.view.php:521
+#: includes/addnew.view.php:630
 msgid "Displayed beneath `Thank you` after petition is signed"
 msgstr "Отображается под ' Спасибо ' после подписания петиции"
 
-#: includes/addnew.view.php:524
+#: includes/addnew.view.php:633
 msgid "Message"
 msgstr "Сообщение"
 
-#: includes/addnew.view.php:535
+#: includes/addnew.view.php:644
 msgid ""
 "You must also enable 'Display opt-in checkbox' under the Display Options tab"
 msgstr ""
 "Вы также должны включить «Флажок «Отображать согласие» на вкладке «Параметры "
 "отображения»"
 
-#: includes/addnew.view.php:542
+#: includes/addnew.view.php:651
 msgid "Enable ActiveCampaign"
 msgstr "Включить ActiveCampaign"
 
-#: includes/addnew.view.php:549 includes/addnew.view.php:717
-#: includes/addnew.view.php:737 includes/addnew.view.php:759
+#: includes/addnew.view.php:658 includes/addnew.view.php:852
+#: includes/addnew.view.php:873 includes/addnew.view.php:895
 msgid "API Key"
 msgstr "Ключ API"
 
-#: includes/addnew.view.php:552
+#: includes/addnew.view.php:661
 msgid "Server URL"
 msgstr "Сервер URL"
 
-#: includes/addnew.view.php:563
+#: includes/addnew.view.php:672
 msgid "Select list"
 msgstr "Список"
 
-#: includes/addnew.view.php:571
+#: includes/addnew.view.php:680
 msgid ""
 "Map the SpeakOut! fields to your Active Campaign fields. Leave those you "
 "don't use blank."
@@ -461,67 +482,83 @@ msgstr ""
 "Карта SpeakOut! поля в полях активной кампании. Оставьте те, которые вы не "
 "используете, пустыми."
 
-#: includes/addnew.view.php:574 includes/csv.php:49
+#: includes/addnew.view.php:683 includes/csv.php:49
 msgid "Honorific"
 msgstr "Почетный"
 
-#: includes/addnew.view.php:582 includes/csv.php:50
-#: includes/emailpetition.php:355 includes/widget.php:358
+#: includes/addnew.view.php:691 includes/csv.php:50
+#: includes/emailpetition.php:383 includes/widget.php:358
 msgid "First Name"
 msgstr "Имя"
 
-#: includes/addnew.view.php:587 includes/csv.php:51
-#: includes/emailpetition.php:359 includes/widget.php:362
+#: includes/addnew.view.php:696 includes/csv.php:51
+#: includes/emailpetition.php:387 includes/widget.php:362
 msgid "Last Name"
 msgstr "Фамилия"
 
-#: includes/addnew.view.php:592 includes/emailpetition.php:418
-#: includes/settings.view.php:449 includes/signatures.view.php:132
+#: includes/addnew.view.php:701 includes/emailpetition.php:460
+#: includes/settings.view.php:485 includes/signatures.view.php:148
 #: includes/widget.php:409
 msgid "Email"
 msgstr "Email"
 
-#: includes/addnew.view.php:605
+#: includes/addnew.view.php:714
 msgid "Suburb"
 msgstr "Пригород"
 
-#: includes/addnew.view.php:613 includes/csv.php:55
-#: includes/settings.view.php:464 includes/signatures.view.php:136
+#: includes/addnew.view.php:722 includes/csv.php:56
+#: includes/settings.view.php:500 includes/signatures.view.php:152
 msgid "State"
 msgstr "Страна"
 
-#: includes/addnew.view.php:621 includes/csv.php:56
-#: includes/emailpetition.php:436 includes/emailpetition.php:459
-#: includes/settings.view.php:383 includes/signatures.view.php:137
+#: includes/addnew.view.php:730 includes/csv.php:57
+#: includes/emailpetition.php:478 includes/emailpetition.php:501
+#: includes/settings.view.php:413 includes/signatures.view.php:153
 #: includes/widget.php:447
 msgid "Postal Code"
 msgstr "Почтовый индекс"
 
-#: includes/addnew.view.php:712
-msgid "Enable MailChimp"
-msgstr "Включить MailChimp"
+#: includes/addnew.view.php:822
+msgid "Enable CleverReach"
+msgstr "Включить CleverReach"
 
-#: includes/addnew.view.php:720
-msgid "Server ID"
-msgstr "Идентификатор сервера"
+#: includes/addnew.view.php:827
+msgid "Client ID "
+msgstr "ID клиента "
 
-#: includes/addnew.view.php:723 includes/addnew.view.php:762
-msgid "List ID"
-msgstr "ID Списка"
+#: includes/addnew.view.php:830
+msgid "Client Secret"
+msgstr "Секрет клиента"
 
-#: includes/addnew.view.php:732
-msgid "Enable Mailerlite"
-msgstr "Включить Mailerlite"
-
-#: includes/addnew.view.php:740
+#: includes/addnew.view.php:833 includes/addnew.view.php:876
 msgid "Group ID"
 msgstr "ID группы"
 
-#: includes/addnew.view.php:750
+#: includes/addnew.view.php:836
+msgid "Source"
+msgstr "Источник"
+
+#: includes/addnew.view.php:847
+msgid "Enable MailChimp"
+msgstr "Включить MailChimp"
+
+#: includes/addnew.view.php:855
+msgid "Server ID"
+msgstr "Идентификатор сервера"
+
+#: includes/addnew.view.php:858 includes/addnew.view.php:898
+msgid "List ID"
+msgstr "ID Списка"
+
+#: includes/addnew.view.php:868
+msgid "Enable Mailerlite"
+msgstr "Включить Mailerlite"
+
+#: includes/addnew.view.php:886
 msgid "Enable Sendy"
 msgstr "Включить Sendy"
 
-#: includes/addnew.view.php:756
+#: includes/addnew.view.php:892
 msgid "Installation URL"
 msgstr "URL установки"
 
@@ -542,11 +579,11 @@ msgid "Add New"
 msgstr "Добавить новое"
 
 #: includes/admin.php:66 includes/admin.php:67 includes/petitions.view.php:18
-#: includes/petitions.view.php:28 includes/signatures.view.php:4
+#: includes/petitions.view.php:28 includes/signatures.view.php:5
 msgid "Signatures"
 msgstr "Подписи"
 
-#: includes/admin.php:77 includes/settings.view.php:142
+#: includes/admin.php:77 includes/settings.view.php:146
 msgid "SpeakOut! Petitions Settings"
 msgstr "Выскажись! Настройки петиций"
 
@@ -554,12 +591,12 @@ msgstr "Выскажись! Настройки петиций"
 msgid "Settings"
 msgstr "Настройки"
 
-#: includes/class.petition.php:505
+#: includes/class.petition.php:547
 msgid "No Title"
 msgstr "Без заголовка"
 
-#: includes/class.signaturelist.php:155 includes/class.signaturelist.php:215
-#: includes/class.signaturelist.php:319
+#: includes/class.signaturelist.php:157 includes/class.signaturelist.php:217
+#: includes/class.signaturelist.php:323 includes/csv.php:53
 msgid "Anonymous"
 msgstr "Аноним"
 
@@ -595,7 +632,7 @@ msgstr "Подтверждение электронной почты"
 msgid "If you aren't redirected"
 msgstr "Если вы не перенаправлены"
 
-#: includes/confirmations.php:169 includes/settings.view.php:603
+#: includes/confirmations.php:169 includes/settings.view.php:651
 msgid "Click here"
 msgstr "Кликнуть сюда"
 
@@ -607,7 +644,7 @@ msgstr "чтобы вернуться на сайт "
 msgid "Insufficient privileges: You need to be an editor to do that."
 msgstr "Недостаточно привилегий: для этого вам нужен редактор."
 
-#: includes/csv.php:28 includes/signatures.view.php:212
+#: includes/csv.php:28 includes/signatures.view.php:235
 msgid "No signatures found."
 msgstr "Подписей не найдено."
 
@@ -615,120 +652,122 @@ msgstr "Подписей не найдено."
 msgid "Email Address"
 msgstr "Email"
 
-#: includes/csv.php:53 includes/widget.php:428
+#: includes/csv.php:54 includes/widget.php:428
 msgid "Address"
 msgstr "Адрес"
 
-#: includes/csv.php:58
+#: includes/csv.php:59
 msgid "Date Signed"
 msgstr "Дата подписания"
 
-#: includes/csv.php:59 includes/signatures.view.php:147
+#: includes/csv.php:60 includes/signatures.view.php:165
 msgid "Confirmed"
 msgstr "Подтвержденные"
 
-#: includes/csv.php:60
+#: includes/csv.php:61
 msgid "Petition Title"
 msgstr "Заголовок ходатайства"
 
-#: includes/csv.php:61
+#: includes/csv.php:62
 msgid "Petition ID"
 msgstr "Идентификационный номер"
 
-#: includes/csv.php:62 includes/settings.view.php:506
+#: includes/csv.php:63 includes/settings.view.php:550
 msgid "Email Opt-in"
 msgstr "Емейл подписка"
 
-#: includes/csv.php:63 includes/settings.view.php:410
+#: includes/csv.php:64 includes/settings.view.php:446
 msgid "Custom Message"
 msgstr "Сообщение клиента"
 
-#: includes/csv.php:72
+#: includes/csv.php:74
 msgid "Language"
 msgstr "Язык"
 
-#: includes/csv.php:73 includes/signatures.view.php:149
+#: includes/csv.php:75 includes/signatures.view.php:167
 msgid "IP Address"
 msgstr "IP-адрес"
 
-#: includes/csv.php:83
+#: includes/csv.php:85
 msgid "Custom Field"
 msgstr "Пользовательское поле"
 
-#: includes/csv.php:103
+#: includes/csv.php:116
 msgid "confirmed"
 msgstr "подтвержденный"
 
-#: includes/csv.php:106
+#: includes/csv.php:119
 msgid "unconfirmed"
 msgstr "не подтвержден"
 
-#: includes/csv.php:115 includes/csv.php:125 includes/csv.php:135
+#: includes/csv.php:128 includes/csv.php:138 includes/csv.php:148
+#: includes/csv.php:158 includes/csv.php:168
 msgid "Y"
 msgstr "Y"
 
-#: includes/csv.php:118 includes/csv.php:128 includes/csv.php:138
+#: includes/csv.php:131 includes/csv.php:141 includes/csv.php:151
+#: includes/csv.php:161 includes/csv.php:171
 msgid "N"
 msgstr "С"
 
-#: includes/emailpetition.php:564
+#: includes/emailpetition.php:620
 msgid "You can add formatting using markdown syntax"
 msgstr "Форматирование можно добавлять с помощью разметки"
 
-#: includes/emailpetition.php:564
+#: includes/emailpetition.php:620
 msgid "read more"
 msgstr "подробнее"
 
-#: includes/emailpetition.php:579 includes/widget.php:242
+#: includes/emailpetition.php:635 includes/widget.php:242
 #: includes/widget.php:256
 msgid "your signature"
 msgstr "ВАША ПОДПИСЬ"
 
-#: includes/emailpetition.php:607 includes/widget.php:535
+#: includes/emailpetition.php:663 includes/widget.php:535
 msgid "BCC yourself"
 msgstr "Скрытая копия"
 
-#: includes/emailpetition.php:620 includes/widget.php:545
+#: includes/emailpetition.php:676 includes/widget.php:545
 msgid "Hide name from public"
 msgstr "Скрыть имя от общественности"
 
-#: includes/emailpetition.php:631 includes/widget.php:555
+#: includes/emailpetition.php:687 includes/widget.php:555
 msgid "Yes, I accept your "
 msgstr "Да, я принимаю "
 
-#: includes/emailpetition.php:631 includes/widget.php:555
+#: includes/emailpetition.php:687 includes/widget.php:555
 msgid "privacy policy"
 msgstr "конфиденциальность"
 
-#: includes/emailpetition.php:666 includes/widget.php:212
+#: includes/emailpetition.php:722 includes/widget.php:212
 msgid "signatures"
 msgstr "Подписи"
 
-#: includes/emailpetition.php:697 includes/widget.php:281
+#: includes/emailpetition.php:753 includes/widget.php:281
 msgid "Signature goal"
 msgstr "Цель подписи"
 
-#: includes/emailpetition.php:702 includes/widget.php:278
+#: includes/emailpetition.php:758 includes/widget.php:278
 msgid "End date"
 msgstr "Конечная дата"
 
-#: includes/emailpetition.php:703 includes/widget.php:279
+#: includes/emailpetition.php:759 includes/widget.php:279
 msgid "Signatures collected"
 msgstr "Подписи собраны"
 
-#: includes/emailpetition.php:708
+#: includes/emailpetition.php:764
 msgid "signature"
 msgid_plural "signatures"
 msgstr[0] "подпись"
 msgstr[1] "подпись"
 msgstr[2] "подпись"
 
-#: includes/emailpetition.php:726 includes/signatures.view.php:133
+#: includes/emailpetition.php:782 includes/signatures.view.php:149
 #: includes/widget.php:91
 msgid "Petition"
 msgstr "Ходатайство"
 
-#: includes/emailpetition.php:728
+#: includes/emailpetition.php:784
 msgid ""
 "Error: The site administrator must include a valid petition id  in the "
 "shortcode."
@@ -784,12 +823,16 @@ msgid "This is included at the bottom of each petition that is sent."
 msgstr "Это указывается в нижней части каждой отправленной петиции."
 
 #: includes/help.php:13
+msgid "x Message"
+msgstr "x Сообщение"
+
+#: includes/help.php:13
 msgid ""
-"Enter a prepared tweet that will be presented to users when the Twitter "
-"button is clicked."
+"Enter a prepared tweet that will be presented to users when the X button is "
+"clicked."
 msgstr ""
 "Введите подготовленный твит, который будет представлен пользователям при "
-"нажатии кнопки Twitter."
+"нажатии кнопки X."
 
 #: includes/help.php:17
 msgid ""
@@ -916,7 +959,7 @@ msgstr ""
 "Эти настройки управляют отображением короткого кода [emailpetition] и "
 "бокового виджета."
 
-#: includes/help.php:67 includes/settings.view.php:170
+#: includes/help.php:67 includes/settings.view.php:174
 msgid "Petition Theme"
 msgstr "Тема Петиции"
 
@@ -925,7 +968,7 @@ msgid "Select a CSS theme that will control the appearance of petition forms."
 msgstr ""
 "Выберите тему CSS, которая будет контролировать появление форм петиции."
 
-#: includes/help.php:68 includes/settings.view.php:177
+#: includes/help.php:68 includes/settings.view.php:189
 msgid "Widget Theme"
 msgstr "Тема Виджета"
 
@@ -935,7 +978,7 @@ msgid ""
 msgstr ""
 "Выберите тему CSS, которая будет контролировать появление виджетов прошения."
 
-#: includes/help.php:69 includes/settings.view.php:184
+#: includes/help.php:69 includes/settings.view.php:196
 msgid "Submit Button Text"
 msgstr "Кнопка отправки Текст"
 
@@ -946,7 +989,7 @@ msgstr ""
 "Введите текст, который отображается в оранжевой кнопке отправки в форме "
 "ходатайств."
 
-#: includes/help.php:70 includes/settings.view.php:188
+#: includes/help.php:70 includes/settings.view.php:200
 msgid "Success Message"
 msgstr "Сообщение об успешном завершении"
 
@@ -958,19 +1001,19 @@ msgstr ""
 "Введите текст, который появляется, когда пользователь успешно подписывает "
 "ваше петицию с уникальным адресом электронной почты."
 
-#: includes/help.php:71 includes/settings.view.php:202
+#: includes/help.php:71 includes/settings.view.php:214
 msgid "Share Message"
 msgstr "Сообщение Поделиться"
 
 #: includes/help.php:71
 msgid ""
-"Enter the text that appears above the Twitter and Facebook buttons after the "
+"Enter the text that appears above the X and Facebook buttons after the "
 "petition form has been submitted."
 msgstr ""
-"Введите текст, который появляется над кнопками Twitter и Facebook после "
-"подачи заявки."
+"Введите текст, который появится над кнопками X и Facebook после отправки "
+"формы петиции."
 
-#: includes/help.php:72 includes/settings.view.php:206
+#: includes/help.php:72 includes/settings.view.php:218
 msgid "Expiration Message"
 msgstr "Сообщение об истечении срока действия"
 
@@ -982,7 +1025,7 @@ msgstr ""
 "Введите текст, который будет отображаться вместо формы ходатайства, когда "
 "ходатайство пройдет по истечении срока его действия."
 
-#: includes/help.php:73 includes/settings.view.php:210
+#: includes/help.php:73 includes/settings.view.php:222
 msgid "Already Signed Message"
 msgstr "Уже подписанное сообщение"
 
@@ -994,7 +1037,7 @@ msgstr ""
 "Введите текст, который будет отображаться, когда петиция будет подписана с "
 "использованием адреса электронной почты, который уже был отправлен."
 
-#: includes/help.php:74 includes/settings.view.php:214
+#: includes/help.php:74 includes/settings.view.php:226
 msgid "Opt-in Default"
 msgstr "Выбор по умолчанию"
 
@@ -1003,7 +1046,7 @@ msgid "Choose whether the opt-in checkbox is checked or unchecked by default."
 msgstr ""
 "Выберите, будет ли флажок для выбора отмечен или снят флажок по умолчанию."
 
-#: includes/help.php:75 includes/settings.view.php:221
+#: includes/help.php:75 includes/settings.view.php:233
 msgid "Display signature count"
 msgstr "Количество отображаемых подписей"
 
@@ -1018,7 +1061,7 @@ msgstr ""
 msgid "These settings control the content of the confirmation emails."
 msgstr "Эти настройки управляют содержимым писем с подтверждением."
 
-#: includes/help.php:79 includes/settings.view.php:315
+#: includes/help.php:79 includes/settings.view.php:345
 msgid "Email From"
 msgstr "Email ОТ"
 
@@ -1034,7 +1077,7 @@ msgstr ""
 msgid "Enter the subject of the confirmation email."
 msgstr "Введите тему письма с подтверждением."
 
-#: includes/help.php:81 includes/settings.view.php:323
+#: includes/help.php:81 includes/settings.view.php:353
 msgid "Email Message"
 msgstr "Сообщение электронной почты"
 
@@ -1050,7 +1093,7 @@ msgstr "Эти настройки управляют отображением к
 msgid "Enter the text that appears above the signature list."
 msgstr "Введите текст, который появляется над списком подписи."
 
-#: includes/help.php:86 includes/settings.view.php:341
+#: includes/help.php:86 includes/settings.view.php:371
 msgid "Theme"
 msgstr "Тема"
 
@@ -1059,7 +1102,7 @@ msgid "Select a CSS theme that will control the appearance of signature lists."
 msgstr ""
 "Выберите тему CSS, которая будет контролировать появление списков подписи."
 
-#: includes/help.php:87 includes/settings.view.php:351
+#: includes/help.php:87 includes/settings.view.php:381
 msgid "Rows"
 msgstr "Вертикально"
 
@@ -1075,7 +1118,7 @@ msgstr ""
 "Выберите стиль списка подписей, нажмите кнопку ? для получения "
 "дополнительной информации."
 
-#: includes/help.php:89 includes/help.php:95 includes/settings.view.php:365
+#: includes/help.php:89 includes/help.php:95 includes/settings.view.php:395
 msgid "Columns"
 msgstr "Колонки"
 
@@ -1096,7 +1139,7 @@ msgstr ""
 "Вы можете отобразить флаг страны, выбранной подписывающей стороной, если у "
 "вас включена функция Country."
 
-#: includes/help.php:91 includes/settings.view.php:427
+#: includes/help.php:91 includes/settings.view.php:463
 msgid "Privacy"
 msgstr "Конфиденциальность"
 
@@ -1130,7 +1173,7 @@ msgstr ""
 "Эти параметры контролируют внешний вид страниц параметров плагина в "
 "администраторе WordPress."
 
-#: includes/help.php:100 includes/settings.view.php:540
+#: includes/help.php:100 includes/settings.view.php:584
 msgid "Petitions table shows"
 msgstr "Таблицы петиций"
 
@@ -1142,7 +1185,7 @@ msgstr ""
 "Введите количество строк для отображения в таблице «Псевдонимы электронной "
 "почты» (по умолчанию = 20)"
 
-#: includes/help.php:101 includes/settings.view.php:544
+#: includes/help.php:101 includes/settings.view.php:588
 msgid "Signatures table shows"
 msgstr "Таблица подписи показывает"
 
@@ -1183,74 +1226,78 @@ msgstr ""
 "Отзовите ключ, это позволит использовать его в другом месте.  Текущий сайт "
 "потеряет весь доступ к любым настройкам."
 
-#: includes/help.php:114 includes/settings.view.php:151
-#: includes/settings.view.php:166
+#: includes/help.php:114 includes/settings.view.php:155
+#: includes/settings.view.php:170
 msgid "Petition Form"
 msgstr "Форма Петиции"
 
-#: includes/help.php:119 includes/settings.view.php:152
-#: includes/settings.view.php:312
+#: includes/help.php:119 includes/settings.view.php:156
+#: includes/settings.view.php:342
 msgid "Confirmation Emails"
 msgstr "Сколько нужно Писем Подтверждения для нескольких подписок"
 
-#: includes/help.php:124 includes/settings.view.php:153
-#: includes/settings.view.php:334
+#: includes/help.php:124 includes/settings.view.php:157
+#: includes/settings.view.php:364
 msgid "Public Signature List"
 msgstr "Публичный список подписей"
 
-#: includes/help.php:129 includes/settings.view.php:154
-#: includes/settings.view.php:438
+#: includes/help.php:129 includes/settings.view.php:158
+#: includes/settings.view.php:474
 msgid "Admin Signature List"
 msgstr "Список подписей администратора"
 
-#: includes/help.php:134 includes/settings.view.php:155
-#: includes/settings.view.php:537
+#: includes/help.php:134 includes/settings.view.php:159
+#: includes/settings.view.php:581
 msgid "Admin Display"
 msgstr "Админ дисплей"
 
-#: includes/help.php:139 includes/settings.view.php:157
+#: includes/help.php:139 includes/settings.view.php:161
 msgid "License"
 msgstr "Лицензия"
 
-#: includes/install.php:178
+#: includes/import.view.php:69
+msgid "Import petitions from SpeakUp to SpeakOut!"
+msgstr "Импорт петиций с SpeakUp на SpeakOut!"
+
+#: includes/install.php:200
 msgid "Sign Now"
 msgstr "Подписать сейчас"
 
-#: includes/install.php:179
+#: includes/install.php:201
 msgid "This petition is now closed."
 msgstr "Это ходатайство теперь закрыто."
 
-#: includes/install.php:180
+#: includes/install.php:202
 msgid "Thank you"
 msgstr "Спасибо Вам"
 
-#: includes/install.php:180
+#: includes/install.php:202
 msgid "Your signature has been added."
 msgstr "Ваша подпись добавлена."
 
-#: includes/install.php:181
+#: includes/install.php:203
 msgid "This petition has already been signed using your email address."
 msgstr ""
 "Это ходатайство уже подписано с использованием вашего адреса электронной "
 "почты."
 
-#: includes/install.php:182
+#: includes/install.php:204
 msgid "Share this with your friends:"
 msgstr "Расскажите об этом друзьям:"
 
-#: includes/install.php:183 includes/install.php:425
+#: includes/install.php:205 includes/install.php:528
 msgid "Please confirm your email address"
 msgstr "Пожалуйста подтвердите ваш адрес электронной почты"
 
-#: includes/install.php:184 includes/install.php:428
+#: includes/install.php:206 includes/install.php:531
 msgid "Hello"
 msgstr "Здравствуйте"
 
-#: includes/install.php:184
+#: includes/install.php:206
 msgid "Thank you for signing our petition %petition_title% "
 msgstr "Спасибо, что подписали наше петицию% petition_title% "
 
-#: includes/install.php:184 includes/install.php:428
+#: includes/install.php:206 includes/install.php:531
 msgid ""
 "Please confirm your email address by clicking or copying and pasting the "
 "link below:"
@@ -1258,32 +1305,32 @@ msgstr ""
 "Пожалуйста, подтвердите свой адрес электронной почты, нажав или скопировав и "
 "вставив ссылку ниже:"
 
-#: includes/install.php:189 includes/install.php:434
+#: includes/install.php:211 includes/install.php:537
 msgid "Latest Signatures"
 msgstr "Последние подписи"
 
-#: includes/install.php:428
+#: includes/install.php:531
 msgid "Thank you for signing our petition"
 msgstr "Спасибо, что подписали наше ходатайство"
 
 #: includes/license.view.php:78 includes/license.view.php:105
-#: includes/settings.view.php:566 includes/settings.view.php:593
+#: includes/settings.view.php:614 includes/settings.view.php:641
 msgid "Enter your license key"
 msgstr "Введите лицензионный ключ"
 
-#: includes/license.view.php:83 includes/settings.view.php:571
+#: includes/license.view.php:83 includes/settings.view.php:619
 msgid "Verified"
 msgstr "Проверенный"
 
-#: includes/license.view.php:86 includes/settings.view.php:574
+#: includes/license.view.php:86 includes/settings.view.php:622
 msgid "Revoke license key"
 msgstr "Отзыв лицензионного ключа"
 
-#: includes/license.view.php:90 includes/settings.view.php:578
+#: includes/license.view.php:90 includes/settings.view.php:626
 msgid "Thanks for upgrading"
 msgstr "Спасибо за обновление"
 
-#: includes/license.view.php:100 includes/settings.view.php:588
+#: includes/license.view.php:100 includes/settings.view.php:636
 msgid ""
 "There appears to be a problem with your license key.  Either verify it again "
 "or contact"
@@ -1291,11 +1338,11 @@ msgstr ""
 "Похоже, что возникла проблема с лицензионным ключом.  Либо проверьте его еще "
 "раз, либо свяжитесь с нами"
 
-#: includes/license.view.php:108 includes/settings.view.php:596
+#: includes/license.view.php:108 includes/settings.view.php:644
 msgid "Your license key"
 msgstr "Ваш лицензионный ключ"
 
-#: includes/license.view.php:111 includes/settings.view.php:599
+#: includes/license.view.php:111 includes/settings.view.php:647
 msgid "Verify"
 msgstr "Проверить"
 
@@ -1359,11 +1406,11 @@ msgstr "отображение названия петиции"
 msgid "display petition message"
 msgstr "Отображение сообщения петиции"
 
-#: includes/petitions.view.php:60
+#: includes/petitions.view.php:63
 msgid "View Signatures"
 msgstr "Просмотр подписей"
 
-#: includes/petitions.view.php:66
+#: includes/petitions.view.php:69
 msgid ""
 "Delete this petition permanently? All of the petition's signatures will be "
 "deleted as well."
@@ -1373,326 +1420,367 @@ msgstr "Удалить это петицию навсегда? Все подпи
 msgid "Settings updated."
 msgstr "Настройки обновлены."
 
-#: includes/settings.view.php:156 includes/settings.view.php:552
+#: includes/settings.view.php:160 includes/settings.view.php:596
 msgid "Security"
 msgstr "Безопасность"
 
-#: includes/settings.view.php:161 includes/settings.view.php:641
+#: includes/settings.view.php:165 includes/settings.view.php:689
 msgid "Anedot.com Donation Form Embed"
 msgstr "Anedot.com Форма пожертвования влаял"
 
-#: includes/settings.view.php:167
+#: includes/settings.view.php:171
 msgid "These settings apply to all petitions"
 msgstr "Эти настройки применяются ко всем петициям"
 
-#: includes/settings.view.php:172 includes/settings.view.php:179
-#: includes/settings.view.php:343
+#: includes/settings.view.php:176 includes/settings.view.php:191
+#: includes/settings.view.php:373
 msgid "Default"
 msgstr "дефолт"
 
-#: includes/settings.view.php:173
+#: includes/settings.view.php:177
 msgid "Basic"
 msgstr "главный"
 
-#: includes/settings.view.php:174 includes/settings.view.php:180
-#: includes/settings.view.php:345
+#: includes/settings.view.php:178 includes/settings.view.php:192
+#: includes/settings.view.php:375
 msgid "Custom"
 msgstr "Пользовательский"
 
-#: includes/settings.view.php:174 includes/settings.view.php:180
-#: includes/settings.view.php:345
+#: includes/settings.view.php:178 includes/settings.view.php:192
+#: includes/settings.view.php:375
 msgid "use"
 msgstr "использовать"
 
-#: includes/settings.view.php:191 includes/settings.view.php:326
+#: includes/settings.view.php:182
+msgid "Message editor style"
+msgstr "Стиль редактора сообщений"
+
+#: includes/settings.view.php:184
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/settings.view.php:185
+msgid "Markdown"
+msgstr "Уценка"
+
+#: includes/settings.view.php:203 includes/settings.view.php:350
+#: includes/settings.view.php:356
 msgid "Accepted variables:"
 msgstr "Принятых переменных:"
 
-#: includes/settings.view.php:192 includes/settings.view.php:327
+#: includes/settings.view.php:204 includes/settings.view.php:357
 msgid "Accepted tags:"
 msgstr "Принятые теги:"
 
-#: includes/settings.view.php:196
+#: includes/settings.view.php:208
 msgid "Petition fade out after signing?"
 msgstr "Петиция исчезают после подписания?"
 
-#: includes/settings.view.php:216
+#: includes/settings.view.php:228
 msgid "Checked"
 msgstr "Проверено"
 
-#: includes/settings.view.php:217
+#: includes/settings.view.php:229
 msgid "Unchecked"
 msgstr "Непроверено"
 
-#: includes/settings.view.php:223 includes/settings.view.php:231
-#: includes/settings.view.php:239 includes/settings.view.php:245
-#: includes/settings.view.php:260
+#: includes/settings.view.php:235 includes/settings.view.php:243
+#: includes/settings.view.php:251 includes/settings.view.php:257
+#: includes/settings.view.php:272
 msgid "Yes"
 msgstr "Да"
 
-#: includes/settings.view.php:223
+#: includes/settings.view.php:235
 msgid "at the bottom of the petition form"
 msgstr "в нижней части формы петиции"
 
-#: includes/settings.view.php:227
+#: includes/settings.view.php:239
 msgid "Display honorific field"
 msgstr "Почетный поле"
 
-#: includes/settings.view.php:235
+#: includes/settings.view.php:247
 msgid "Display BCC field"
 msgstr "Поле «СК»"
 
-#: includes/settings.view.php:243
+#: includes/settings.view.php:255
 msgid "EU postal code position?"
 msgstr "Позиция почтового кода ЕС?"
 
-#: includes/settings.view.php:245
+#: includes/settings.view.php:257
 msgid "In EU postal code comes before city"
 msgstr "В ЕС почтовый индекс приходит перед городом"
 
-#: includes/settings.view.php:249
+#: includes/settings.view.php:261
 msgid "Signature count format"
 msgstr "Формат подсчета подписей"
 
-#: includes/settings.view.php:252
+#: includes/settings.view.php:264
 msgid "Thousands separator"
 msgstr "Разделитель тысяч"
 
-#: includes/settings.view.php:253
+#: includes/settings.view.php:265
 msgid "Decimal separator"
 msgstr "Десятичный разделитель"
 
-#: includes/settings.view.php:254
+#: includes/settings.view.php:266
 msgid "currently"
 msgstr "текущий"
 
-#: includes/settings.view.php:258
+#: includes/settings.view.php:270
 msgid "Display Privacy Policy accept?"
 msgstr "Отображать политику конфиденциальности?"
 
-#: includes/settings.view.php:260
+#: includes/settings.view.php:272
 msgid "GDPR"
 msgstr "GDPR"
 
-#: includes/settings.view.php:266
+#: includes/settings.view.php:278
 msgid "Enable Google recaptcha?"
 msgstr "Включить Google recaptcha?"
 
-#: includes/settings.view.php:282
+#: includes/settings.view.php:297
 msgid "Enable hCaptcha?"
 msgstr "Включить hCaptcha?"
 
-#: includes/settings.view.php:296
+#: includes/settings.view.php:311
 msgid "Display sharing icons?"
 msgstr "Отображение иконок обмена?"
 
-#: includes/settings.view.php:303
+#: includes/settings.view.php:318
+msgid "Mailchimp error reporting?"
+msgstr "Отчеты об ошибках Mailchimp?"
+
+#: includes/settings.view.php:326
 msgid "Enable Anedot.com?"
 msgstr "Включить Anedot.com?"
 
-#: includes/settings.view.php:305
+#: includes/settings.view.php:328
 msgid "Anedot.com is a 3rd party fund raising site"
 msgstr "Anedot.com является третьей стороной сбора средств сайт"
 
-#: includes/settings.view.php:335
+#: includes/settings.view.php:333
+msgid "Debug mailchimp?"
+msgstr "Отладка mailchimp?"
+
+#: includes/settings.view.php:334
+msgid "if submissions not getting to mailchimp"
+msgstr "Если отправки не попадают в Mailchimp"
+
+#: includes/settings.view.php:365
 msgid ""
 "These settings apply to signatures displayed on your site using the shortcode"
 msgstr ""
 "Эти настройки применяются к подписям, отображаемым на вашем сайте с помощью "
 "короткого кода"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "To style the signature list you are best using your theme's"
 msgstr "Чтобы утехать список подписей, лучше всего использовать тему"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "Additional CSS"
 msgstr "Дополнительный CSS"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "setting"
 msgstr "Параметр"
 
-#: includes/settings.view.php:352
+#: includes/settings.view.php:382
 msgid "0 to display all"
 msgstr "0 для отображения всех"
 
-#: includes/settings.view.php:355
+#: includes/settings.view.php:385
 msgid "Changing to \"list\" will clear column settings below"
 msgstr "Изменение на \"список\" очистит настройки столбца ниже"
 
-#: includes/settings.view.php:357
+#: includes/settings.view.php:387
 msgid "table"
 msgstr "Таблица отсутствует"
 
-#: includes/settings.view.php:359
+#: includes/settings.view.php:389
 msgid "inline blocks - very styleable"
 msgstr "встроенные блоки - очень стильной"
 
-#: includes/settings.view.php:361
+#: includes/settings.view.php:391
 msgid "long list (comma separated)"
 msgstr "длинный список (через запятую)"
 
-#: includes/settings.view.php:368
+#: includes/settings.view.php:398
 msgid "Count"
 msgstr "Количество"
 
-#: includes/settings.view.php:371 includes/settings.view.php:446
-#: includes/signatures.view.php:157 includes/signatures.view.php:185
+#: includes/settings.view.php:401 includes/settings.view.php:482
+#: includes/signatures.view.php:175 includes/signatures.view.php:206
 msgid "Name"
 msgstr "Название"
 
-#: includes/settings.view.php:374
+#: includes/settings.view.php:404
 msgid "Email address - unless disabled"
 msgstr "Адрес электронной почты - если не отключен"
 
-#: includes/settings.view.php:389
+#: includes/settings.view.php:404
+msgid "Are you sure you want to publicly display email addresses?"
+msgstr "Вы уверены, что хотите публично отображать адреса электронной почты?"
+
+#: includes/settings.view.php:419
 msgid "Custom Field 1"
 msgstr "Настраиваемое поле 1"
 
-#: includes/settings.view.php:392
+#: includes/settings.view.php:422
 msgid "Custom Field 2"
 msgstr "Настраиваемое поле 2"
 
-#: includes/settings.view.php:395
+#: includes/settings.view.php:425
 msgid "Custom Field 3"
 msgstr "Настраиваемое поле 3"
 
-#: includes/settings.view.php:398
+#: includes/settings.view.php:428
 msgid "Custom Field 4"
 msgstr "Настраиваемое поле 4"
 
-#: includes/settings.view.php:401
+#: includes/settings.view.php:431
 msgid "Custom drop-down field"
 msgstr "Настраиваемое поле раскрывающегося списка"
 
-#: includes/settings.view.php:404 includes/settings.view.php:496
+#: includes/settings.view.php:434 includes/settings.view.php:532
 msgid "Custom Checkbox 1"
 msgstr "Пользовательский флажок 1"
 
-#: includes/settings.view.php:407 includes/settings.view.php:500
+#: includes/settings.view.php:437 includes/settings.view.php:536
 msgid "Custom Checkbox 2"
 msgstr "Пользовательский флажок 2"
 
-#: includes/settings.view.php:413 includes/signatures.view.php:148
+#: includes/settings.view.php:440 includes/settings.view.php:540
+msgid "Custom Checkbox 3"
+msgstr "Пользовательский флажок 3"
+
+#: includes/settings.view.php:443 includes/settings.view.php:544
+msgid "Custom Checkbox 4"
+msgstr "Пользовательский флажок 4"
+
+#: includes/settings.view.php:449 includes/signatures.view.php:166
 msgid "Date"
 msgstr "Дата"
 
-#: includes/settings.view.php:418
+#: includes/settings.view.php:454
 msgid "Display country flags?"
 msgstr "Отображение флагов страны?"
 
-#: includes/settings.view.php:422
+#: includes/settings.view.php:458
 msgid "requires Country column to be enabled above"
 msgstr "требует, чтобы столбец Страна был включен выше"
 
-#: includes/settings.view.php:429
+#: includes/settings.view.php:465
 msgid "enabled - only show first letter of surname"
 msgstr "включено - показывать только первую букву фамилии"
 
-#: includes/settings.view.php:430
+#: includes/settings.view.php:466
 msgid "disabled"
 msgstr "отключен"
 
-#: includes/settings.view.php:439
+#: includes/settings.view.php:475
 msgid "Settings for the dashboard signature list"
 msgstr "Настройки для списка подписей панели мониторинга"
 
-#: includes/settings.view.php:442
+#: includes/settings.view.php:478
 msgid "Columns to display"
 msgstr "Колонки для отображения"
 
-#: includes/settings.view.php:452
+#: includes/settings.view.php:488
 msgid "Petition info"
 msgstr "Информация о петиции"
 
-#: includes/settings.view.php:468
+#: includes/settings.view.php:504
 msgid "Postal code"
 msgstr "Почтовый индекс"
 
-#: includes/settings.view.php:476 includes/signatures.view.php:139
+#: includes/settings.view.php:512 includes/signatures.view.php:155
 msgid "Custom field 1"
 msgstr "Настраиваемое поле 1"
 
-#: includes/settings.view.php:480 includes/signatures.view.php:140
+#: includes/settings.view.php:516 includes/signatures.view.php:156
 msgid "Custom field 2"
 msgstr "Настраиваемое поле 2"
 
-#: includes/settings.view.php:484 includes/signatures.view.php:141
+#: includes/settings.view.php:520 includes/signatures.view.php:157
 msgid "Custom field 3"
 msgstr "Настраиваемое поле 3"
 
-#: includes/settings.view.php:488 includes/signatures.view.php:142
+#: includes/settings.view.php:524 includes/signatures.view.php:158
 msgid "Custom field 4"
 msgstr "Настраиваемое поле 4"
 
-#: includes/settings.view.php:492 includes/signatures.view.php:143
+#: includes/settings.view.php:528 includes/signatures.view.php:159
 msgid "Custom field 5"
 msgstr "Настраиваемое поле 5"
 
-#: includes/settings.view.php:503
+#: includes/settings.view.php:547
 msgid "Confirmed status"
 msgstr "opt-in + подтвержден"
 
-#: includes/settings.view.php:509
+#: includes/settings.view.php:553
 msgid "Date signed"
 msgstr "Дата подписания"
 
-#: includes/settings.view.php:513
+#: includes/settings.view.php:557
 msgid "Display time signed?"
 msgstr "Время отображения подписано?"
 
-#: includes/settings.view.php:517
+#: includes/settings.view.php:561
 msgid "IP address"
 msgstr "IP-адрес"
 
-#: includes/settings.view.php:521
+#: includes/settings.view.php:565
 msgid "CSV file includes"
 msgstr "Файл CSV включает"
 
-#: includes/settings.view.php:523
+#: includes/settings.view.php:567
 msgid "All signatures"
 msgstr "Все подписи"
 
-#: includes/settings.view.php:525
+#: includes/settings.view.php:569
 msgid "Only opt-in signatures"
 msgstr "Только подписки на отказ"
 
-#: includes/settings.view.php:527
+#: includes/settings.view.php:571
 msgid "Only double opt-in signatures"
 msgstr "Только двойные подписываемые подписки"
 
-#: includes/settings.view.php:527
+#: includes/settings.view.php:571
 msgid "opt-in + confirmed"
 msgstr "opt-in + подтвержден"
 
-#: includes/settings.view.php:529
+#: includes/settings.view.php:573
 msgid "Only confirmed signatures"
 msgstr "Только подтвержденные подписи"
 
-#: includes/settings.view.php:541
+#: includes/settings.view.php:585
 msgid "rows - default = 20"
 msgstr "По умолчанию: 20 капель / мл"
 
-#: includes/settings.view.php:545
+#: includes/settings.view.php:589
 msgid "rows - default = 50"
 msgstr ""
 "По умолчанию\n"
 "Предложить исправление"
 
-#: includes/settings.view.php:555
+#: includes/settings.view.php:599
 msgid "Webhooks enabled"
 msgstr "Веб-перехватчики включены"
 
 #: includes/settings.view.php:603
+msgid "Enable Wordpress updater"
+msgstr "Включить обновление Wordpress"
+
+#: includes/settings.view.php:651
 msgid "Don't have a license"
 msgstr "У вас нет лицензии"
 
-#: includes/settings.view.php:644
+#: includes/settings.view.php:692
 msgid "Anedot.com Donation Slug"
 msgstr "Anedot.com Пожертвование Слизень"
 
-#: includes/settings.view.php:646
+#: includes/settings.view.php:694
 msgid ""
 "Input your Anedot.com \"Account Slug\" (from Settings > Brand), a slash, and "
 "then your Campaign Slug (from Campaigns > Edit > Basic)."
@@ -1700,11 +1788,11 @@ msgstr ""
 "Ввейте свой Anedot.com \"Счет Slug\" (из настройки и бренд), слэш, а затем "
 "ваша кампания Slug (из кампаний и отсеивать и Basic)."
 
-#: includes/settings.view.php:651
+#: includes/settings.view.php:699
 msgid "Anedot.com Embed Pref"
 msgstr "Anedot.com встраиваемый Преф"
 
-#: includes/settings.view.php:653
+#: includes/settings.view.php:701
 msgid ""
 "Enter \"true\" (without quotes) to show account name header on embedded "
 "campaigns."
@@ -1712,11 +1800,11 @@ msgstr ""
 "Введите \"true\" (без кавычек), чтобы показать заголовок имени учетной "
 "записи во встроенных кампаниях."
 
-#: includes/settings.view.php:657
+#: includes/settings.view.php:705
 msgid "Anedot.com iframe Width"
 msgstr "Anedot.com ширина iframe"
 
-#: includes/settings.view.php:659
+#: includes/settings.view.php:707
 msgid ""
 "Width for donation form iframe, either as percent, e.g. \"100%\" (without "
 "quotes), or pixels, e.g. \"375\" (without quotes). Iframe is to be displayed "
@@ -1726,11 +1814,11 @@ msgstr ""
 "котировок), или пикселей, например, \"375\" (без котировок). Iframe будет "
 "отображаться в области «Сообщение успеха» после подписания петиции."
 
-#: includes/settings.view.php:663
+#: includes/settings.view.php:711
 msgid "Anedot.com iframe Height"
 msgstr "Anedot.com высота iframe"
 
-#: includes/settings.view.php:665
+#: includes/settings.view.php:713
 msgid ""
 "Height for donation page iframe, either as pixels, e.g. \"1570\" (without "
 "quotes), or percent, e.g. \"100%\" (without quotes). Iframe is to be "
@@ -1741,17 +1829,13 @@ msgstr ""
 "Iframe будет отображаться в области «Сообщение успеха» после подписания "
 "петиции."
 
-#: includes/settings.view.php:671
+#: includes/settings.view.php:719
 msgid "Save Changes"
 msgstr "Сохранить Изменения"
 
-#: includes/settings.view.php:374
-msgid "Are you sure you want to publicly display email addresses?"
-msgstr "Вы уверены, что хотите публично отображать адреса электронной почты?"
-
 #: includes/signatures.php:39 includes/signatures.php:86
-#: includes/signatures.php:122 includes/signatures.php:193
-#: includes/signatures.php:207
+#: includes/signatures.php:122 includes/signatures.php:195
+#: includes/signatures.php:209
 msgid "Total Signatures"
 msgstr "Всего подписей"
 
@@ -1759,19 +1843,19 @@ msgstr "Всего подписей"
 msgid "Confirmation emails sent."
 msgstr "Сколько нужно Писем Подтверждения для нескольких подписок."
 
-#: includes/signatures.php:212
+#: includes/signatures.php:214
 msgid "Total"
 msgstr "Всего"
 
-#: includes/signatures.view.php:15
+#: includes/signatures.view.php:19
 msgid "Display all signatures"
 msgstr "Отображение всех подписей"
 
-#: includes/signatures.view.php:20
+#: includes/signatures.view.php:25
 msgid "Select petition"
 msgstr "Выберите петицию"
 
-#: includes/signatures.view.php:35
+#: includes/signatures.view.php:41
 msgid ""
 "Are you sure you want to do this? A separate confirmation email will be sent "
 "for each unconfirmed signature."
@@ -1779,7 +1863,7 @@ msgstr ""
 "Вы уверены, что хотите это сделать? На каждую неподтвержденную подпись будет "
 "отправлено отдельное электронное письмо с подтверждением."
 
-#: includes/signatures.view.php:36
+#: includes/signatures.view.php:44
 msgid ""
 "Are you sure you want to do this? A separate confirmation email will be sent "
 "for each selected signature."
@@ -1787,91 +1871,99 @@ msgstr ""
 "Ты уверен, что хочешь это сделать? Отдельное письмо-подтверждение будет "
 "отправлено для каждой выбранной подписи."
 
-#: includes/signatures.view.php:37
+#: includes/signatures.view.php:47
 msgid "Are you sure you want to do this? You will manually confirm "
 msgstr "Ты уверен, что хочешь это сделать? Вы вручную подтвердите "
 
-#: includes/signatures.view.php:38
+#: includes/signatures.view.php:50
 msgid "Are you sure you want to do this? You will delete "
 msgstr "Ты уверен, что хочешь это сделать? Вы удалите "
 
-#: includes/signatures.view.php:39
+#: includes/signatures.view.php:53
 msgid "selected signature"
 msgstr "выбранная подпись"
 
-#: includes/signatures.view.php:51
+#: includes/signatures.view.php:66
 msgid "Reconfirm selected"
 msgstr "Повторное подтверждение выбранного"
 
-#: includes/signatures.view.php:53
+#: includes/signatures.view.php:68
 msgid "Reconfirm selected: choose petition first"
 msgstr "Повторное подтверждение выбранного: выберите петицию в первую очередь"
 
-#: includes/signatures.view.php:55 includes/signatures.view.php:58
+#: includes/signatures.view.php:70 includes/signatures.view.php:73
 msgid "Reconfirm selected: choose signatures"
 msgstr "Повторное подтверждение выбранного: выбирайте подписи"
 
-#: includes/signatures.view.php:63
+#: includes/signatures.view.php:77
 msgid "Force confirm selected"
 msgstr "Силы подтверждают выбранный"
 
-#: includes/signatures.view.php:65
+#: includes/signatures.view.php:79
 msgid "Force confirm selected - choose signatures"
 msgstr "Сила подтвердила выбранный - выбирайте подписи"
 
-#: includes/signatures.view.php:67
+#: includes/signatures.view.php:81
 msgid "Force confirm selected: choose petition first"
 msgstr "Сила подтвердила выбранную: выберите петицию первой"
 
-#: includes/signatures.view.php:69 includes/signatures.view.php:71
+#: includes/signatures.view.php:83 includes/signatures.view.php:85
 msgid "Force confirm selected: choose signatures"
 msgstr "Сила подтверждает выбранный: выбирайте подписи"
 
-#: includes/signatures.view.php:75
+#: includes/signatures.view.php:89
 msgid "Delete selected"
 msgstr "Удалить выбранное"
 
-#: includes/signatures.view.php:77
+#: includes/signatures.view.php:91
 msgid "Delete selected: choose signatures"
 msgstr "Удаление выбрано: выбрать подписи"
 
-#: includes/signatures.view.php:91
+#: includes/signatures.view.php:105
 msgid "Resend selected confirmations"
 msgstr "Повторное отправка выбранных подтверждений"
 
-#: includes/signatures.view.php:100
+#: includes/signatures.view.php:114
 msgid "Choose signatures action"
 msgstr "Выбрать действия подписей"
 
-#: includes/signatures.view.php:101
+#: includes/signatures.view.php:117
 msgid "Download CSV - see settings/admin sig list"
 msgstr "Скачать CSV - см. настройки/список sig администратора"
 
-#: includes/signatures.view.php:102
+#: includes/signatures.view.php:120
 msgid "Display only unconfirmed"
 msgstr "Отображение только неподтвержденных"
 
-#: includes/signatures.view.php:103
+#: includes/signatures.view.php:123
 msgid "Resend all unconfirmed"
 msgstr "Отправить все неподтвержденные"
 
-#: includes/signatures.view.php:108
+#: includes/signatures.view.php:129
 msgid "Apply"
 msgstr "Применить"
 
-#: includes/signatures.view.php:113
+#: includes/signatures.view.php:133
 msgid "Search signatures"
 msgstr "Подписи в поиске"
 
-#: includes/signatures.view.php:144
+#: includes/signatures.view.php:160
 msgid "Checkbox 1"
 msgstr "Флажок 1"
 
-#: includes/signatures.view.php:145
+#: includes/signatures.view.php:161
 msgid "Checkbox 2"
 msgstr "Флажок 2"
 
-#: includes/signatures.view.php:146
+#: includes/signatures.view.php:162
+msgid "Checkbox 3"
+msgstr "Чекбокс 3"
+
+#: includes/signatures.view.php:163
+msgid "Checkbox 4"
+msgstr "Чекбокс 4"
+
+#: includes/signatures.view.php:164
 msgid "Opt-in"
 msgstr "Форма - Уехать из Украины"
 
@@ -1895,17 +1987,13 @@ msgstr "Вызов действия"
 msgid "Confirm Email"
 msgstr "Подтверждение email"
 
-#: speakout-email-petitions.php:95
-msgid "Support"
-msgstr "Поддержка"
-
 #. Plugin Name of the plugin/theme
 msgid "SpeakOut! Email Petitions Pro"
 msgstr "Говорите! Электронная почта Петиции Pro"
 
 #. Plugin URI of the plugin/theme
-msgid "https://speakout.123host.net.au/"
-msgstr "https://speakout.123host.net.au/"
+msgid "https://speakoutpetitions.com/"
+msgstr "https://speakoutpetitions.com/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -1922,15 +2010,21 @@ msgstr ""
 "настраиваемых опций, чтобы сделать этот плагин очень гибким."
 
 #. Author of the plugin/theme
-msgid "Steve D - 123host.au"
-msgstr "Стив Д — 123host.au"
+msgid "Steve D"
+msgstr "Стив Ди"
 
 #. Author URI of the plugin/theme
-msgid "https://123Host.au"
-msgstr "https://123host.au"
+msgid "https://SpeakOutPetitions.com"
+msgstr "https://SpeakOutPetitions.com"
 
-#~ msgid "Import petitions from SpeakUp to SpeakOut!"
-#~ msgstr "Импорт петиций с SpeakUp на SpeakOut!"
+#~ msgid "Support"
+#~ msgstr "Поддержка"
+
+#~ msgid "Steve D - 123host.au"
+#~ msgstr "Стив Д — 123host.au"
+
+#~ msgid "https://123Host.au"
+#~ msgstr "https://123host.au"
 
 #~ msgid "Upgrade to Pro"
 #~ msgstr "Обновить до Pro"

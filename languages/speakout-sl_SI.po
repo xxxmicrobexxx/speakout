@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpeakOut! Email Petitions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 09:34+1000\n"
-"PO-Revision-Date: 2023-04-03 09:34+1000\n"
-"Last-Translator: Steve D <info@123host.com.au>\n"
+"POT-Creation-Date: 2024-12-03 14:40+1000\n"
+"PO-Revision-Date: 2024-12-03 14:42+1000\n"
+"Last-Translator: Steve <Hello@SpeakOutPetitions.com>\n"
 "Language-Team: Marko Žagar <info@ma-seo.com>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
@@ -14,18 +14,18 @@ msgstr ""
 "_ex;esc_attr_x;_n;_nx;_n_noop\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/addnew.php:38 includes/addnew.php:64
+#: includes/addnew.php:37 includes/addnew.php:63
 msgid "Edit Petition"
 msgstr "Uredi peticijo"
 
-#: includes/addnew.php:42 includes/addnew.php:68 includes/addnew.php:116
+#: includes/addnew.php:41 includes/addnew.php:67 includes/addnew.php:115
 msgid "Update Petition"
 msgstr "Osvežite peticijo"
 
-#: includes/addnew.php:50
+#: includes/addnew.php:49
 #, php-format
 msgid ""
 "Petition created. Use %1$s %2$s %3$s to display in a page or post. Use %1$s "
@@ -36,15 +36,15 @@ msgstr ""
 "sporočilu. Uporabite %1$s %4$s %3$s za prikaz spiska podpisov ali %1$s %5$s "
 "%3$s da prikažete samo število podpisov."
 
-#: includes/addnew.php:85
+#: includes/addnew.php:84
 msgid "Duplicate Petition"
 msgstr "Podvojena peticija"
 
-#: includes/addnew.php:89
+#: includes/addnew.php:88
 msgid "Save Duplicate Petition"
 msgstr "Shrani podvojeno peticijo"
 
-#: includes/addnew.php:97
+#: includes/addnew.php:96
 #, php-format
 msgid ""
 "Petition created - you can edit it here. Use %1$s %2$s %3$s to display in a "
@@ -53,23 +53,23 @@ msgstr ""
 "Peticija ustvarjena - lahko jo uredite tukaj. Uporabite %1$s %2$s %3$s za "
 "prikaz na strani ali objavi."
 
-#: includes/addnew.php:112
+#: includes/addnew.php:111
 msgid "Edit New Petition"
 msgstr "Uredi novo peticijo"
 
-#: includes/addnew.php:117
+#: includes/addnew.php:116
 msgid "Petition "
 msgstr "Peticija "
 
-#: includes/addnew.php:124
+#: includes/addnew.php:123
 msgid "Add New Petition"
 msgstr "Dodaj novo peticijo"
 
-#: includes/addnew.php:128
+#: includes/addnew.php:127
 msgid "Create Petition"
 msgstr "Naredite peticijo"
 
-#: includes/addnew.php:130
+#: includes/addnew.php:129
 msgid "Add me to your mailing list"
 msgstr "Naročite me na novice"
 
@@ -95,7 +95,7 @@ msgid "3rd Party Integrations"
 msgstr "Integracije tretjih strank"
 
 #: includes/addnew.view.php:29 includes/help.php:6 includes/help.php:85
-#: includes/settings.view.php:338 includes/widget.php:88
+#: includes/settings.view.php:368 includes/widget.php:88
 msgid "Title"
 msgstr "Naslov"
 
@@ -120,7 +120,7 @@ msgid "CC Email"
 msgstr "CC E-pošta"
 
 #: includes/addnew.view.php:56 includes/help.php:9 includes/help.php:80
-#: includes/settings.view.php:319
+#: includes/settings.view.php:349
 msgid "Email Subject"
 msgstr "Zadeva"
 
@@ -132,332 +132,353 @@ msgstr "Pozdrav"
 msgid "Petition Message"
 msgstr "Sporočilo peticije"
 
-#: includes/addnew.view.php:67
+#: includes/addnew.view.php:84 includes/addnew.view.php:244
 msgid "You can personalise the message by inserting tags"
 msgstr "Sporočilo lahko prilagodite tako, da vstavite oznake"
 
-#: includes/addnew.view.php:68
+#: includes/addnew.view.php:85
 msgid "You or the signer can format the message using Markdown syntax - see"
 msgstr "Vi ali podpisnik lahko oblikujete sporočilo z markdownom - glejte"
 
-#: includes/addnew.view.php:70
+#: includes/addnew.view.php:87
 msgid "Petition Footer (below signature)"
 msgstr "Petični podstavek (pod podpisom)"
 
-#: includes/addnew.view.php:75 includes/help.php:13
-msgid "Twitter Message"
-msgstr "Sporočilo za Twitter"
+#: includes/addnew.view.php:92
+msgid "X (Twitter) Message"
+msgstr "X (Twitter) Sporočilo"
 
-#: includes/addnew.view.php:100
+#: includes/addnew.view.php:117
 msgid "Don't collect email address"
 msgstr "Ne zbirajte e-poštnega naslova"
 
-#: includes/addnew.view.php:101
+#: includes/addnew.view.php:118
 msgid "This cannot be reversed"
 msgstr "Tega ni mogoče"
 
-#: includes/addnew.view.php:108 includes/help.php:17
+#: includes/addnew.view.php:125 includes/help.php:17
 msgid "Allow public anonymous"
 msgstr "Dovoli javno anonimnost"
 
-#: includes/addnew.view.php:117 includes/help.php:18
+#: includes/addnew.view.php:134 includes/help.php:18
 msgid "Confirm signatures"
 msgstr "Potrdite podpise"
 
-#: includes/addnew.view.php:120
+#: includes/addnew.view.php:137
 msgid "Return URL"
 msgstr "Vrni URL"
 
-#: includes/addnew.view.php:129
+#: includes/addnew.view.php:146
 msgid "Allow message to be edited"
 msgstr "Omogočajo sporočilo v obstati izdajati"
 
-#: includes/addnew.view.php:137 includes/help.php:20
+#: includes/addnew.view.php:154 includes/help.php:20
 msgid "Set signature goal"
 msgstr "Nastavite cilj za število podpisov"
 
-#: includes/addnew.view.php:140 includes/petitions.view.php:19
+#: includes/addnew.view.php:157 includes/petitions.view.php:19
 #: includes/petitions.view.php:29
 msgid "Goal"
 msgstr "Cilj"
 
-#: includes/addnew.view.php:143
+#: includes/addnew.view.php:160
 msgid "Auto increase goal"
 msgstr "Cilj samodejnega povečanja"
 
-#: includes/addnew.view.php:144
+#: includes/addnew.view.php:161
 msgid "by"
 msgstr "od"
 
-#: includes/addnew.view.php:145
+#: includes/addnew.view.php:162
 msgid "when count"
 msgstr "pri štetju"
 
-#: includes/addnew.view.php:145 includes/emailpetition.php:661
+#: includes/addnew.view.php:162 includes/emailpetition.php:717
 #: includes/widget.php:207
 msgid "of goal"
 msgstr "cilj"
 
-#: includes/addnew.view.php:153 includes/help.php:22
+#: includes/addnew.view.php:170 includes/help.php:22
 msgid "Set expiration date"
 msgstr "Nastavite rok trajanja"
 
 # Month
-#: includes/addnew.view.php:157
+#: includes/addnew.view.php:174
 msgid "Jan"
 msgstr "Jan"
 
 # Month
-#: includes/addnew.view.php:158
+#: includes/addnew.view.php:175
 msgid "Feb"
 msgstr "Feb"
 
 # Month
-#: includes/addnew.view.php:159
+#: includes/addnew.view.php:176
 msgid "Mar"
 msgstr "Mar"
 
 # Month
-#: includes/addnew.view.php:160
+#: includes/addnew.view.php:177
 msgid "Apr"
 msgstr "Apr"
 
 # Month
-#: includes/addnew.view.php:161
+#: includes/addnew.view.php:178
 msgid "May"
 msgstr "Maj"
 
 # Month
-#: includes/addnew.view.php:162
+#: includes/addnew.view.php:179
 msgid "Jun"
 msgstr "Jun"
 
 # Month
-#: includes/addnew.view.php:163
+#: includes/addnew.view.php:180
 msgid "Jul"
 msgstr "Jul"
 
 # Month
-#: includes/addnew.view.php:164
+#: includes/addnew.view.php:181
 msgid "Aug"
 msgstr "Avg"
 
 # Month
-#: includes/addnew.view.php:165
+#: includes/addnew.view.php:182
 msgid "Sep"
 msgstr "Sep"
 
 # Month
-#: includes/addnew.view.php:166
+#: includes/addnew.view.php:183
 msgid "Oct"
 msgstr "Okt"
 
 # Month
-#: includes/addnew.view.php:167
+#: includes/addnew.view.php:184
 msgid "Nov"
 msgstr "Nov"
 
 # Month
-#: includes/addnew.view.php:168
+#: includes/addnew.view.php:185
 msgid "Dec"
 msgstr "Dec"
 
-#: includes/addnew.view.php:184
+#: includes/addnew.view.php:201
 msgid "Redirect after successful sign"
 msgstr "Preusmeritev po uspešnem znaku"
 
-#: includes/addnew.view.php:187
+#: includes/addnew.view.php:204
 msgid "Full URL"
 msgstr "Celoten URL"
 
-#: includes/addnew.view.php:189
+#: includes/addnew.view.php:206
 msgid "Delay?"
 msgstr "Zamude?"
 
-#: includes/addnew.view.php:190
+#: includes/addnew.view.php:207
 msgid "milliseconds"
 msgstr "mikrosekunde"
 
-#: includes/addnew.view.php:191
+#: includes/addnew.view.php:208
 msgid "Open in new window (target='_blank')"
 msgstr "Odpri v novem oknu (Target = ' _blank ')"
 
-#: includes/addnew.view.php:205
+#: includes/addnew.view.php:217
+msgid "Email to signer?"
+msgstr "Pošljete e-pošto podpisniku?"
+
+#: includes/addnew.view.php:220
+msgid "Email content"
+msgstr "Vsebina e-pošte"
+
+#: includes/addnew.view.php:257
 msgid "Text to open/close petition message"
 msgstr "Besedilo za odpiranje/zapiranje peticije"
 
-#: includes/addnew.view.php:210
+#: includes/addnew.view.php:262
 msgid "Text to open/close editable petition message"
 msgstr ""
 "Besedilo za odpiranje/zapiranje sporočila peticije, ki ga je mogoče urediti"
 
-#: includes/addnew.view.php:219 includes/help.php:27
+#: includes/addnew.view.php:271 includes/help.php:27
 msgid "Display opt-in checkbox"
 msgstr "Prikažite opt-in potrditev"
 
-#: includes/addnew.view.php:222 includes/addnew.view.php:287
-#: includes/addnew.view.php:322 includes/addnew.view.php:357
-#: includes/addnew.view.php:393 includes/addnew.view.php:434
-#: includes/addnew.view.php:465 includes/addnew.view.php:494
+#: includes/addnew.view.php:274 includes/addnew.view.php:339
+#: includes/addnew.view.php:374 includes/addnew.view.php:409
+#: includes/addnew.view.php:445 includes/addnew.view.php:486
+#: includes/addnew.view.php:517 includes/addnew.view.php:546
+#: includes/addnew.view.php:575 includes/addnew.view.php:603
 msgid "Label"
 msgstr "Oznaka"
 
-#: includes/addnew.view.php:230
+#: includes/addnew.view.php:282
 msgid "Display petition message"
 msgstr "Prikaz sporočila o peticiji"
 
-#: includes/addnew.view.php:237 includes/help.php:28
+#: includes/addnew.view.php:289 includes/help.php:28
 msgid "Display address fields"
 msgstr "Prikažite polja naslova"
 
-#: includes/addnew.view.php:244 includes/help.php:88
-#: includes/settings.view.php:355
+#: includes/addnew.view.php:296 includes/help.php:88
+#: includes/settings.view.php:385
 msgid "Display"
 msgstr "Zaslon"
 
-#: includes/addnew.view.php:245 includes/addnew.view.php:298
-#: includes/addnew.view.php:333 includes/addnew.view.php:368
-#: includes/addnew.view.php:404 includes/addnew.view.php:432
+#: includes/addnew.view.php:297 includes/addnew.view.php:350
+#: includes/addnew.view.php:385 includes/addnew.view.php:420
+#: includes/addnew.view.php:456 includes/addnew.view.php:484
 msgid "Required"
 msgstr "Zahtevano"
 
-#: includes/addnew.view.php:251 includes/addnew.view.php:597
-#: includes/emailpetition.php:426 includes/settings.view.php:456
-#: includes/signatures.view.php:134
+#: includes/addnew.view.php:303 includes/addnew.view.php:706
+#: includes/emailpetition.php:468 includes/settings.view.php:492
+#: includes/signatures.view.php:150
 msgid "Street"
 msgstr "Ulica"
 
-#: includes/addnew.view.php:256 includes/csv.php:54
-#: includes/emailpetition.php:443 includes/settings.view.php:377
-#: includes/settings.view.php:460 includes/signatures.view.php:135
+#: includes/addnew.view.php:308 includes/csv.php:55
+#: includes/emailpetition.php:485 includes/settings.view.php:407
+#: includes/settings.view.php:496 includes/signatures.view.php:151
 #: includes/widget.php:434
 msgid "City"
 msgstr "Mesto"
 
-#: includes/addnew.view.php:261 includes/emailpetition.php:450
-#: includes/settings.view.php:380 includes/widget.php:440
+#: includes/addnew.view.php:313 includes/emailpetition.php:492
+#: includes/settings.view.php:410 includes/widget.php:440
 msgid "State / Province"
 msgstr "Država/Pokrajina"
 
-#: includes/addnew.view.php:266
+#: includes/addnew.view.php:318
 msgid "Postal Code - see settings for EU style"
 msgstr "Poštna številka – glejte nastavitve za slog EU"
 
-#: includes/addnew.view.php:271 includes/addnew.view.php:629
-#: includes/csv.php:57 includes/emailpetition.php:491
-#: includes/settings.view.php:386 includes/settings.view.php:472
-#: includes/signatures.view.php:138 includes/widget.php:476
+#: includes/addnew.view.php:323 includes/addnew.view.php:738
+#: includes/csv.php:58 includes/emailpetition.php:533
+#: includes/settings.view.php:416 includes/settings.view.php:508
+#: includes/signatures.view.php:154 includes/widget.php:476
 msgid "Country"
 msgstr "Država"
 
-#: includes/addnew.view.php:283
+#: includes/addnew.view.php:335
 msgid "Display custom field 1"
 msgstr "Prikaži polje po meri 1"
 
-#: includes/addnew.view.php:300 includes/addnew.view.php:335
-#: includes/addnew.view.php:370 includes/addnew.view.php:406
-#: includes/addnew.view.php:447 includes/addnew.view.php:475
-#: includes/addnew.view.php:504
+#: includes/addnew.view.php:352 includes/addnew.view.php:387
+#: includes/addnew.view.php:422 includes/addnew.view.php:458
+#: includes/addnew.view.php:499 includes/addnew.view.php:527
+#: includes/addnew.view.php:556 includes/addnew.view.php:585
+#: includes/addnew.view.php:613
 msgid "Location"
 msgstr "Lokacija"
 
-#: includes/addnew.view.php:301 includes/addnew.view.php:336
-#: includes/addnew.view.php:371 includes/addnew.view.php:407
-#: includes/addnew.view.php:448 includes/addnew.view.php:476
-#: includes/addnew.view.php:505
+#: includes/addnew.view.php:353 includes/addnew.view.php:388
+#: includes/addnew.view.php:423 includes/addnew.view.php:459
+#: includes/addnew.view.php:500 includes/addnew.view.php:528
+#: includes/addnew.view.php:557 includes/addnew.view.php:586
+#: includes/addnew.view.php:614
 msgid "Top"
 msgstr "Zgoraj"
 
-#: includes/addnew.view.php:303 includes/addnew.view.php:338
-#: includes/addnew.view.php:373 includes/addnew.view.php:409
-#: includes/addnew.view.php:450 includes/addnew.view.php:478
-#: includes/addnew.view.php:507
+#: includes/addnew.view.php:355 includes/addnew.view.php:390
+#: includes/addnew.view.php:425 includes/addnew.view.php:461
+#: includes/addnew.view.php:502 includes/addnew.view.php:530
+#: includes/addnew.view.php:559 includes/addnew.view.php:588
+#: includes/addnew.view.php:616
 msgid "Above email"
 msgstr "Zgoraj email"
 
-#: includes/addnew.view.php:305 includes/addnew.view.php:340
-#: includes/addnew.view.php:375 includes/addnew.view.php:411
-#: includes/addnew.view.php:453 includes/addnew.view.php:481
-#: includes/addnew.view.php:510
+#: includes/addnew.view.php:357 includes/addnew.view.php:392
+#: includes/addnew.view.php:427 includes/addnew.view.php:463
+#: includes/addnew.view.php:505 includes/addnew.view.php:533
+#: includes/addnew.view.php:562 includes/addnew.view.php:591
+#: includes/addnew.view.php:619
 msgid "Bottom"
 msgstr "Spodaj"
 
-#: includes/addnew.view.php:308 includes/addnew.view.php:343
-#: includes/addnew.view.php:378 includes/addnew.view.php:414
-#: includes/addnew.view.php:428
+#: includes/addnew.view.php:360 includes/addnew.view.php:395
+#: includes/addnew.view.php:430 includes/addnew.view.php:466
+#: includes/addnew.view.php:480
 msgid "Include with petition"
 msgstr "Vključite s peticijo"
 
-#: includes/addnew.view.php:310 includes/addnew.view.php:345
-#: includes/addnew.view.php:380 includes/addnew.view.php:416
+#: includes/addnew.view.php:362 includes/addnew.view.php:397
+#: includes/addnew.view.php:432 includes/addnew.view.php:468
 msgid "Trim when displaying"
 msgstr "Obsešanje pri prikazu"
 
-#: includes/addnew.view.php:318
+#: includes/addnew.view.php:370
 msgid "Display custom field 2"
 msgstr "Prikaži polje po meri 2"
 
-#: includes/addnew.view.php:353
+#: includes/addnew.view.php:405
 msgid "Display custom field 3"
 msgstr "Prikaži polje po meri 3"
 
-#: includes/addnew.view.php:389
+#: includes/addnew.view.php:441
 msgid "Display custom field 4"
 msgstr "Prikaži polje po meri 4"
 
-#: includes/addnew.view.php:424
+#: includes/addnew.view.php:476
 msgid "Display custom drop-down"
 msgstr "Prikaz spustnega seznama po meri"
 
-#: includes/addnew.view.php:444
+#: includes/addnew.view.php:496
 msgid "Values"
 msgstr "Vrednosti"
 
-#: includes/addnew.view.php:461
+#: includes/addnew.view.php:513
 msgid "Display custom checkbox 1"
 msgstr "Prikaži potrditveno polje po meri 1"
 
-#: includes/addnew.view.php:490
+#: includes/addnew.view.php:542
 msgid "Display custom checkbox 2"
 msgstr "Prikaži potrditveno polje po meri 2"
 
-#: includes/addnew.view.php:520 includes/help.php:30
+#: includes/addnew.view.php:571
+msgid "Display custom checkbox 3"
+msgstr "Potrditveno polje »Prikaz po meri« 3"
+
+#: includes/addnew.view.php:599
+msgid "Display custom checkbox 4"
+msgstr "Potrditveno polje »Prikaži po meri« 4"
+
+#: includes/addnew.view.php:629 includes/help.php:30
 msgid "Display custom message"
 msgstr "Prikaži sporočilo po meri"
 
-#: includes/addnew.view.php:521
+#: includes/addnew.view.php:630
 msgid "Displayed beneath `Thank you` after petition is signed"
 msgstr "Prikazan pod \"hvala\" po podpisu peticijo"
 
-#: includes/addnew.view.php:524
+#: includes/addnew.view.php:633
 msgid "Message"
 msgstr "Sporočilo"
 
-#: includes/addnew.view.php:535
+#: includes/addnew.view.php:644
 msgid ""
 "You must also enable 'Display opt-in checkbox' under the Display Options tab"
 msgstr ""
 "Pod zavihkom Možnosti prikaza morate omogočiti tudi potrditveno polje "
 "»Prikaz možnosti za izklop«"
 
-#: includes/addnew.view.php:542
+#: includes/addnew.view.php:651
 msgid "Enable ActiveCampaign"
 msgstr "Omogoči activeCampaign"
 
-#: includes/addnew.view.php:549 includes/addnew.view.php:717
-#: includes/addnew.view.php:737 includes/addnew.view.php:759
+#: includes/addnew.view.php:658 includes/addnew.view.php:852
+#: includes/addnew.view.php:873 includes/addnew.view.php:895
 msgid "API Key"
 msgstr "API ključ"
 
-#: includes/addnew.view.php:552
+#: includes/addnew.view.php:661
 msgid "Server URL"
 msgstr "URL strežnika"
 
-#: includes/addnew.view.php:563
+#: includes/addnew.view.php:672
 msgid "Select list"
 msgstr "Izberite seznam"
 
-#: includes/addnew.view.php:571
+#: includes/addnew.view.php:680
 msgid ""
 "Map the SpeakOut! fields to your Active Campaign fields. Leave those you "
 "don't use blank."
@@ -465,67 +486,83 @@ msgstr ""
 "Preslikajte pogovorni kot! polja aktivne oglaševalske akcije. Pusti tiste, "
 "ki jih ne uporabljaš prazno."
 
-#: includes/addnew.view.php:574 includes/csv.php:49
+#: includes/addnew.view.php:683 includes/csv.php:49
 msgid "Honorific"
 msgstr "Častnih nazivov"
 
-#: includes/addnew.view.php:582 includes/csv.php:50
-#: includes/emailpetition.php:355 includes/widget.php:358
+#: includes/addnew.view.php:691 includes/csv.php:50
+#: includes/emailpetition.php:383 includes/widget.php:358
 msgid "First Name"
 msgstr "Ime"
 
-#: includes/addnew.view.php:587 includes/csv.php:51
-#: includes/emailpetition.php:359 includes/widget.php:362
+#: includes/addnew.view.php:696 includes/csv.php:51
+#: includes/emailpetition.php:387 includes/widget.php:362
 msgid "Last Name"
 msgstr "Priimek"
 
-#: includes/addnew.view.php:592 includes/emailpetition.php:418
-#: includes/settings.view.php:449 includes/signatures.view.php:132
+#: includes/addnew.view.php:701 includes/emailpetition.php:460
+#: includes/settings.view.php:485 includes/signatures.view.php:148
 #: includes/widget.php:409
 msgid "Email"
 msgstr "Elektronski naslov"
 
-#: includes/addnew.view.php:605
+#: includes/addnew.view.php:714
 msgid "Suburb"
 msgstr "Predmestje"
 
-#: includes/addnew.view.php:613 includes/csv.php:55
-#: includes/settings.view.php:464 includes/signatures.view.php:136
+#: includes/addnew.view.php:722 includes/csv.php:56
+#: includes/settings.view.php:500 includes/signatures.view.php:152
 msgid "State"
 msgstr "Država"
 
-#: includes/addnew.view.php:621 includes/csv.php:56
-#: includes/emailpetition.php:436 includes/emailpetition.php:459
-#: includes/settings.view.php:383 includes/signatures.view.php:137
+#: includes/addnew.view.php:730 includes/csv.php:57
+#: includes/emailpetition.php:478 includes/emailpetition.php:501
+#: includes/settings.view.php:413 includes/signatures.view.php:153
 #: includes/widget.php:447
 msgid "Postal Code"
 msgstr "Poštna številka"
 
-#: includes/addnew.view.php:712
-msgid "Enable MailChimp"
-msgstr "Omogoči mailChimp"
+#: includes/addnew.view.php:822
+msgid "Enable CleverReach"
+msgstr "Omogočite CleverReach"
 
-#: includes/addnew.view.php:720
-msgid "Server ID"
-msgstr "ID strežnika"
+#: includes/addnew.view.php:827
+msgid "Client ID "
+msgstr "ID stranke "
 
-#: includes/addnew.view.php:723 includes/addnew.view.php:762
-msgid "List ID"
-msgstr "ID seznama"
+#: includes/addnew.view.php:830
+msgid "Client Secret"
+msgstr "Skrivnostni ključ klienta"
 
-#: includes/addnew.view.php:732
-msgid "Enable Mailerlite"
-msgstr "Omogoči mailerlite"
-
-#: includes/addnew.view.php:740
+#: includes/addnew.view.php:833 includes/addnew.view.php:876
 msgid "Group ID"
 msgstr "ID skupine"
 
-#: includes/addnew.view.php:750
+#: includes/addnew.view.php:836
+msgid "Source"
+msgstr "Vir"
+
+#: includes/addnew.view.php:847
+msgid "Enable MailChimp"
+msgstr "Omogoči mailChimp"
+
+#: includes/addnew.view.php:855
+msgid "Server ID"
+msgstr "ID strežnika"
+
+#: includes/addnew.view.php:858 includes/addnew.view.php:898
+msgid "List ID"
+msgstr "ID seznama"
+
+#: includes/addnew.view.php:868
+msgid "Enable Mailerlite"
+msgstr "Omogoči mailerlite"
+
+#: includes/addnew.view.php:886
 msgid "Enable Sendy"
 msgstr "Omogoči pošiljanje"
 
-#: includes/addnew.view.php:756
+#: includes/addnew.view.php:892
 msgid "Installation URL"
 msgstr "URL namestitve"
 
@@ -546,11 +583,11 @@ msgid "Add New"
 msgstr "Dodajte nov"
 
 #: includes/admin.php:66 includes/admin.php:67 includes/petitions.view.php:18
-#: includes/petitions.view.php:28 includes/signatures.view.php:4
+#: includes/petitions.view.php:28 includes/signatures.view.php:5
 msgid "Signatures"
 msgstr "Podpisi"
 
-#: includes/admin.php:77 includes/settings.view.php:142
+#: includes/admin.php:77 includes/settings.view.php:146
 msgid "SpeakOut! Petitions Settings"
 msgstr "SpeakOut! Peticije nastavitve"
 
@@ -558,12 +595,12 @@ msgstr "SpeakOut! Peticije nastavitve"
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: includes/class.petition.php:505
+#: includes/class.petition.php:547
 msgid "No Title"
 msgstr "Nobenega imena"
 
-#: includes/class.signaturelist.php:155 includes/class.signaturelist.php:215
-#: includes/class.signaturelist.php:319
+#: includes/class.signaturelist.php:157 includes/class.signaturelist.php:217
+#: includes/class.signaturelist.php:323 includes/csv.php:53
 msgid "Anonymous"
 msgstr "Anonimno"
 
@@ -599,7 +636,7 @@ msgstr "Potrditev elektronskega naslova"
 msgid "If you aren't redirected"
 msgstr "Če niste preusmerjeni"
 
-#: includes/confirmations.php:169 includes/settings.view.php:603
+#: includes/confirmations.php:169 includes/settings.view.php:651
 msgid "Click here"
 msgstr "Kliknite tukaj"
 
@@ -611,7 +648,7 @@ msgstr "Če se želite vrniti na mesto "
 msgid "Insufficient privileges: You need to be an editor to do that."
 msgstr "Nimate dovolj pravic. Za to morate biti urednik."
 
-#: includes/csv.php:28 includes/signatures.view.php:212
+#: includes/csv.php:28 includes/signatures.view.php:235
 msgid "No signatures found."
 msgstr "Nobenega podpisa še ni."
 
@@ -619,117 +656,119 @@ msgstr "Nobenega podpisa še ni."
 msgid "Email Address"
 msgstr "Elektronski naslov"
 
-#: includes/csv.php:53 includes/widget.php:428
+#: includes/csv.php:54 includes/widget.php:428
 msgid "Address"
 msgstr "Naslov"
 
-#: includes/csv.php:58
+#: includes/csv.php:59
 msgid "Date Signed"
 msgstr "Datum vpisa"
 
-#: includes/csv.php:59 includes/signatures.view.php:147
+#: includes/csv.php:60 includes/signatures.view.php:165
 msgid "Confirmed"
 msgstr "Potrjeno"
 
-#: includes/csv.php:60
+#: includes/csv.php:61
 msgid "Petition Title"
 msgstr "Ime peticije"
 
-#: includes/csv.php:61
+#: includes/csv.php:62
 msgid "Petition ID"
 msgstr "ID peticije"
 
-#: includes/csv.php:62 includes/settings.view.php:506
+#: includes/csv.php:63 includes/settings.view.php:550
 msgid "Email Opt-in"
 msgstr "Elektronsko sporočilo prijave"
 
-#: includes/csv.php:63 includes/settings.view.php:410
+#: includes/csv.php:64 includes/settings.view.php:446
 msgid "Custom Message"
 msgstr "Sporočilo po želji"
 
-#: includes/csv.php:72
+#: includes/csv.php:74
 msgid "Language"
 msgstr "Jezik"
 
-#: includes/csv.php:73 includes/signatures.view.php:149
+#: includes/csv.php:75 includes/signatures.view.php:167
 msgid "IP Address"
 msgstr "IP Naslov"
 
-#: includes/csv.php:83
+#: includes/csv.php:85
 msgid "Custom Field"
 msgstr "Polje po želji"
 
-#: includes/csv.php:103
+#: includes/csv.php:116
 msgid "confirmed"
 msgstr "potrjeno"
 
-#: includes/csv.php:106
+#: includes/csv.php:119
 msgid "unconfirmed"
 msgstr "nepotrjeno"
 
-#: includes/csv.php:115 includes/csv.php:125 includes/csv.php:135
+#: includes/csv.php:128 includes/csv.php:138 includes/csv.php:148
+#: includes/csv.php:158 includes/csv.php:168
 msgid "Y"
 msgstr "Y"
 
-#: includes/csv.php:118 includes/csv.php:128 includes/csv.php:138
+#: includes/csv.php:131 includes/csv.php:141 includes/csv.php:151
+#: includes/csv.php:161 includes/csv.php:171
 msgid "N"
 msgstr "N"
 
-#: includes/emailpetition.php:564
+#: includes/emailpetition.php:620
 msgid "You can add formatting using markdown syntax"
 msgstr "Oblikovanje lahko dodate z oznako"
 
-#: includes/emailpetition.php:564
+#: includes/emailpetition.php:620
 msgid "read more"
 msgstr "preberi več"
 
-#: includes/emailpetition.php:579 includes/widget.php:242
+#: includes/emailpetition.php:635 includes/widget.php:242
 #: includes/widget.php:256
 msgid "your signature"
 msgstr "tvoj podpis"
 
-#: includes/emailpetition.php:607 includes/widget.php:535
+#: includes/emailpetition.php:663 includes/widget.php:535
 msgid "BCC yourself"
 msgstr "SKP si"
 
-#: includes/emailpetition.php:620 includes/widget.php:545
+#: includes/emailpetition.php:676 includes/widget.php:545
 msgid "Hide name from public"
 msgstr "Skrij ime pred javnim"
 
-#: includes/emailpetition.php:631 includes/widget.php:555
+#: includes/emailpetition.php:687 includes/widget.php:555
 msgid "Yes, I accept your "
 msgstr "Sprejmem "
 
-#: includes/emailpetition.php:631 includes/widget.php:555
+#: includes/emailpetition.php:687 includes/widget.php:555
 msgid "privacy policy"
 msgstr "pravilnik o zasebnosti"
 
-#: includes/emailpetition.php:666 includes/widget.php:212
+#: includes/emailpetition.php:722 includes/widget.php:212
 msgid "signatures"
 msgstr "podpisi"
 
-#: includes/emailpetition.php:697 includes/widget.php:281
+#: includes/emailpetition.php:753 includes/widget.php:281
 msgid "Signature goal"
 msgstr "Cilj podpisa"
 
-#: includes/emailpetition.php:702 includes/widget.php:278
+#: includes/emailpetition.php:758 includes/widget.php:278
 msgid "End date"
 msgstr "Datum zaključka"
 
-#: includes/emailpetition.php:703 includes/widget.php:279
+#: includes/emailpetition.php:759 includes/widget.php:279
 msgid "Signatures collected"
 msgstr "Zbranih podpisov"
 
-#: includes/emailpetition.php:708
+#: includes/emailpetition.php:764
 msgid "signature"
 msgstr "podpis"
 
-#: includes/emailpetition.php:726 includes/signatures.view.php:133
+#: includes/emailpetition.php:782 includes/signatures.view.php:149
 #: includes/widget.php:91
 msgid "Petition"
 msgstr "Peticija"
 
-#: includes/emailpetition.php:728
+#: includes/emailpetition.php:784
 msgid ""
 "Error: The site administrator must include a valid petition id  in the "
 "shortcode."
@@ -780,11 +819,15 @@ msgid "This is included at the bottom of each petition that is sent."
 msgstr "To je vključeno na dnu vsake poslane peticije."
 
 #: includes/help.php:13
+msgid "x Message"
+msgstr "x Sporočilo"
+
+#: includes/help.php:13
 msgid ""
-"Enter a prepared tweet that will be presented to users when the Twitter "
-"button is clicked."
+"Enter a prepared tweet that will be presented to users when the X button is "
+"clicked."
 msgstr ""
-"Vpišite vsebino, ki ga bo uporabnik poslal, s pritikom na gumb Twitter."
+"Vnesite pripravljen tvit, ki bo uporabnikom predstavljen, ko kliknete gumb X."
 
 #: includes/help.php:17
 msgid ""
@@ -904,7 +947,7 @@ msgid ""
 "sidebar widget."
 msgstr "Te nastavitve upravljajo z [emailpetition] kodami in vtičniki."
 
-#: includes/help.php:67 includes/settings.view.php:170
+#: includes/help.php:67 includes/settings.view.php:174
 msgid "Petition Theme"
 msgstr "Tema peticije"
 
@@ -912,7 +955,7 @@ msgstr "Tema peticije"
 msgid "Select a CSS theme that will control the appearance of petition forms."
 msgstr "Izberite temo CSS, da bo nadzor nad videz peticije obrazcev."
 
-#: includes/help.php:68 includes/settings.view.php:177
+#: includes/help.php:68 includes/settings.view.php:189
 msgid "Widget Theme"
 msgstr "Teme vtičnikov"
 
@@ -921,7 +964,7 @@ msgid ""
 "Select a CSS theme that will control the appearance of petition widgets."
 msgstr "Izberite CSS temo, ki bo upravljala z vtičniki peticije."
 
-#: includes/help.php:69 includes/settings.view.php:184
+#: includes/help.php:69 includes/settings.view.php:196
 msgid "Submit Button Text"
 msgstr "Gumb za potrditev teksta"
 
@@ -930,7 +973,7 @@ msgid ""
 "Enter the text that displays in the orange submit button on petition forms."
 msgstr "Vpišite tekst, ki bo označeval potrditve gumb peticije."
 
-#: includes/help.php:70 includes/settings.view.php:188
+#: includes/help.php:70 includes/settings.view.php:200
 msgid "Success Message"
 msgstr "Sporočilo o uspešno poslanem podpisu"
 
@@ -940,19 +983,19 @@ msgid ""
 "with a unique email address."
 msgstr "Vpišite tekst, ki se pojavi, ko podpisnik uspešno pošlje peticijo."
 
-#: includes/help.php:71 includes/settings.view.php:202
+#: includes/help.php:71 includes/settings.view.php:214
 msgid "Share Message"
 msgstr "Pokaži sporočilo"
 
 #: includes/help.php:71
 msgid ""
-"Enter the text that appears above the Twitter and Facebook buttons after the "
+"Enter the text that appears above the X and Facebook buttons after the "
 "petition form has been submitted."
 msgstr ""
-"Vpišite tekst na prostor nad Twitter in Facebook gumboma, ko je bila "
-"peticija prijavljena."
+"Vnesite besedilo, ki se prikaže nad gumboma X in Facebook po oddaji obrazca "
+"peticije."
 
-#: includes/help.php:72 includes/settings.view.php:206
+#: includes/help.php:72 includes/settings.view.php:218
 msgid "Expiration Message"
 msgstr "Sporočilo o potekli piticiji"
 
@@ -962,7 +1005,7 @@ msgid ""
 "past its expiration date."
 msgstr "Vpišite tekst na prostor peticije, ko je le-ta že potekla."
 
-#: includes/help.php:73 includes/settings.view.php:210
+#: includes/help.php:73 includes/settings.view.php:222
 msgid "Already Signed Message"
 msgstr "Sporočilo ste že potrdili"
 
@@ -974,15 +1017,15 @@ msgstr ""
 "Vpišite takst, ki se pojavi v sporočilu, če je bil elektronski naslov že "
 "poprej uporabljan."
 
-#: includes/help.php:74 includes/settings.view.php:214
+#: includes/help.php:74 includes/settings.view.php:226
 msgid "Opt-in Default"
-msgstr "\"Dovoli\" je prevzeto"
+msgstr "Dovoli je prevzeto"
 
 #: includes/help.php:74
 msgid "Choose whether the opt-in checkbox is checked or unchecked by default."
 msgstr "Izberite, kako želite imeti označeno izbirno okno."
 
-#: includes/help.php:75 includes/settings.view.php:221
+#: includes/help.php:75 includes/settings.view.php:233
 msgid "Display signature count"
 msgstr "Prikažite števec podpisov"
 
@@ -996,7 +1039,7 @@ msgstr "Izberite, če želite prikazati število zbranih podpisov."
 msgid "These settings control the content of the confirmation emails."
 msgstr "Te nastavitve upravljajo z vsebino potrditvenih sporočil."
 
-#: includes/help.php:79 includes/settings.view.php:315
+#: includes/help.php:79 includes/settings.view.php:345
 msgid "Email From"
 msgstr "Sporočilo od"
 
@@ -1012,7 +1055,7 @@ msgstr ""
 msgid "Enter the subject of the confirmation email."
 msgstr "Vpišite naslov potrditvenega sporočila."
 
-#: includes/help.php:81 includes/settings.view.php:323
+#: includes/help.php:81 includes/settings.view.php:353
 msgid "Email Message"
 msgstr "Elektronsko sporočilo"
 
@@ -1028,7 +1071,7 @@ msgstr "Te nastavitve upravljajo zaslon [signaturelist] kode."
 msgid "Enter the text that appears above the signature list."
 msgstr "Vpišite tekst, ki se pojavi nad podpisanim seznamom."
 
-#: includes/help.php:86 includes/settings.view.php:341
+#: includes/help.php:86 includes/settings.view.php:371
 msgid "Theme"
 msgstr "Teme"
 
@@ -1036,7 +1079,7 @@ msgstr "Teme"
 msgid "Select a CSS theme that will control the appearance of signature lists."
 msgstr "Izberite CSS temo, ki bo kontrolirala izgled izpisa podpisov."
 
-#: includes/help.php:87 includes/settings.view.php:351
+#: includes/help.php:87 includes/settings.view.php:381
 msgid "Rows"
 msgstr "Vrstice"
 
@@ -1049,7 +1092,7 @@ msgstr "Vpišite število podpisov, ki bo prikazano ne eni strani."
 msgid "Choose the signature list styling, click the ? for more information."
 msgstr "Izberite styling seznama podpisov, kliknite na ? za več informacij."
 
-#: includes/help.php:89 includes/help.php:95 includes/settings.view.php:365
+#: includes/help.php:89 includes/help.php:95 includes/settings.view.php:395
 msgid "Columns"
 msgstr "Stolpci"
 
@@ -1069,7 +1112,7 @@ msgstr ""
 "Če imate omogočeno državo, lahko prikažete zastavo države, ki jo je izbral "
 "podpisnik."
 
-#: includes/help.php:91 includes/settings.view.php:427
+#: includes/help.php:91 includes/settings.view.php:463
 msgid "Privacy"
 msgstr "Zasebnost"
 
@@ -1100,7 +1143,7 @@ msgid ""
 msgstr ""
 "Te nastavitve uporavljajo z izgledom možnosti vtičnika v WP administratorju."
 
-#: includes/help.php:100 includes/settings.view.php:540
+#: includes/help.php:100 includes/settings.view.php:584
 msgid "Petitions table shows"
 msgstr "Prikaz tabele peticij"
 
@@ -1111,7 +1154,7 @@ msgid ""
 msgstr ""
 "Vnesite število vrstic za prikaz v tabeli \"Email peticije\" (privzeto = 20)"
 
-#: includes/help.php:101 includes/settings.view.php:544
+#: includes/help.php:101 includes/settings.view.php:588
 msgid "Signatures table shows"
 msgstr "Prikaz tabele podpisov"
 
@@ -1150,72 +1193,76 @@ msgstr ""
 "ključ, to omogoča, da se uporablja drugje.  Trenutno mesto bo izgubilo ves "
 "dostop do vseh nastavitev."
 
-#: includes/help.php:114 includes/settings.view.php:151
-#: includes/settings.view.php:166
+#: includes/help.php:114 includes/settings.view.php:155
+#: includes/settings.view.php:170
 msgid "Petition Form"
 msgstr "Obrazec peticije"
 
-#: includes/help.php:119 includes/settings.view.php:152
-#: includes/settings.view.php:312
+#: includes/help.php:119 includes/settings.view.php:156
+#: includes/settings.view.php:342
 msgid "Confirmation Emails"
 msgstr "Potrditvena sporočila"
 
-#: includes/help.php:124 includes/settings.view.php:153
-#: includes/settings.view.php:334
+#: includes/help.php:124 includes/settings.view.php:157
+#: includes/settings.view.php:364
 msgid "Public Signature List"
 msgstr "Seznam javnih podpisov"
 
-#: includes/help.php:129 includes/settings.view.php:154
-#: includes/settings.view.php:438
+#: includes/help.php:129 includes/settings.view.php:158
+#: includes/settings.view.php:474
 msgid "Admin Signature List"
 msgstr "Skrbniški seznam podpisov"
 
-#: includes/help.php:134 includes/settings.view.php:155
-#: includes/settings.view.php:537
+#: includes/help.php:134 includes/settings.view.php:159
+#: includes/settings.view.php:581
 msgid "Admin Display"
 msgstr "Administratorjev zaslon"
 
-#: includes/help.php:139 includes/settings.view.php:157
+#: includes/help.php:139 includes/settings.view.php:161
 msgid "License"
 msgstr "Licenca"
 
-#: includes/install.php:178
+#: includes/import.view.php:69
+msgid "Import petitions from SpeakUp to SpeakOut!"
+msgstr "Uvoz peticije iz SpeakUp v SpeakOut!"
+
+#: includes/install.php:200
 msgid "Sign Now"
 msgstr "Podpišite sedaj"
 
-#: includes/install.php:179
+#: includes/install.php:201
 msgid "This petition is now closed."
 msgstr "Peticija je zaključena."
 
-#: includes/install.php:180
+#: includes/install.php:202
 msgid "Thank you"
 msgstr "Hvala Vam"
 
-#: includes/install.php:180
+#: includes/install.php:202
 msgid "Your signature has been added."
 msgstr "Vaš podpis je bil dodan."
 
-#: includes/install.php:181
+#: includes/install.php:203
 msgid "This petition has already been signed using your email address."
 msgstr "Peticija je že bila podpisna s tem elektronskim naslovom."
 
-#: includes/install.php:182
+#: includes/install.php:204
 msgid "Share this with your friends:"
 msgstr "Povejte prijateljem:"
 
-#: includes/install.php:183 includes/install.php:425
+#: includes/install.php:205 includes/install.php:528
 msgid "Please confirm your email address"
 msgstr "Potrdite vaš elektronski naslov"
 
-#: includes/install.php:184 includes/install.php:428
+#: includes/install.php:206 includes/install.php:531
 msgid "Hello"
 msgstr "Pozdravljeni"
 
-#: includes/install.php:184
+#: includes/install.php:206
 msgid "Thank you for signing our petition %petition_title% "
-msgstr "Hvala za podpis naše Peticija % petition_title % "
+msgstr "Hvala za podpis naše Peticija %petition_title% "
 
-#: includes/install.php:184 includes/install.php:428
+#: includes/install.php:206 includes/install.php:531
 msgid ""
 "Please confirm your email address by clicking or copying and pasting the "
 "link below:"
@@ -1223,32 +1270,32 @@ msgstr ""
 "Prosimo, da potrdite vaš e-poštni naslov s klikom ali kopirate in prilepite "
 "spodnjo povezavo:"
 
-#: includes/install.php:189 includes/install.php:434
+#: includes/install.php:211 includes/install.php:537
 msgid "Latest Signatures"
 msgstr "Zadnji podpisi"
 
-#: includes/install.php:428
+#: includes/install.php:531
 msgid "Thank you for signing our petition"
 msgstr "Hvala za podpis naše peticije"
 
 #: includes/license.view.php:78 includes/license.view.php:105
-#: includes/settings.view.php:566 includes/settings.view.php:593
+#: includes/settings.view.php:614 includes/settings.view.php:641
 msgid "Enter your license key"
 msgstr "Vnesite vaš licenčni ključ"
 
-#: includes/license.view.php:83 includes/settings.view.php:571
+#: includes/license.view.php:83 includes/settings.view.php:619
 msgid "Verified"
 msgstr "Preverjeno"
 
-#: includes/license.view.php:86 includes/settings.view.php:574
+#: includes/license.view.php:86 includes/settings.view.php:622
 msgid "Revoke license key"
 msgstr "Preklic licenčnega ključa"
 
-#: includes/license.view.php:90 includes/settings.view.php:578
+#: includes/license.view.php:90 includes/settings.view.php:626
 msgid "Thanks for upgrading"
 msgstr "Hvala za nadgradnjo"
 
-#: includes/license.view.php:100 includes/settings.view.php:588
+#: includes/license.view.php:100 includes/settings.view.php:636
 msgid ""
 "There appears to be a problem with your license key.  Either verify it again "
 "or contact"
@@ -1256,11 +1303,11 @@ msgstr ""
 "Zdi se, da je težava z licenčno tipko.  Ali ga znova preverite ali pa se "
 "obrnite na"
 
-#: includes/license.view.php:108 includes/settings.view.php:596
+#: includes/license.view.php:108 includes/settings.view.php:644
 msgid "Your license key"
 msgstr "Vaš licenčni ključ"
 
-#: includes/license.view.php:111 includes/settings.view.php:599
+#: includes/license.view.php:111 includes/settings.view.php:647
 msgid "Verify"
 msgstr "Preveri"
 
@@ -1324,11 +1371,11 @@ msgstr "prikaz naslova peticije"
 msgid "display petition message"
 msgstr "prikaz sporočila o peticiji"
 
-#: includes/petitions.view.php:60
+#: includes/petitions.view.php:63
 msgid "View Signatures"
 msgstr "Poglejte podpise"
 
-#: includes/petitions.view.php:66
+#: includes/petitions.view.php:69
 msgid ""
 "Delete this petition permanently? All of the petition's signatures will be "
 "deleted as well."
@@ -1338,324 +1385,365 @@ msgstr "Ali trajno pobrišem petiicijo? Vsi podpisi bodo prav tako zbrisani."
 msgid "Settings updated."
 msgstr "Nastavitve potrjene."
 
-#: includes/settings.view.php:156 includes/settings.view.php:552
+#: includes/settings.view.php:160 includes/settings.view.php:596
 msgid "Security"
 msgstr "Varnost"
 
-#: includes/settings.view.php:161 includes/settings.view.php:641
+#: includes/settings.view.php:165 includes/settings.view.php:689
 msgid "Anedot.com Donation Form Embed"
 msgstr "Anedot.com darovanje Form vlagati"
 
-#: includes/settings.view.php:167
+#: includes/settings.view.php:171
 msgid "These settings apply to all petitions"
 msgstr "Te nastavitve veljajo za vse peticije"
 
-#: includes/settings.view.php:172 includes/settings.view.php:179
-#: includes/settings.view.php:343
+#: includes/settings.view.php:176 includes/settings.view.php:191
+#: includes/settings.view.php:373
 msgid "Default"
 msgstr "Prednastavljeni"
 
-#: includes/settings.view.php:173
+#: includes/settings.view.php:177
 msgid "Basic"
 msgstr "Osnovni"
 
-#: includes/settings.view.php:174 includes/settings.view.php:180
-#: includes/settings.view.php:345
+#: includes/settings.view.php:178 includes/settings.view.php:192
+#: includes/settings.view.php:375
 msgid "Custom"
 msgstr "Po meri"
 
-#: includes/settings.view.php:174 includes/settings.view.php:180
-#: includes/settings.view.php:345
+#: includes/settings.view.php:178 includes/settings.view.php:192
+#: includes/settings.view.php:375
 msgid "use"
 msgstr "uporabi"
 
-#: includes/settings.view.php:191 includes/settings.view.php:326
+#: includes/settings.view.php:182
+msgid "Message editor style"
+msgstr "Slog urejevalnika sporočil"
+
+#: includes/settings.view.php:184
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/settings.view.php:185
+msgid "Markdown"
+msgstr "Markdown"
+
+#: includes/settings.view.php:203 includes/settings.view.php:350
+#: includes/settings.view.php:356
 msgid "Accepted variables:"
 msgstr "Sprejete spremenjljivke:"
 
-#: includes/settings.view.php:192 includes/settings.view.php:327
+#: includes/settings.view.php:204 includes/settings.view.php:357
 msgid "Accepted tags:"
 msgstr "Sprejete ključne beside:"
 
-#: includes/settings.view.php:196
+#: includes/settings.view.php:208
 msgid "Petition fade out after signing?"
 msgstr "Peticija zbledi po podpisu?"
 
-#: includes/settings.view.php:216
+#: includes/settings.view.php:228
 msgid "Checked"
 msgstr "Označeno"
 
-#: includes/settings.view.php:217
+#: includes/settings.view.php:229
 msgid "Unchecked"
 msgstr "Odznačeno"
 
-#: includes/settings.view.php:223 includes/settings.view.php:231
-#: includes/settings.view.php:239 includes/settings.view.php:245
-#: includes/settings.view.php:260
+#: includes/settings.view.php:235 includes/settings.view.php:243
+#: includes/settings.view.php:251 includes/settings.view.php:257
+#: includes/settings.view.php:272
 msgid "Yes"
 msgstr "Da"
 
-#: includes/settings.view.php:223
+#: includes/settings.view.php:235
 msgid "at the bottom of the petition form"
 msgstr "na dnu obrazca za peticijo"
 
-#: includes/settings.view.php:227
+#: includes/settings.view.php:239
 msgid "Display honorific field"
 msgstr "Prikaz častnih polje"
 
-#: includes/settings.view.php:235
+#: includes/settings.view.php:247
 msgid "Display BCC field"
 msgstr "Prikaz polje SKP"
 
-#: includes/settings.view.php:243
+#: includes/settings.view.php:255
 msgid "EU postal code position?"
 msgstr "Položaj poštne številke EU?"
 
-#: includes/settings.view.php:245
+#: includes/settings.view.php:257
 msgid "In EU postal code comes before city"
 msgstr "V EU je poštna številka pred mestnimi"
 
-#: includes/settings.view.php:249
+#: includes/settings.view.php:261
 msgid "Signature count format"
 msgstr "Oblika štetja podpisov"
 
-#: includes/settings.view.php:252
+#: includes/settings.view.php:264
 msgid "Thousands separator"
 msgstr "Ločilo tisočic"
 
-#: includes/settings.view.php:253
+#: includes/settings.view.php:265
 msgid "Decimal separator"
 msgstr "Decimalno ločilo"
 
-#: includes/settings.view.php:254
+#: includes/settings.view.php:266
 msgid "currently"
-msgstr "Trenutno"
+msgstr "trenutno"
 
-#: includes/settings.view.php:258
+#: includes/settings.view.php:270
 msgid "Display Privacy Policy accept?"
 msgstr "Zasebna politika zasebnosti sprejeti?"
 
-#: includes/settings.view.php:260
+#: includes/settings.view.php:272
 msgid "GDPR"
 msgstr "GDPR"
 
-#: includes/settings.view.php:266
+#: includes/settings.view.php:278
 msgid "Enable Google recaptcha?"
 msgstr "Omogoči Google reCAPTCHA?"
 
-#: includes/settings.view.php:282
+#: includes/settings.view.php:297
 msgid "Enable hCaptcha?"
 msgstr "Omogočite hCaptcha?"
 
-#: includes/settings.view.php:296
+#: includes/settings.view.php:311
 msgid "Display sharing icons?"
 msgstr "Ikone skupne rabe zaslona?"
 
-#: includes/settings.view.php:303
+#: includes/settings.view.php:318
+msgid "Mailchimp error reporting?"
+msgstr "Poročanje o napakah Mailchimp?"
+
+#: includes/settings.view.php:326
 msgid "Enable Anedot.com?"
 msgstr "Omogoči Anedot.com?"
 
-#: includes/settings.view.php:305
+#: includes/settings.view.php:328
 msgid "Anedot.com is a 3rd party fund raising site"
 msgstr "Anedot.com je 3rd stranka sklad dvig stran"
 
-#: includes/settings.view.php:335
+#: includes/settings.view.php:333
+msgid "Debug mailchimp?"
+msgstr "Odpravljanje napak po pošti?"
+
+#: includes/settings.view.php:334
+msgid "if submissions not getting to mailchimp"
+msgstr "Če prispevki ne pridejo v Mailchimp"
+
+#: includes/settings.view.php:365
 msgid ""
 "These settings apply to signatures displayed on your site using the shortcode"
 msgstr ""
 "Te nastavitve veljajo za podpise, prikazane na spletnem mestu s pomočjo "
 "kratke kode"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "To style the signature list you are best using your theme's"
 msgstr "Če želite slog seznama podpisov najbolje uporabiti temo"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "Additional CSS"
 msgstr "Dodatni CSS"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "setting"
 msgstr "nastavitev"
 
-#: includes/settings.view.php:352
+#: includes/settings.view.php:382
 msgid "0 to display all"
 msgstr "0 za prikaz vseh"
 
-#: includes/settings.view.php:355
+#: includes/settings.view.php:385
 msgid "Changing to \"list\" will clear column settings below"
 msgstr "Spreminjanje v »seznam« bo spodaj počistilo nastavitve stolpcev"
 
-#: includes/settings.view.php:357
+#: includes/settings.view.php:387
 msgid "table"
 msgstr "tabela"
 
-#: includes/settings.view.php:359
+#: includes/settings.view.php:389
 msgid "inline blocks - very styleable"
 msgstr "inline bloki - zelo styleable"
 
-#: includes/settings.view.php:361
+#: includes/settings.view.php:391
 msgid "long list (comma separated)"
 msgstr "dolg seznam (ločene z vejicami)"
 
-#: includes/settings.view.php:368
+#: includes/settings.view.php:398
 msgid "Count"
 msgstr "Število"
 
-#: includes/settings.view.php:371 includes/settings.view.php:446
-#: includes/signatures.view.php:157 includes/signatures.view.php:185
+#: includes/settings.view.php:401 includes/settings.view.php:482
+#: includes/signatures.view.php:175 includes/signatures.view.php:206
 msgid "Name"
 msgstr "Ime"
 
-#: includes/settings.view.php:374
+#: includes/settings.view.php:404
 msgid "Email address - unless disabled"
 msgstr "E-poštni naslov - razen če je onemogočen"
 
-#: includes/settings.view.php:389
+#: includes/settings.view.php:404
+msgid "Are you sure you want to publicly display email addresses?"
+msgstr "Ali ste prepričani, da želite javno prikazati e-poštne naslove?"
+
+#: includes/settings.view.php:419
 msgid "Custom Field 1"
 msgstr "Polje po meri 1"
 
-#: includes/settings.view.php:392
+#: includes/settings.view.php:422
 msgid "Custom Field 2"
 msgstr "Polje po meri 2"
 
-#: includes/settings.view.php:395
+#: includes/settings.view.php:425
 msgid "Custom Field 3"
 msgstr "Polje po meri 3"
 
-#: includes/settings.view.php:398
+#: includes/settings.view.php:428
 msgid "Custom Field 4"
 msgstr "Polje po meri 4"
 
-#: includes/settings.view.php:401
+#: includes/settings.view.php:431
 msgid "Custom drop-down field"
 msgstr "Spustno polje po meri"
 
-#: includes/settings.view.php:404 includes/settings.view.php:496
+#: includes/settings.view.php:434 includes/settings.view.php:532
 msgid "Custom Checkbox 1"
 msgstr "Potrditveno polje po meri 1"
 
-#: includes/settings.view.php:407 includes/settings.view.php:500
+#: includes/settings.view.php:437 includes/settings.view.php:536
 msgid "Custom Checkbox 2"
 msgstr "Potrditveno polje po meri 2"
 
-#: includes/settings.view.php:413 includes/signatures.view.php:148
+#: includes/settings.view.php:440 includes/settings.view.php:540
+msgid "Custom Checkbox 3"
+msgstr "Potrditveno polje po meri 3"
+
+#: includes/settings.view.php:443 includes/settings.view.php:544
+msgid "Custom Checkbox 4"
+msgstr "Potrditveno polje po meri 4"
+
+#: includes/settings.view.php:449 includes/signatures.view.php:166
 msgid "Date"
 msgstr "Datum"
 
-#: includes/settings.view.php:418
+#: includes/settings.view.php:454
 msgid "Display country flags?"
 msgstr "Prikaz zastav držav?"
 
-#: includes/settings.view.php:422
+#: includes/settings.view.php:458
 msgid "requires Country column to be enabled above"
 msgstr "zahteva, da je stolpec države omogočen zgoraj"
 
-#: includes/settings.view.php:429
+#: includes/settings.view.php:465
 msgid "enabled - only show first letter of surname"
 msgstr "omogočeno - Pokaži le prva črka priimka"
 
-#: includes/settings.view.php:430
+#: includes/settings.view.php:466
 msgid "disabled"
 msgstr "onemogočena"
 
-#: includes/settings.view.php:439
+#: includes/settings.view.php:475
 msgid "Settings for the dashboard signature list"
 msgstr "Nastavitve za seznam podpisov nadzorne plošče"
 
-#: includes/settings.view.php:442
+#: includes/settings.view.php:478
 msgid "Columns to display"
 msgstr "Stolpci za prikaz"
 
-#: includes/settings.view.php:452
+#: includes/settings.view.php:488
 msgid "Petition info"
 msgstr "Informacije o peticiji"
 
-#: includes/settings.view.php:468
+#: includes/settings.view.php:504
 msgid "Postal code"
 msgstr "Poštna številka"
 
-#: includes/settings.view.php:476 includes/signatures.view.php:139
+#: includes/settings.view.php:512 includes/signatures.view.php:155
 msgid "Custom field 1"
 msgstr "Polje po meri 1"
 
-#: includes/settings.view.php:480 includes/signatures.view.php:140
+#: includes/settings.view.php:516 includes/signatures.view.php:156
 msgid "Custom field 2"
 msgstr "Polje po meri 2"
 
-#: includes/settings.view.php:484 includes/signatures.view.php:141
+#: includes/settings.view.php:520 includes/signatures.view.php:157
 msgid "Custom field 3"
 msgstr "Polje po meri 3"
 
-#: includes/settings.view.php:488 includes/signatures.view.php:142
+#: includes/settings.view.php:524 includes/signatures.view.php:158
 msgid "Custom field 4"
 msgstr "Polje po meri 4"
 
-#: includes/settings.view.php:492 includes/signatures.view.php:143
+#: includes/settings.view.php:528 includes/signatures.view.php:159
 msgid "Custom field 5"
 msgstr "Polje po meri 5"
 
-#: includes/settings.view.php:503
+#: includes/settings.view.php:547
 msgid "Confirmed status"
 msgstr "Potrjen status"
 
-#: includes/settings.view.php:509
+#: includes/settings.view.php:553
 msgid "Date signed"
 msgstr "Datum vpisa"
 
-#: includes/settings.view.php:513
+#: includes/settings.view.php:557
 msgid "Display time signed?"
 msgstr "Je čas prikaza podpisan?"
 
-#: includes/settings.view.php:517
+#: includes/settings.view.php:561
 msgid "IP address"
 msgstr "IP Naslov"
 
-#: includes/settings.view.php:521
+#: includes/settings.view.php:565
 msgid "CSV file includes"
 msgstr "CSV datoteka vključuje"
 
-#: includes/settings.view.php:523
+#: includes/settings.view.php:567
 msgid "All signatures"
 msgstr "Vsi podpisi"
 
-#: includes/settings.view.php:525
+#: includes/settings.view.php:569
 msgid "Only opt-in signatures"
 msgstr "Samo označeni podpisi"
 
-#: includes/settings.view.php:527
+#: includes/settings.view.php:571
 msgid "Only double opt-in signatures"
 msgstr "Samo dvojno označeni podpisi"
 
-#: includes/settings.view.php:527
+#: includes/settings.view.php:571
 msgid "opt-in + confirmed"
 msgstr "označeni + potrjeni"
 
-#: includes/settings.view.php:529
+#: includes/settings.view.php:573
 msgid "Only confirmed signatures"
 msgstr "Samo potrjeni podpisi"
 
-#: includes/settings.view.php:541
+#: includes/settings.view.php:585
 msgid "rows - default = 20"
 msgstr "vrstice - privzeto = 20"
 
-#: includes/settings.view.php:545
+#: includes/settings.view.php:589
 msgid "rows - default = 50"
 msgstr "vrstice - privzeto = 50"
 
-#: includes/settings.view.php:555
+#: includes/settings.view.php:599
 msgid "Webhooks enabled"
 msgstr "Omogočeni webhooks"
 
 #: includes/settings.view.php:603
-msgid "Don't have a license"
-msgstr "Nimam licence."
+msgid "Enable Wordpress updater"
+msgstr "Omogoči posodabljanje Wordpressa"
 
-#: includes/settings.view.php:644
+#: includes/settings.view.php:651
+msgid "Don't have a license"
+msgstr "Nimam licence"
+
+#: includes/settings.view.php:692
 msgid "Anedot.com Donation Slug"
 msgstr "Anedot.com darovanje Slug"
 
-#: includes/settings.view.php:646
+#: includes/settings.view.php:694
 msgid ""
 "Input your Anedot.com \"Account Slug\" (from Settings > Brand), a slash, and "
 "then your Campaign Slug (from Campaigns > Edit > Basic)."
@@ -1663,11 +1751,11 @@ msgstr ""
 "Vložek vaš Anedot.com \"račun Slug\" (od Settings > Brand), poševnica, nato "
 "pa vaše oglaševalsko akcijo Slug (iz oglaševalske akcije > Uredi > Basic)."
 
-#: includes/settings.view.php:651
+#: includes/settings.view.php:699
 msgid "Anedot.com Embed Pref"
 msgstr "Anedot.com vlagati Pref"
 
-#: includes/settings.view.php:653
+#: includes/settings.view.php:701
 msgid ""
 "Enter \"true\" (without quotes) to show account name header on embedded "
 "campaigns."
@@ -1675,11 +1763,11 @@ msgstr ""
 "Vnesite» true «(brez narekovajev), če želite v vdelanih oglaševalskih "
 "akcijah prikazati glavo imena računa."
 
-#: includes/settings.view.php:657
+#: includes/settings.view.php:705
 msgid "Anedot.com iframe Width"
 msgstr "Anedot.com iframe širina"
 
-#: includes/settings.view.php:659
+#: includes/settings.view.php:707
 msgid ""
 "Width for donation form iframe, either as percent, e.g. \"100%\" (without "
 "quotes), or pixels, e.g. \"375\" (without quotes). Iframe is to be displayed "
@@ -1689,34 +1777,27 @@ msgstr ""
 "narekovajev), ali slikovnih pik, na primer \"375\" (brez narekovajev). "
 "Iframe je treba prikazati na področju uspeha sporočilo, po podpisu peticije."
 
-#: includes/settings.view.php:663
+#: includes/settings.view.php:711
 msgid "Anedot.com iframe Height"
 msgstr "Anedot.com iframe višina"
 
-#: includes/settings.view.php:665
+#: includes/settings.view.php:713
 msgid ""
 "Height for donation page iframe, either as pixels, e.g. \"1570\" (without "
 "quotes), or percent, e.g. \"100%\" (without quotes). Iframe is to be "
 "displayed in Success Message area, after signing of a petition."
 msgstr ""
-"Višina za darovanje strani iframe, bodisi kot slikovnih pik, npr "
-"\"1570\" (brez narekovajev), ali odstotkov, na primer \"100%\" (brez "
-"narekovajev). Iframe je treba prikazati na področju uspeha sporočilo, po "
-"podpisu peticije."
+"Višina za darovanje strani iframe, bodisi kot slikovnih pik, npr \"1570\" "
+"(brez narekovajev), ali odstotkov, na primer \"100%\" (brez narekovajev). "
+"Iframe je treba prikazati na področju uspeha sporočilo, po podpisu peticije."
 
-#: includes/settings.view.php:671
+#: includes/settings.view.php:719
 msgid "Save Changes"
 msgstr "Shrani spremembe"
 
-#: includes/settings.view.php:374
-#, fuzzy
-#| msgid "Are you sure you want to do this? You will delete "
-msgid "Are you sure you want to publicly display email addresses?"
-msgstr "Si prepričan, da hočeš to narediti? Izbrisali boste "
-
 #: includes/signatures.php:39 includes/signatures.php:86
-#: includes/signatures.php:122 includes/signatures.php:193
-#: includes/signatures.php:207
+#: includes/signatures.php:122 includes/signatures.php:195
+#: includes/signatures.php:209
 msgid "Total Signatures"
 msgstr "Skupaj podpisi"
 
@@ -1724,19 +1805,19 @@ msgstr "Skupaj podpisi"
 msgid "Confirmation emails sent."
 msgstr "Sporočilo za potrditev poslano."
 
-#: includes/signatures.php:212
+#: includes/signatures.php:214
 msgid "Total"
 msgstr "Skupaj"
 
-#: includes/signatures.view.php:15
+#: includes/signatures.view.php:19
 msgid "Display all signatures"
 msgstr "Prikaži vse podpise"
 
-#: includes/signatures.view.php:20
+#: includes/signatures.view.php:25
 msgid "Select petition"
 msgstr "Izberi peticijo"
 
-#: includes/signatures.view.php:35
+#: includes/signatures.view.php:41
 msgid ""
 "Are you sure you want to do this? A separate confirmation email will be sent "
 "for each unconfirmed signature."
@@ -1744,7 +1825,7 @@ msgstr ""
 "Res želite to? Še eno sporočilo za potrditev bo poslano na nepotrjene "
 "naslove."
 
-#: includes/signatures.view.php:36
+#: includes/signatures.view.php:44
 msgid ""
 "Are you sure you want to do this? A separate confirmation email will be sent "
 "for each selected signature."
@@ -1752,91 +1833,99 @@ msgstr ""
 "Si prepričan, da hočeš to narediti? Za vsak izbran podpis bo poslano ločeno "
 "potrditveno e-poštno sporočilo."
 
-#: includes/signatures.view.php:37
+#: includes/signatures.view.php:47
 msgid "Are you sure you want to do this? You will manually confirm "
 msgstr "Si prepričan, da hočeš to narediti? Ročno boste potrdili "
 
-#: includes/signatures.view.php:38
+#: includes/signatures.view.php:50
 msgid "Are you sure you want to do this? You will delete "
 msgstr "Si prepričan, da hočeš to narediti? Izbrisali boste "
 
-#: includes/signatures.view.php:39
+#: includes/signatures.view.php:53
 msgid "selected signature"
 msgstr "izbran podpis"
 
-#: includes/signatures.view.php:51
+#: includes/signatures.view.php:66
 msgid "Reconfirm selected"
 msgstr "Ponovno potrdi izbrano"
 
-#: includes/signatures.view.php:53
+#: includes/signatures.view.php:68
 msgid "Reconfirm selected: choose petition first"
 msgstr "Ponovno potrdi izbrano: najprej izberite peticijo"
 
-#: includes/signatures.view.php:55 includes/signatures.view.php:58
+#: includes/signatures.view.php:70 includes/signatures.view.php:73
 msgid "Reconfirm selected: choose signatures"
 msgstr "Ponovno potrdi izbrano: Izberite podpise"
 
-#: includes/signatures.view.php:63
+#: includes/signatures.view.php:77
 msgid "Force confirm selected"
 msgstr "Prisilna potrditev izbrana"
 
-#: includes/signatures.view.php:65
+#: includes/signatures.view.php:79
 msgid "Force confirm selected - choose signatures"
 msgstr "Prisilna potrditev izbrana-izberite podpise"
 
-#: includes/signatures.view.php:67
+#: includes/signatures.view.php:81
 msgid "Force confirm selected: choose petition first"
 msgstr "Prisilna potrditev izbrana: najprej izberite peticijo"
 
-#: includes/signatures.view.php:69 includes/signatures.view.php:71
+#: includes/signatures.view.php:83 includes/signatures.view.php:85
 msgid "Force confirm selected: choose signatures"
 msgstr "Izbrana potrjena sila: Izberite podpise"
 
-#: includes/signatures.view.php:75
+#: includes/signatures.view.php:89
 msgid "Delete selected"
 msgstr "Izbriši izbrano"
 
-#: includes/signatures.view.php:77
+#: includes/signatures.view.php:91
 msgid "Delete selected: choose signatures"
 msgstr "Izbriši izbrano: Izberite podpise"
 
-#: includes/signatures.view.php:91
+#: includes/signatures.view.php:105
 msgid "Resend selected confirmations"
 msgstr "Ponovno Pošlji izbrane potrditve"
 
-#: includes/signatures.view.php:100
+#: includes/signatures.view.php:114
 msgid "Choose signatures action"
 msgstr "Izberite dejanje podpisov"
 
-#: includes/signatures.view.php:101
+#: includes/signatures.view.php:117
 msgid "Download CSV - see settings/admin sig list"
 msgstr "Prenos CSV - glej nastavitve/admin sig seznam"
 
-#: includes/signatures.view.php:102
+#: includes/signatures.view.php:120
 msgid "Display only unconfirmed"
 msgstr "Prikaži samo nepotrjenega"
 
-#: includes/signatures.view.php:103
+#: includes/signatures.view.php:123
 msgid "Resend all unconfirmed"
 msgstr "Ponovno Pošlji vse nepotrjene"
 
-#: includes/signatures.view.php:108
+#: includes/signatures.view.php:129
 msgid "Apply"
 msgstr "Uporabi"
 
-#: includes/signatures.view.php:113
+#: includes/signatures.view.php:133
 msgid "Search signatures"
 msgstr "Iskalni podpisi"
 
-#: includes/signatures.view.php:144
+#: includes/signatures.view.php:160
 msgid "Checkbox 1"
 msgstr "Potrditveno polje 1"
 
-#: includes/signatures.view.php:145
+#: includes/signatures.view.php:161
 msgid "Checkbox 2"
 msgstr "Potrditveno polje 2"
 
-#: includes/signatures.view.php:146
+#: includes/signatures.view.php:162
+msgid "Checkbox 3"
+msgstr "Potrditveno polje 3"
+
+#: includes/signatures.view.php:163
+msgid "Checkbox 4"
+msgstr "Potrditveno polje 4"
+
+#: includes/signatures.view.php:164
 msgid "Opt-in"
 msgstr "Označi"
 
@@ -1860,12 +1949,8 @@ msgstr "Prikliči"
 msgid "Confirm Email"
 msgstr "Potrdite Email"
 
-#: speakout-email-petitions.php:95
-msgid "Support"
-msgstr "Podpora"
-
-#~ msgid "Import petitions from SpeakUp to SpeakOut!"
-#~ msgstr "Uvoz peticije iz SpeakUp v SpeakOut!"
+#~ msgid "Support"
+#~ msgstr "Podpora"
 
 #~ msgid "Upgrade to Pro"
 #~ msgstr "Nadgradnja"
@@ -1959,92 +2044,3 @@ msgstr "Podpora"
 
 #~ msgid "Ms"
 #~ msgstr "Gdč."
-
-# Month
-#~ msgid "Mr"
-#~ msgstr "gospod"
-
-# Month
-#~ msgid "Mrs"
-#~ msgstr "gospa"
-
-#~ msgid "Miss"
-#~ msgstr "Gdč."
-
-#~ msgid "Mx."
-#~ msgstr "Mx."
-
-#~ msgid "Dr."
-#~ msgstr "Dr."
-
-#~ msgid "IP"
-#~ msgstr "IP"
-
-#~ msgid "You will be redirected momentarily."
-#~ msgstr "Preusmerjam vas."
-
-#~ msgid "instead of instant hide"
-#~ msgstr "namesto takojšnjega skriva"
-
-#~ msgid "Privacy Policy URL"
-#~ msgstr "URL pravilnika o zasebnosti"
-
-#~ msgid "You will need a pair of keys from"
-#~ msgstr "Potrebovali boste par ključev iz"
-
-#~ msgid "You can hide Facebook and Twitter icons"
-#~ msgstr "Ikone facebooka in Twitterja lahko skrijete"
-
-#~ msgid "Example: If your donation page's URL is"
-#~ msgstr "Primer: če je URL strani za darovanje"
-
-#~ msgid "then your Donation Slug is:"
-#~ msgstr "potem je vaš Darovanje Slug je:"
-
-#~ msgid "Donate, please!"
-#~ msgstr "Donirajte"
-
-#~ msgid "Force confirm selected: check 1 or more"
-#~ msgstr "Potrjena moč potrdite: 1 ali več"
-
-#~ msgid "Delete selected: check 1 or more"
-#~ msgstr "Izbriši izbrano: preverite 1 ali več"
-
-#~ msgid "Error: You must include a valid id."
-#~ msgstr "Napaka: Vključite veljaven ID."
-
-#~ msgid "All Signatures"
-#~ msgstr "Vsi podpisi"
-
-#~ msgid "Signature deleted."
-#~ msgstr "Podpis izbrisan."
-
-#~ msgid "Download as CSV"
-#~ msgstr "Prenesi kot CSV"
-
-#~ msgid "Re-send confirmations"
-#~ msgstr "Ponovno pošlji potrdila"
-
-#~ msgid "Donate"
-#~ msgstr "Donirajte"
-
-#~ msgid "Search"
-#~ msgstr "Išči"
-
-#~ msgid "Street Address"
-#~ msgstr "Ulica"
-
-#~ msgid "Address fields required?"
-#~ msgstr "Zahtevana polja za naslove?"
-
-#~ msgid "Post Code"
-#~ msgstr "Poštna številka"
-
-#~ msgid "rows"
-#~ msgstr "vrstice"
-
-#~ msgid "Petition updated."
-#~ msgstr "Peticija osvežena."
-
-#~ msgid "Allow custom messages"
-#~ msgstr "Dovolite sporočila po želji"

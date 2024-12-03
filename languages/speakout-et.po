@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SpeakOut! Email Petitions\n"
-"POT-Creation-Date: 2023-04-03 09:30+1000\n"
-"PO-Revision-Date: 2023-04-03 09:31+1000\n"
-"Last-Translator: Steve D <info@123host.com.au>\n"
+"POT-Creation-Date: 2024-12-03 14:19+1000\n"
+"PO-Revision-Date: 2024-12-03 14:19+1000\n"
+"Last-Translator: Steve <Hello@SpeakOutPetitions.com>\n"
 "Language-Team: \n"
 "Language: et_EE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: speakout-email-petitions.php\n"
@@ -21,15 +21,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/addnew.php:38 includes/addnew.php:64
+#: includes/addnew.php:37 includes/addnew.php:63
 msgid "Edit Petition"
 msgstr "Petitsiooni redigeerimine"
 
-#: includes/addnew.php:42 includes/addnew.php:68 includes/addnew.php:116
+#: includes/addnew.php:41 includes/addnew.php:67 includes/addnew.php:115
 msgid "Update Petition"
 msgstr "Uuenda avaldust"
 
-#: includes/addnew.php:50
+#: includes/addnew.php:49
 #, php-format
 msgid ""
 "Petition created. Use %1$s %2$s %3$s to display in a page or post. Use %1$s "
@@ -40,15 +40,15 @@ msgstr ""
 "Kasuta%1$s %4$s %3$s loendi signatuuride kuvamine või%1$s %5$s %3$s, et "
 "kuvada ainult allkirja arv."
 
-#: includes/addnew.php:85
+#: includes/addnew.php:84
 msgid "Duplicate Petition"
 msgstr "Petitsiooni dubleerimine"
 
-#: includes/addnew.php:89
+#: includes/addnew.php:88
 msgid "Save Duplicate Petition"
 msgstr "Salvesta duplikaatpetitsioon"
 
-#: includes/addnew.php:97
+#: includes/addnew.php:96
 #, php-format
 msgid ""
 "Petition created - you can edit it here. Use %1$s %2$s %3$s to display in a "
@@ -57,23 +57,23 @@ msgstr ""
 "Loodud petitsioon - seda saate redigeerida siin. Lehel või postituses "
 "kuvamiseks kasutage %1$s %2$s %3$s."
 
-#: includes/addnew.php:112
+#: includes/addnew.php:111
 msgid "Edit New Petition"
 msgstr "Redigeeri uut petitsiooni"
 
-#: includes/addnew.php:117
+#: includes/addnew.php:116
 msgid "Petition "
 msgstr "Petitsioon "
 
-#: includes/addnew.php:124
+#: includes/addnew.php:123
 msgid "Add New Petition"
 msgstr "Uue petitsiooni lisamine"
 
-#: includes/addnew.php:128
+#: includes/addnew.php:127
 msgid "Create Petition"
 msgstr "Loo avaldus"
 
-#: includes/addnew.php:130
+#: includes/addnew.php:129
 msgid "Add me to your mailing list"
 msgstr "Mind lisada oma meililistis"
 
@@ -97,10 +97,10 @@ msgstr "Ekraani Valikud"
 
 #: includes/addnew.view.php:21 includes/help.php:57
 msgid "3rd Party Integrations"
-msgstr "Kolmanda osapoole integratsioonid"
+msgstr "3. osapoole integratsioonid"
 
 #: includes/addnew.view.php:29 includes/help.php:6 includes/help.php:85
-#: includes/settings.view.php:338 includes/widget.php:88
+#: includes/settings.view.php:368 includes/widget.php:88
 msgid "Title"
 msgstr "Pealkiri"
 
@@ -125,7 +125,7 @@ msgid "CC Email"
 msgstr "CC email"
 
 #: includes/addnew.view.php:56 includes/help.php:9 includes/help.php:80
-#: includes/settings.view.php:319
+#: includes/settings.view.php:349
 msgid "Email Subject"
 msgstr "Emaili teema"
 
@@ -137,319 +137,340 @@ msgstr "Tervitus"
 msgid "Petition Message"
 msgstr "Petitsiooni sõnum"
 
-#: includes/addnew.view.php:67
+#: includes/addnew.view.php:84 includes/addnew.view.php:244
 msgid "You can personalise the message by inserting tags"
 msgstr "Sõnumi isikupärastamiseks lisage sildid"
 
-#: includes/addnew.view.php:68
+#: includes/addnew.view.php:85
 msgid "You or the signer can format the message using Markdown syntax - see"
 msgstr ""
 "Teie või allkirjastaja saate sõnumi vormindada, kasutades Markdownsüntaksit "
 "- vt"
 
-#: includes/addnew.view.php:70
+#: includes/addnew.view.php:87
 msgid "Petition Footer (below signature)"
 msgstr "Petitsiooni jalus (alla allkiri)"
 
-#: includes/addnew.view.php:75 includes/help.php:13
-msgid "Twitter Message"
-msgstr "Twitter sõnum"
+#: includes/addnew.view.php:92
+msgid "X (Twitter) Message"
+msgstr "X (Twitter) sõnum"
 
-#: includes/addnew.view.php:100
+#: includes/addnew.view.php:117
 msgid "Don't collect email address"
 msgstr "Ära kogu e-posti aadressi"
 
-#: includes/addnew.view.php:101
+#: includes/addnew.view.php:118
 msgid "This cannot be reversed"
 msgstr "Seda ei saa tühistada"
 
-#: includes/addnew.view.php:108 includes/help.php:17
+#: includes/addnew.view.php:125 includes/help.php:17
 msgid "Allow public anonymous"
 msgstr "Luba avalik anonüümne"
 
-#: includes/addnew.view.php:117 includes/help.php:18
+#: includes/addnew.view.php:134 includes/help.php:18
 msgid "Confirm signatures"
 msgstr "Kinnita allkirjad"
 
-#: includes/addnew.view.php:120
+#: includes/addnew.view.php:137
 msgid "Return URL"
 msgstr "Tagasipöördumise URL:"
 
-#: includes/addnew.view.php:129
+#: includes/addnew.view.php:146
 msgid "Allow message to be edited"
 msgstr "Luba sõnumi redigeerimist"
 
-#: includes/addnew.view.php:137 includes/help.php:20
+#: includes/addnew.view.php:154 includes/help.php:20
 msgid "Set signature goal"
 msgstr "Sea allkirja eesmärk"
 
-#: includes/addnew.view.php:140 includes/petitions.view.php:19
+#: includes/addnew.view.php:157 includes/petitions.view.php:19
 #: includes/petitions.view.php:29
 msgid "Goal"
 msgstr "Eesmärk"
 
-#: includes/addnew.view.php:143
+#: includes/addnew.view.php:160
 msgid "Auto increase goal"
 msgstr "Automaatne suurendamise eesmärk"
 
-#: includes/addnew.view.php:144
+#: includes/addnew.view.php:161
 msgid "by"
 msgstr "poolt"
 
-#: includes/addnew.view.php:145
+#: includes/addnew.view.php:162
 msgid "when count"
 msgstr "kui loendada"
 
-#: includes/addnew.view.php:145 includes/emailpetition.php:661
+#: includes/addnew.view.php:162 includes/emailpetition.php:717
 #: includes/widget.php:207
 msgid "of goal"
 msgstr "eesmärk"
 
-#: includes/addnew.view.php:153 includes/help.php:22
+#: includes/addnew.view.php:170 includes/help.php:22
 msgid "Set expiration date"
 msgstr "Aegumiskuupäeva seadmine"
 
-#: includes/addnew.view.php:157
+#: includes/addnew.view.php:174
 msgid "Jan"
-msgstr "jaan"
+msgstr "Jaan"
 
-#: includes/addnew.view.php:158
+#: includes/addnew.view.php:175
 msgid "Feb"
 msgstr "veebr"
 
-#: includes/addnew.view.php:159
+#: includes/addnew.view.php:176
 msgid "Mar"
 msgstr "Märts"
 
-#: includes/addnew.view.php:160
+#: includes/addnew.view.php:177
 msgid "Apr"
 msgstr "Aprill"
 
-#: includes/addnew.view.php:161
+#: includes/addnew.view.php:178
 msgid "May"
 msgstr "Mai"
 
-#: includes/addnew.view.php:162
+#: includes/addnew.view.php:179
 msgid "Jun"
 msgstr "Juuni"
 
-#: includes/addnew.view.php:163
+#: includes/addnew.view.php:180
 msgid "Jul"
 msgstr "Juuli"
 
-#: includes/addnew.view.php:164
+#: includes/addnew.view.php:181
 msgid "Aug"
 msgstr "August"
 
-#: includes/addnew.view.php:165
+#: includes/addnew.view.php:182
 msgid "Sep"
 msgstr "September"
 
-#: includes/addnew.view.php:166
+#: includes/addnew.view.php:183
 msgid "Oct"
 msgstr "Oktoober"
 
-#: includes/addnew.view.php:167
+#: includes/addnew.view.php:184
 msgid "Nov"
 msgstr "nov"
 
-#: includes/addnew.view.php:168
+#: includes/addnew.view.php:185
 msgid "Dec"
 msgstr "dets"
 
-#: includes/addnew.view.php:184
+#: includes/addnew.view.php:201
 msgid "Redirect after successful sign"
 msgstr "Suuna pärast edukat silti ümber"
 
-#: includes/addnew.view.php:187
+#: includes/addnew.view.php:204
 msgid "Full URL"
 msgstr "Täielik URL"
 
-#: includes/addnew.view.php:189
+#: includes/addnew.view.php:206
 msgid "Delay?"
 msgstr "Viivitus?"
 
-#: includes/addnew.view.php:190
+#: includes/addnew.view.php:207
 msgid "milliseconds"
 msgstr "Millisekundit"
 
-#: includes/addnew.view.php:191
+#: includes/addnew.view.php:208
 msgid "Open in new window (target='_blank')"
 msgstr "Ava uues aknas (sihtmärk = ' _blank ')"
 
-#: includes/addnew.view.php:205
+#: includes/addnew.view.php:217
+msgid "Email to signer?"
+msgstr "E-kiri allkirjastajale?"
+
+#: includes/addnew.view.php:220
+msgid "Email content"
+msgstr "E-kirja sisu"
+
+#: includes/addnew.view.php:257
 msgid "Text to open/close petition message"
 msgstr "Petitsioonisõnumi avamise/sulgemise tekst"
 
-#: includes/addnew.view.php:210
+#: includes/addnew.view.php:262
 msgid "Text to open/close editable petition message"
 msgstr "Tekst redigeeritava petitsioonisõnumi avamiseks/sulgemiseks"
 
-#: includes/addnew.view.php:219 includes/help.php:27
+#: includes/addnew.view.php:271 includes/help.php:27
 msgid "Display opt-in checkbox"
 msgstr "Kuva opt-in ruut"
 
-#: includes/addnew.view.php:222 includes/addnew.view.php:287
-#: includes/addnew.view.php:322 includes/addnew.view.php:357
-#: includes/addnew.view.php:393 includes/addnew.view.php:434
-#: includes/addnew.view.php:465 includes/addnew.view.php:494
+#: includes/addnew.view.php:274 includes/addnew.view.php:339
+#: includes/addnew.view.php:374 includes/addnew.view.php:409
+#: includes/addnew.view.php:445 includes/addnew.view.php:486
+#: includes/addnew.view.php:517 includes/addnew.view.php:546
+#: includes/addnew.view.php:575 includes/addnew.view.php:603
 msgid "Label"
 msgstr "Silt"
 
-#: includes/addnew.view.php:230
+#: includes/addnew.view.php:282
 msgid "Display petition message"
 msgstr "Kuva petitsiooni sõnum"
 
-#: includes/addnew.view.php:237 includes/help.php:28
+#: includes/addnew.view.php:289 includes/help.php:28
 msgid "Display address fields"
 msgstr "Aadressi väljade kuvamine"
 
-#: includes/addnew.view.php:244 includes/help.php:88
-#: includes/settings.view.php:355
+#: includes/addnew.view.php:296 includes/help.php:88
+#: includes/settings.view.php:385
 msgid "Display"
 msgstr "Aadressi väljade kuvamine"
 
-#: includes/addnew.view.php:245 includes/addnew.view.php:298
-#: includes/addnew.view.php:333 includes/addnew.view.php:368
-#: includes/addnew.view.php:404 includes/addnew.view.php:432
+#: includes/addnew.view.php:297 includes/addnew.view.php:350
+#: includes/addnew.view.php:385 includes/addnew.view.php:420
+#: includes/addnew.view.php:456 includes/addnew.view.php:484
 msgid "Required"
 msgstr "Nõutud"
 
-#: includes/addnew.view.php:251 includes/addnew.view.php:597
-#: includes/emailpetition.php:426 includes/settings.view.php:456
-#: includes/signatures.view.php:134
+#: includes/addnew.view.php:303 includes/addnew.view.php:706
+#: includes/emailpetition.php:468 includes/settings.view.php:492
+#: includes/signatures.view.php:150
 msgid "Street"
 msgstr "Tänav"
 
-#: includes/addnew.view.php:256 includes/csv.php:54
-#: includes/emailpetition.php:443 includes/settings.view.php:377
-#: includes/settings.view.php:460 includes/signatures.view.php:135
+#: includes/addnew.view.php:308 includes/csv.php:55
+#: includes/emailpetition.php:485 includes/settings.view.php:407
+#: includes/settings.view.php:496 includes/signatures.view.php:151
 #: includes/widget.php:434
 msgid "City"
 msgstr "Linn"
 
-#: includes/addnew.view.php:261 includes/emailpetition.php:450
-#: includes/settings.view.php:380 includes/widget.php:440
+#: includes/addnew.view.php:313 includes/emailpetition.php:492
+#: includes/settings.view.php:410 includes/widget.php:440
 msgid "State / Province"
 msgstr "Maakond"
 
-#: includes/addnew.view.php:266
+#: includes/addnew.view.php:318
 msgid "Postal Code - see settings for EU style"
 msgstr "Sihtnumber – vt ELi stiili sätteid"
 
-#: includes/addnew.view.php:271 includes/addnew.view.php:629
-#: includes/csv.php:57 includes/emailpetition.php:491
-#: includes/settings.view.php:386 includes/settings.view.php:472
-#: includes/signatures.view.php:138 includes/widget.php:476
+#: includes/addnew.view.php:323 includes/addnew.view.php:738
+#: includes/csv.php:58 includes/emailpetition.php:533
+#: includes/settings.view.php:416 includes/settings.view.php:508
+#: includes/signatures.view.php:154 includes/widget.php:476
 msgid "Country"
 msgstr "Riik"
 
-#: includes/addnew.view.php:283
+#: includes/addnew.view.php:335
 msgid "Display custom field 1"
 msgstr "Kuva kohandatud väli 1"
 
-#: includes/addnew.view.php:300 includes/addnew.view.php:335
-#: includes/addnew.view.php:370 includes/addnew.view.php:406
-#: includes/addnew.view.php:447 includes/addnew.view.php:475
-#: includes/addnew.view.php:504
+#: includes/addnew.view.php:352 includes/addnew.view.php:387
+#: includes/addnew.view.php:422 includes/addnew.view.php:458
+#: includes/addnew.view.php:499 includes/addnew.view.php:527
+#: includes/addnew.view.php:556 includes/addnew.view.php:585
+#: includes/addnew.view.php:613
 msgid "Location"
 msgstr "Asukoht"
 
-#: includes/addnew.view.php:301 includes/addnew.view.php:336
-#: includes/addnew.view.php:371 includes/addnew.view.php:407
-#: includes/addnew.view.php:448 includes/addnew.view.php:476
-#: includes/addnew.view.php:505
+#: includes/addnew.view.php:353 includes/addnew.view.php:388
+#: includes/addnew.view.php:423 includes/addnew.view.php:459
+#: includes/addnew.view.php:500 includes/addnew.view.php:528
+#: includes/addnew.view.php:557 includes/addnew.view.php:586
+#: includes/addnew.view.php:614
 msgid "Top"
 msgstr "Peal"
 
-#: includes/addnew.view.php:303 includes/addnew.view.php:338
-#: includes/addnew.view.php:373 includes/addnew.view.php:409
-#: includes/addnew.view.php:450 includes/addnew.view.php:478
-#: includes/addnew.view.php:507
+#: includes/addnew.view.php:355 includes/addnew.view.php:390
+#: includes/addnew.view.php:425 includes/addnew.view.php:461
+#: includes/addnew.view.php:502 includes/addnew.view.php:530
+#: includes/addnew.view.php:559 includes/addnew.view.php:588
+#: includes/addnew.view.php:616
 msgid "Above email"
 msgstr "Üle e-posti"
 
-#: includes/addnew.view.php:305 includes/addnew.view.php:340
-#: includes/addnew.view.php:375 includes/addnew.view.php:411
-#: includes/addnew.view.php:453 includes/addnew.view.php:481
-#: includes/addnew.view.php:510
+#: includes/addnew.view.php:357 includes/addnew.view.php:392
+#: includes/addnew.view.php:427 includes/addnew.view.php:463
+#: includes/addnew.view.php:505 includes/addnew.view.php:533
+#: includes/addnew.view.php:562 includes/addnew.view.php:591
+#: includes/addnew.view.php:619
 msgid "Bottom"
 msgstr "All"
 
-#: includes/addnew.view.php:308 includes/addnew.view.php:343
-#: includes/addnew.view.php:378 includes/addnew.view.php:414
-#: includes/addnew.view.php:428
+#: includes/addnew.view.php:360 includes/addnew.view.php:395
+#: includes/addnew.view.php:430 includes/addnew.view.php:466
+#: includes/addnew.view.php:480
 msgid "Include with petition"
 msgstr "Kaasa petitsiooniga"
 
-#: includes/addnew.view.php:310 includes/addnew.view.php:345
-#: includes/addnew.view.php:380 includes/addnew.view.php:416
+#: includes/addnew.view.php:362 includes/addnew.view.php:397
+#: includes/addnew.view.php:432 includes/addnew.view.php:468
 msgid "Trim when displaying"
 msgstr "Trimmimine kuvamisel"
 
-#: includes/addnew.view.php:318
+#: includes/addnew.view.php:370
 msgid "Display custom field 2"
 msgstr "Kuva kohandatud väli 2"
 
-#: includes/addnew.view.php:353
+#: includes/addnew.view.php:405
 msgid "Display custom field 3"
 msgstr "Kuva kohandatud väli 3"
 
-#: includes/addnew.view.php:389
+#: includes/addnew.view.php:441
 msgid "Display custom field 4"
 msgstr "Kuva kohandatud väli 4"
 
-#: includes/addnew.view.php:424
+#: includes/addnew.view.php:476
 msgid "Display custom drop-down"
 msgstr "Kohandatud rippmenüü kuvamine"
 
-#: includes/addnew.view.php:444
+#: includes/addnew.view.php:496
 msgid "Values"
 msgstr "Väärtused"
 
-#: includes/addnew.view.php:461
+#: includes/addnew.view.php:513
 msgid "Display custom checkbox 1"
 msgstr "Kohandatud märkeruudu kuvamine 1"
 
-#: includes/addnew.view.php:490
+#: includes/addnew.view.php:542
 msgid "Display custom checkbox 2"
 msgstr "Kohandatud märkeruudu kuvamine 2"
 
-#: includes/addnew.view.php:520 includes/help.php:30
+#: includes/addnew.view.php:571
+msgid "Display custom checkbox 3"
+msgstr "Kuva kohandatud märkeruut 3"
+
+#: includes/addnew.view.php:599
+msgid "Display custom checkbox 4"
+msgstr "Kuva kohandatud märkeruut 4"
+
+#: includes/addnew.view.php:629 includes/help.php:30
 msgid "Display custom message"
 msgstr "Kuva kohandatud sõnum"
 
-#: includes/addnew.view.php:521
+#: includes/addnew.view.php:630
 msgid "Displayed beneath `Thank you` after petition is signed"
 msgstr "Kuvatakse all \"aitäh\" pärast avalduse allkirjastamist"
 
-#: includes/addnew.view.php:524
+#: includes/addnew.view.php:633
 msgid "Message"
 msgstr "Sõnum"
 
-#: includes/addnew.view.php:535
+#: includes/addnew.view.php:644
 msgid ""
 "You must also enable 'Display opt-in checkbox' under the Display Options tab"
 msgstr "Vahekaardil Kuvamissuvandid peate lubama ka märkeruudu Kuva opt-in"
 
-#: includes/addnew.view.php:542
+#: includes/addnew.view.php:651
 msgid "Enable ActiveCampaign"
 msgstr "ActiveCampaigni lubamine"
 
-#: includes/addnew.view.php:549 includes/addnew.view.php:717
-#: includes/addnew.view.php:737 includes/addnew.view.php:759
+#: includes/addnew.view.php:658 includes/addnew.view.php:852
+#: includes/addnew.view.php:873 includes/addnew.view.php:895
 msgid "API Key"
 msgstr "API võti"
 
-#: includes/addnew.view.php:552
+#: includes/addnew.view.php:661
 msgid "Server URL"
 msgstr "Serveri URL"
 
-#: includes/addnew.view.php:563
+#: includes/addnew.view.php:672
 msgid "Select list"
 msgstr "Vali loend"
 
-#: includes/addnew.view.php:571
+#: includes/addnew.view.php:680
 msgid ""
 "Map the SpeakOut! fields to your Active Campaign fields. Leave those you "
 "don't use blank."
@@ -457,67 +478,83 @@ msgstr ""
 "Kaardista SpeakOut! väljadele Aktiivne kampaania. Jäta need, keda sa ei "
 "kasuta, tühjaks."
 
-#: includes/addnew.view.php:574 includes/csv.php:49
+#: includes/addnew.view.php:683 includes/csv.php:49
 msgid "Honorific"
 msgstr "Aunimetus"
 
-#: includes/addnew.view.php:582 includes/csv.php:50
-#: includes/emailpetition.php:355 includes/widget.php:358
+#: includes/addnew.view.php:691 includes/csv.php:50
+#: includes/emailpetition.php:383 includes/widget.php:358
 msgid "First Name"
 msgstr "Eesnimi"
 
-#: includes/addnew.view.php:587 includes/csv.php:51
-#: includes/emailpetition.php:359 includes/widget.php:362
+#: includes/addnew.view.php:696 includes/csv.php:51
+#: includes/emailpetition.php:387 includes/widget.php:362
 msgid "Last Name"
 msgstr "Perekonnanimi"
 
-#: includes/addnew.view.php:592 includes/emailpetition.php:418
-#: includes/settings.view.php:449 includes/signatures.view.php:132
+#: includes/addnew.view.php:701 includes/emailpetition.php:460
+#: includes/settings.view.php:485 includes/signatures.view.php:148
 #: includes/widget.php:409
 msgid "Email"
 msgstr "Email"
 
-#: includes/addnew.view.php:605
+#: includes/addnew.view.php:714
 msgid "Suburb"
 msgstr "Rajoon"
 
-#: includes/addnew.view.php:613 includes/csv.php:55
-#: includes/settings.view.php:464 includes/signatures.view.php:136
+#: includes/addnew.view.php:722 includes/csv.php:56
+#: includes/settings.view.php:500 includes/signatures.view.php:152
 msgid "State"
 msgstr "Maakond"
 
-#: includes/addnew.view.php:621 includes/csv.php:56
-#: includes/emailpetition.php:436 includes/emailpetition.php:459
-#: includes/settings.view.php:383 includes/signatures.view.php:137
+#: includes/addnew.view.php:730 includes/csv.php:57
+#: includes/emailpetition.php:478 includes/emailpetition.php:501
+#: includes/settings.view.php:413 includes/signatures.view.php:153
 #: includes/widget.php:447
 msgid "Postal Code"
 msgstr "Postiindeks"
 
-#: includes/addnew.view.php:712
-msgid "Enable MailChimp"
-msgstr "MailChimpi lubamine"
+#: includes/addnew.view.php:822
+msgid "Enable CleverReach"
+msgstr "CleverReachi lubamine"
 
-#: includes/addnew.view.php:720
-msgid "Server ID"
-msgstr "Serveri ID"
+#: includes/addnew.view.php:827
+msgid "Client ID "
+msgstr "Kliendi ID "
 
-#: includes/addnew.view.php:723 includes/addnew.view.php:762
-msgid "List ID"
-msgstr "Loendi ID"
+#: includes/addnew.view.php:830
+msgid "Client Secret"
+msgstr "Client Secret"
 
-#: includes/addnew.view.php:732
-msgid "Enable Mailerlite"
-msgstr "Mailerlite'i lubamine"
-
-#: includes/addnew.view.php:740
+#: includes/addnew.view.php:833 includes/addnew.view.php:876
 msgid "Group ID"
 msgstr "Grupi ID"
 
-#: includes/addnew.view.php:750
+#: includes/addnew.view.php:836
+msgid "Source"
+msgstr "Allikas"
+
+#: includes/addnew.view.php:847
+msgid "Enable MailChimp"
+msgstr "MailChimpi lubamine"
+
+#: includes/addnew.view.php:855
+msgid "Server ID"
+msgstr "Serveri ID"
+
+#: includes/addnew.view.php:858 includes/addnew.view.php:898
+msgid "List ID"
+msgstr "Loendi ID"
+
+#: includes/addnew.view.php:868
+msgid "Enable Mailerlite"
+msgstr "Mailerlite'i lubamine"
+
+#: includes/addnew.view.php:886
 msgid "Enable Sendy"
 msgstr "Luba Sendy"
 
-#: includes/addnew.view.php:756
+#: includes/addnew.view.php:892
 msgid "Installation URL"
 msgstr "Installimise URL"
 
@@ -531,18 +568,18 @@ msgstr "SpeakOut! E-posti Petitsioonid"
 
 #: includes/admin.php:44 includes/admin.php:45 includes/license.view.php:74
 msgid "Activate license"
-msgstr "Litsentsi aktiveerimine"
+msgstr "Aktiveeri litsents"
 
 #: includes/admin.php:55 includes/admin.php:56 includes/petitions.view.php:4
 msgid "Add New"
 msgstr "Lisa uus"
 
 #: includes/admin.php:66 includes/admin.php:67 includes/petitions.view.php:18
-#: includes/petitions.view.php:28 includes/signatures.view.php:4
+#: includes/petitions.view.php:28 includes/signatures.view.php:5
 msgid "Signatures"
 msgstr "Allkirjad"
 
-#: includes/admin.php:77 includes/settings.view.php:142
+#: includes/admin.php:77 includes/settings.view.php:146
 msgid "SpeakOut! Petitions Settings"
 msgstr "SpeakOut! Petitsioonide seaded"
 
@@ -550,12 +587,12 @@ msgstr "SpeakOut! Petitsioonide seaded"
 msgid "Settings"
 msgstr "Seaded"
 
-#: includes/class.petition.php:505
+#: includes/class.petition.php:547
 msgid "No Title"
 msgstr "Pealkiri puudub"
 
-#: includes/class.signaturelist.php:155 includes/class.signaturelist.php:215
-#: includes/class.signaturelist.php:319
+#: includes/class.signaturelist.php:157 includes/class.signaturelist.php:217
+#: includes/class.signaturelist.php:323 includes/csv.php:53
 msgid "Anonymous"
 msgstr "Anonüümne"
 
@@ -591,7 +628,7 @@ msgstr "E-posti kinnitamine"
 msgid "If you aren't redirected"
 msgstr "Kui te pole ümber suunatud"
 
-#: includes/confirmations.php:169 includes/settings.view.php:603
+#: includes/confirmations.php:169 includes/settings.view.php:651
 msgid "Click here"
 msgstr "Vajutage siia"
 
@@ -603,7 +640,7 @@ msgstr "saidile naasmiseks "
 msgid "Insufficient privileges: You need to be an editor to do that."
 msgstr "Ebapiisavad õigused: sa pead olema toimetaja, et seda teha."
 
-#: includes/csv.php:28 includes/signatures.view.php:212
+#: includes/csv.php:28 includes/signatures.view.php:235
 msgid "No signatures found."
 msgstr "Allkirju ei leitud."
 
@@ -611,119 +648,121 @@ msgstr "Allkirju ei leitud."
 msgid "Email Address"
 msgstr "E-posti aadress"
 
-#: includes/csv.php:53 includes/widget.php:428
+#: includes/csv.php:54 includes/widget.php:428
 msgid "Address"
 msgstr "Aadress"
 
-#: includes/csv.php:58
+#: includes/csv.php:59
 msgid "Date Signed"
 msgstr "Allkirjastamise kuupäev"
 
-#: includes/csv.php:59 includes/signatures.view.php:147
+#: includes/csv.php:60 includes/signatures.view.php:165
 msgid "Confirmed"
 msgstr "Kinnitatud"
 
-#: includes/csv.php:60
+#: includes/csv.php:61
 msgid "Petition Title"
 msgstr "Avalduse pealkiri"
 
-#: includes/csv.php:61
+#: includes/csv.php:62
 msgid "Petition ID"
 msgstr "Avalduse ID"
 
-#: includes/csv.php:62 includes/settings.view.php:506
+#: includes/csv.php:63 includes/settings.view.php:550
 msgid "Email Opt-in"
 msgstr "Email opt-in"
 
-#: includes/csv.php:63 includes/settings.view.php:410
+#: includes/csv.php:64 includes/settings.view.php:446
 msgid "Custom Message"
 msgstr "Kohandatud sõnum"
 
-#: includes/csv.php:72
+#: includes/csv.php:74
 msgid "Language"
 msgstr "Keel"
 
-#: includes/csv.php:73 includes/signatures.view.php:149
+#: includes/csv.php:75 includes/signatures.view.php:167
 msgid "IP Address"
 msgstr "IP Aadress"
 
-#: includes/csv.php:83
+#: includes/csv.php:85
 msgid "Custom Field"
 msgstr "Kohandatud väli"
 
-#: includes/csv.php:103
+#: includes/csv.php:116
 msgid "confirmed"
 msgstr "kinnitatud"
 
-#: includes/csv.php:106
+#: includes/csv.php:119
 msgid "unconfirmed"
 msgstr "Kinnitamata"
 
-#: includes/csv.php:115 includes/csv.php:125 includes/csv.php:135
+#: includes/csv.php:128 includes/csv.php:138 includes/csv.php:148
+#: includes/csv.php:158 includes/csv.php:168
 msgid "Y"
 msgstr "Y"
 
-#: includes/csv.php:118 includes/csv.php:128 includes/csv.php:138
+#: includes/csv.php:131 includes/csv.php:141 includes/csv.php:151
+#: includes/csv.php:161 includes/csv.php:171
 msgid "N"
 msgstr "N"
 
-#: includes/emailpetition.php:564
+#: includes/emailpetition.php:620
 msgid "You can add formatting using markdown syntax"
 msgstr "Vormingu saate lisada märgistussüntaksi abil"
 
-#: includes/emailpetition.php:564
+#: includes/emailpetition.php:620
 msgid "read more"
 msgstr "loe edasi"
 
-#: includes/emailpetition.php:579 includes/widget.php:242
+#: includes/emailpetition.php:635 includes/widget.php:242
 #: includes/widget.php:256
 msgid "your signature"
 msgstr "teie allkirjad"
 
-#: includes/emailpetition.php:607 includes/widget.php:535
+#: includes/emailpetition.php:663 includes/widget.php:535
 msgid "BCC yourself"
 msgstr "Salakoopia ise"
 
-#: includes/emailpetition.php:620 includes/widget.php:545
+#: includes/emailpetition.php:676 includes/widget.php:545
 msgid "Hide name from public"
 msgstr "Peida nimi avalikust"
 
-#: includes/emailpetition.php:631 includes/widget.php:555
+#: includes/emailpetition.php:687 includes/widget.php:555
 msgid "Yes, I accept your "
 msgstr "Jah, olen nõus oma "
 
-#: includes/emailpetition.php:631 includes/widget.php:555
+#: includes/emailpetition.php:687 includes/widget.php:555
 msgid "privacy policy"
 msgstr "andmekaitse põhimõtted"
 
-#: includes/emailpetition.php:666 includes/widget.php:212
+#: includes/emailpetition.php:722 includes/widget.php:212
 msgid "signatures"
 msgstr "allkirjad"
 
-#: includes/emailpetition.php:697 includes/widget.php:281
+#: includes/emailpetition.php:753 includes/widget.php:281
 msgid "Signature goal"
 msgstr "Allkirja eesmärk"
 
-#: includes/emailpetition.php:702 includes/widget.php:278
+#: includes/emailpetition.php:758 includes/widget.php:278
 msgid "End date"
 msgstr "Lõppkuupäev"
 
-#: includes/emailpetition.php:703 includes/widget.php:279
+#: includes/emailpetition.php:759 includes/widget.php:279
 msgid "Signatures collected"
 msgstr "Allkirjad kogutud"
 
-#: includes/emailpetition.php:708
+#: includes/emailpetition.php:764
 msgid "signature"
 msgid_plural "signatures"
 msgstr[0] "allkiri"
 msgstr[1] "allkirju"
 
-#: includes/emailpetition.php:726 includes/signatures.view.php:133
+#: includes/emailpetition.php:782 includes/signatures.view.php:149
 #: includes/widget.php:91
 msgid "Petition"
 msgstr "Petitsioon"
 
-#: includes/emailpetition.php:728
+#: includes/emailpetition.php:784
 msgid ""
 "Error: The site administrator must include a valid petition id  in the "
 "shortcode."
@@ -773,12 +812,16 @@ msgid "This is included at the bottom of each petition that is sent."
 msgstr "See on lisatud iga saadetud petitsiooni lõppu."
 
 #: includes/help.php:13
+msgid "x Message"
+msgstr "x Sõnum"
+
+#: includes/help.php:13
 msgid ""
-"Enter a prepared tweet that will be presented to users when the Twitter "
-"button is clicked."
+"Enter a prepared tweet that will be presented to users when the X button is "
+"clicked."
 msgstr ""
-"Enter ettevalmistatud piiksuma, mis esitatakse kasutajatele, kui vidistama "
-"nupp on klõpsatud."
+"Sisestage ettevalmistatud säuts, mis esitatakse kasutajatele nupu X "
+"klõpsamisel."
 
 #: includes/help.php:17
 msgid ""
@@ -904,7 +947,7 @@ msgstr ""
 "Need sätted kontrollivad ekraani [emailpetition] shortcode ja külgriba "
 "vidinat."
 
-#: includes/help.php:67 includes/settings.view.php:170
+#: includes/help.php:67 includes/settings.view.php:174
 msgid "Petition Theme"
 msgstr "Petitsioonide kujundus"
 
@@ -912,7 +955,7 @@ msgstr "Petitsioonide kujundus"
 msgid "Select a CSS theme that will control the appearance of petition forms."
 msgstr "Valige CSS teema, mis kontrollib välimus avalduse vorme."
 
-#: includes/help.php:68 includes/settings.view.php:177
+#: includes/help.php:68 includes/settings.view.php:189
 msgid "Widget Theme"
 msgstr "Vidina teema"
 
@@ -921,7 +964,7 @@ msgid ""
 "Select a CSS theme that will control the appearance of petition widgets."
 msgstr "Valige CSS teema, mis kontrollib välimus avalduse vidinad."
 
-#: includes/help.php:69 includes/settings.view.php:184
+#: includes/help.php:69 includes/settings.view.php:196
 msgid "Submit Button Text"
 msgstr "Nupu teksti edastamine"
 
@@ -931,7 +974,7 @@ msgid ""
 msgstr ""
 "Sisestage tekst, mis kuvatakse petitsiooni vormide nupu oranž esitamisel."
 
-#: includes/help.php:70 includes/settings.view.php:188
+#: includes/help.php:70 includes/settings.view.php:200
 msgid "Success Message"
 msgstr "Õnnestumise Teade"
 
@@ -943,19 +986,19 @@ msgstr ""
 "Sisestage tekst, mis kuvatakse, kui kasutaja allkirjastab edukalt teie "
 "avalduse ainulaadse meiliaadressi abil."
 
-#: includes/help.php:71 includes/settings.view.php:202
+#: includes/help.php:71 includes/settings.view.php:214
 msgid "Share Message"
 msgstr "Sõnumi ühiskasutus"
 
 #: includes/help.php:71
 msgid ""
-"Enter the text that appears above the Twitter and Facebook buttons after the "
+"Enter the text that appears above the X and Facebook buttons after the "
 "petition form has been submitted."
 msgstr ""
-"Sisestage tekst, mis kuvatakse üle vidistama ja Facebook nupud pärast "
-"avalduse vorm on esitatud."
+"Sisestage tekst, mis kuvatakse X- ja Facebooki nuppude kohal pärast "
+"petitsioonivormi esitamist."
 
-#: includes/help.php:72 includes/settings.view.php:206
+#: includes/help.php:72 includes/settings.view.php:218
 msgid "Expiration Message"
 msgstr "Aegumise teade"
 
@@ -967,7 +1010,7 @@ msgstr ""
 "Sisestage tekst, mis kuvatakse avalduse vormi asemel, kui avaldus on "
 "möödunud selle aegumiskuupäev."
 
-#: includes/help.php:73 includes/settings.view.php:210
+#: includes/help.php:73 includes/settings.view.php:222
 msgid "Already Signed Message"
 msgstr "Juba allkirjastatud sõnum"
 
@@ -979,7 +1022,7 @@ msgstr ""
 "Sisestage tekst, mida kuvatakse, kui avaldus on allkirjastatud juba "
 "edastatud meiliaadressi abil."
 
-#: includes/help.php:74 includes/settings.view.php:214
+#: includes/help.php:74 includes/settings.view.php:226
 msgid "Opt-in Default"
 msgstr "Opt-in default"
 
@@ -987,7 +1030,7 @@ msgstr "Opt-in default"
 msgid "Choose whether the opt-in checkbox is checked or unchecked by default."
 msgstr "Valige, kas ruut opt-in on vaikimisi märgitud või märkimata."
 
-#: includes/help.php:75 includes/settings.view.php:221
+#: includes/help.php:75 includes/settings.view.php:233
 msgid "Display signature count"
 msgstr "Kuva signatuuride arv"
 
@@ -1001,7 +1044,7 @@ msgstr "Valige, kas soovite kuvada kogutud allkirjade arvu."
 msgid "These settings control the content of the confirmation emails."
 msgstr "Need sätted kontrollivad kinnituse e-kirjade sisu."
 
-#: includes/help.php:79 includes/settings.view.php:315
+#: includes/help.php:79 includes/settings.view.php:345
 msgid "Email From"
 msgstr "Saatja e-post"
 
@@ -1017,7 +1060,7 @@ msgstr ""
 msgid "Enter the subject of the confirmation email."
 msgstr "Sisestage kinnituse e-kirja teema."
 
-#: includes/help.php:81 includes/settings.view.php:323
+#: includes/help.php:81 includes/settings.view.php:353
 msgid "Email Message"
 msgstr "E-posti teade"
 
@@ -1033,7 +1076,7 @@ msgstr "Need sätted kontrollivad [signaturelist] shortcode kuvamist."
 msgid "Enter the text that appears above the signature list."
 msgstr "Sisestage tekst, mis kuvatakse signatuuride loendi kohal."
 
-#: includes/help.php:86 includes/settings.view.php:341
+#: includes/help.php:86 includes/settings.view.php:371
 msgid "Theme"
 msgstr "Teema"
 
@@ -1041,7 +1084,7 @@ msgstr "Teema"
 msgid "Select a CSS theme that will control the appearance of signature lists."
 msgstr "Valige CSS teema, mis kontrollib välimust allkirja nimekirjad."
 
-#: includes/help.php:87 includes/settings.view.php:351
+#: includes/help.php:87 includes/settings.view.php:381
 msgid "Rows"
 msgstr "Read"
 
@@ -1054,7 +1097,7 @@ msgstr "Sisestage allkirjade loendis kuvatavate signatuuride arv."
 msgid "Choose the signature list styling, click the ? for more information."
 msgstr "Valige allkirjaloendi stiil, klõpsake nuppu ? lisateabe saamiseks."
 
-#: includes/help.php:89 includes/help.php:95 includes/settings.view.php:365
+#: includes/help.php:89 includes/help.php:95 includes/settings.view.php:395
 msgid "Columns"
 msgstr "Veerud"
 
@@ -1073,7 +1116,7 @@ msgid ""
 msgstr ""
 "Saate kuvada allkirjastaja valitud riigi lipu, kui teil on riik lubatud."
 
-#: includes/help.php:91 includes/settings.view.php:427
+#: includes/help.php:91 includes/settings.view.php:463
 msgid "Privacy"
 msgstr "Privaatsus"
 
@@ -1105,7 +1148,7 @@ msgstr ""
 "Need seaded kontrolli välimuse plugin ' s Options lehekülge jooksul "
 "WordPress Administrator."
 
-#: includes/help.php:100 includes/settings.view.php:540
+#: includes/help.php:100 includes/settings.view.php:584
 msgid "Petitions table shows"
 msgstr "Petitsioonide tabel näitab"
 
@@ -1117,7 +1160,7 @@ msgstr ""
 "Sisestage tabeli \"e-posti Petitsioonid\" kuvatavate ridade arv (vaikimisi = "
 "20)"
 
-#: includes/help.php:101 includes/settings.view.php:544
+#: includes/help.php:101 includes/settings.view.php:588
 msgid "Signatures table shows"
 msgstr "Allkirjade tabel näitab"
 
@@ -1156,72 +1199,76 @@ msgstr ""
 "võimaldab seda mujal kasutada.  Praegune sait kaotab igasuguse juurdepääsu "
 "mis tahes seadetele."
 
-#: includes/help.php:114 includes/settings.view.php:151
-#: includes/settings.view.php:166
+#: includes/help.php:114 includes/settings.view.php:155
+#: includes/settings.view.php:170
 msgid "Petition Form"
 msgstr "Avalduse vorm"
 
-#: includes/help.php:119 includes/settings.view.php:152
-#: includes/settings.view.php:312
+#: includes/help.php:119 includes/settings.view.php:156
+#: includes/settings.view.php:342
 msgid "Confirmation Emails"
 msgstr "Kinnitus e-kirjad"
 
-#: includes/help.php:124 includes/settings.view.php:153
-#: includes/settings.view.php:334
+#: includes/help.php:124 includes/settings.view.php:157
+#: includes/settings.view.php:364
 msgid "Public Signature List"
 msgstr "Avaliku allkirja loend"
 
-#: includes/help.php:129 includes/settings.view.php:154
-#: includes/settings.view.php:438
+#: includes/help.php:129 includes/settings.view.php:158
+#: includes/settings.view.php:474
 msgid "Admin Signature List"
 msgstr "Administraatori allkirjade loend"
 
-#: includes/help.php:134 includes/settings.view.php:155
-#: includes/settings.view.php:537
+#: includes/help.php:134 includes/settings.view.php:159
+#: includes/settings.view.php:581
 msgid "Admin Display"
 msgstr "Admin Display"
 
-#: includes/help.php:139 includes/settings.view.php:157
+#: includes/help.php:139 includes/settings.view.php:161
 msgid "License"
 msgstr "Litsents"
 
-#: includes/install.php:178
+#: includes/import.view.php:69
+msgid "Import petitions from SpeakUp to SpeakOut!"
+msgstr "Impordi Petitsioonid alates SpeakUp et SpeakOut!"
+
+#: includes/install.php:200
 msgid "Sign Now"
 msgstr "Logi kohe alla"
 
-#: includes/install.php:179
+#: includes/install.php:201
 msgid "This petition is now closed."
 msgstr "See avaldus on nüüd suletud."
 
-#: includes/install.php:180
+#: includes/install.php:202
 msgid "Thank you"
 msgstr "Aitäh"
 
-#: includes/install.php:180
+#: includes/install.php:202
 msgid "Your signature has been added."
 msgstr "Teie allkiri on lisatud."
 
-#: includes/install.php:181
+#: includes/install.php:203
 msgid "This petition has already been signed using your email address."
 msgstr "See avaldus on juba allkirjastatud teie meiliaadressi abil."
 
-#: includes/install.php:182
+#: includes/install.php:204
 msgid "Share this with your friends:"
 msgstr "Jaga seda oma sõpradega:"
 
-#: includes/install.php:183 includes/install.php:425
+#: includes/install.php:205 includes/install.php:528
 msgid "Please confirm your email address"
 msgstr "Palun kinnitage oma e-posti aadress"
 
-#: includes/install.php:184 includes/install.php:428
+#: includes/install.php:206 includes/install.php:531
 msgid "Hello"
 msgstr "Tere"
 
-#: includes/install.php:184
+#: includes/install.php:206
 msgid "Thank you for signing our petition %petition_title% "
 msgstr "Täname allkirjastamise meie avalduse% petition_title%"
 
-#: includes/install.php:184 includes/install.php:428
+#: includes/install.php:206 includes/install.php:531
 msgid ""
 "Please confirm your email address by clicking or copying and pasting the "
 "link below:"
@@ -1229,32 +1276,32 @@ msgstr ""
 "Palun kinnitage oma e-posti aadress klikkides või kopeerides ja kleepides "
 "link allpool:"
 
-#: includes/install.php:189 includes/install.php:434
+#: includes/install.php:211 includes/install.php:537
 msgid "Latest Signatures"
 msgstr "Viimased allkirjad"
 
-#: includes/install.php:428
+#: includes/install.php:531
 msgid "Thank you for signing our petition"
 msgstr "Täname meie avalduse"
 
 #: includes/license.view.php:78 includes/license.view.php:105
-#: includes/settings.view.php:566 includes/settings.view.php:593
+#: includes/settings.view.php:614 includes/settings.view.php:641
 msgid "Enter your license key"
 msgstr "Litsentsivõtme sisestamine"
 
-#: includes/license.view.php:83 includes/settings.view.php:571
+#: includes/license.view.php:83 includes/settings.view.php:619
 msgid "Verified"
 msgstr "Verifitseeritud"
 
-#: includes/license.view.php:86 includes/settings.view.php:574
+#: includes/license.view.php:86 includes/settings.view.php:622
 msgid "Revoke license key"
 msgstr "Litsentsivõtme tühistamine"
 
-#: includes/license.view.php:90 includes/settings.view.php:578
+#: includes/license.view.php:90 includes/settings.view.php:626
 msgid "Thanks for upgrading"
 msgstr "Täname uuendamise eest"
 
-#: includes/license.view.php:100 includes/settings.view.php:588
+#: includes/license.view.php:100 includes/settings.view.php:636
 msgid ""
 "There appears to be a problem with your license key.  Either verify it again "
 "or contact"
@@ -1262,11 +1309,11 @@ msgstr ""
 "Tundub, et teie litsentsivõtmega on probleeme.  Kinnitage see uuesti või "
 "võtke ühendust"
 
-#: includes/license.view.php:108 includes/settings.view.php:596
+#: includes/license.view.php:108 includes/settings.view.php:644
 msgid "Your license key"
 msgstr "Teie litsentsivõti"
 
-#: includes/license.view.php:111 includes/settings.view.php:599
+#: includes/license.view.php:111 includes/settings.view.php:647
 msgid "Verify"
 msgstr "Kontrollida"
 
@@ -1330,11 +1377,11 @@ msgstr "petitsiooni pealkirja kuvamine"
 msgid "display petition message"
 msgstr "petitsiooniteate kuvamine"
 
-#: includes/petitions.view.php:60
+#: includes/petitions.view.php:63
 msgid "View Signatures"
 msgstr "Kuva allkirjad"
 
-#: includes/petitions.view.php:66
+#: includes/petitions.view.php:69
 msgid ""
 "Delete this petition permanently? All of the petition's signatures will be "
 "deleted as well."
@@ -1346,323 +1393,364 @@ msgstr ""
 msgid "Settings updated."
 msgstr "Seaded uuendatud."
 
-#: includes/settings.view.php:156 includes/settings.view.php:552
+#: includes/settings.view.php:160 includes/settings.view.php:596
 msgid "Security"
 msgstr "Turvalisus"
 
-#: includes/settings.view.php:161 includes/settings.view.php:641
+#: includes/settings.view.php:165 includes/settings.view.php:689
 msgid "Anedot.com Donation Form Embed"
 msgstr "Anedot.com annetuse vormi manustamine"
 
-#: includes/settings.view.php:167
+#: includes/settings.view.php:171
 msgid "These settings apply to all petitions"
 msgstr "Need sätted kehtivad kõigi petitsioonide kohta"
 
-#: includes/settings.view.php:172 includes/settings.view.php:179
-#: includes/settings.view.php:343
+#: includes/settings.view.php:176 includes/settings.view.php:191
+#: includes/settings.view.php:373
 msgid "Default"
 msgstr "Vaikimisi valik"
 
-#: includes/settings.view.php:173
+#: includes/settings.view.php:177
 msgid "Basic"
 msgstr "Põhiline"
 
-#: includes/settings.view.php:174 includes/settings.view.php:180
-#: includes/settings.view.php:345
+#: includes/settings.view.php:178 includes/settings.view.php:192
+#: includes/settings.view.php:375
 msgid "Custom"
 msgstr "Kohandatud"
 
-#: includes/settings.view.php:174 includes/settings.view.php:180
-#: includes/settings.view.php:345
+#: includes/settings.view.php:178 includes/settings.view.php:192
+#: includes/settings.view.php:375
 msgid "use"
 msgstr "kasutamine"
 
-#: includes/settings.view.php:191 includes/settings.view.php:326
+#: includes/settings.view.php:182
+msgid "Message editor style"
+msgstr "Sõnumiredaktori stiil"
+
+#: includes/settings.view.php:184
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/settings.view.php:185
+msgid "Markdown"
+msgstr "Märgistamine"
+
+#: includes/settings.view.php:203 includes/settings.view.php:350
+#: includes/settings.view.php:356
 msgid "Accepted variables:"
 msgstr "Aktsepteeritud muutujad:"
 
-#: includes/settings.view.php:192 includes/settings.view.php:327
+#: includes/settings.view.php:204 includes/settings.view.php:357
 msgid "Accepted tags:"
-msgstr "Aktsepteeritud:"
+msgstr "Aktsepteeritud sildid:"
 
-#: includes/settings.view.php:196
+#: includes/settings.view.php:208
 msgid "Petition fade out after signing?"
 msgstr "Petitsioon tuhmuvad pärast allkirjastamist?"
 
-#: includes/settings.view.php:216
+#: includes/settings.view.php:228
 msgid "Checked"
 msgstr "Kontrollitud"
 
-#: includes/settings.view.php:217
+#: includes/settings.view.php:229
 msgid "Unchecked"
 msgstr "Kontrollimata"
 
-#: includes/settings.view.php:223 includes/settings.view.php:231
-#: includes/settings.view.php:239 includes/settings.view.php:245
-#: includes/settings.view.php:260
+#: includes/settings.view.php:235 includes/settings.view.php:243
+#: includes/settings.view.php:251 includes/settings.view.php:257
+#: includes/settings.view.php:272
 msgid "Yes"
 msgstr "Jah"
 
-#: includes/settings.view.php:223
+#: includes/settings.view.php:235
 msgid "at the bottom of the petition form"
 msgstr "Avalduse vorm"
 
-#: includes/settings.view.php:227
+#: includes/settings.view.php:239
 msgid "Display honorific field"
 msgstr "Kuvatava austavaid välja"
 
-#: includes/settings.view.php:235
+#: includes/settings.view.php:247
 msgid "Display BCC field"
 msgstr "Näidake BCC välja"
 
-#: includes/settings.view.php:243
+#: includes/settings.view.php:255
 msgid "EU postal code position?"
 msgstr "ELi sihtnumbrite asukoht?"
 
-#: includes/settings.view.php:245
+#: includes/settings.view.php:257
 msgid "In EU postal code comes before city"
 msgstr "ELis tuleb sihtnumber linna ette"
 
-#: includes/settings.view.php:249
+#: includes/settings.view.php:261
 msgid "Signature count format"
 msgstr "Allkirjade arvu vorming"
 
-#: includes/settings.view.php:252
+#: includes/settings.view.php:264
 msgid "Thousands separator"
 msgstr "Tuhanded eraldajad"
 
-#: includes/settings.view.php:253
+#: includes/settings.view.php:265
 msgid "Decimal separator"
 msgstr "Kümnenderaldaja"
 
-#: includes/settings.view.php:254
+#: includes/settings.view.php:266
 msgid "currently"
 msgstr "praegu"
 
-#: includes/settings.view.php:258
+#: includes/settings.view.php:270
 msgid "Display Privacy Policy accept?"
 msgstr "Kas kuvada privaatsuspoliitika nõus?"
 
-#: includes/settings.view.php:260
+#: includes/settings.view.php:272
 msgid "GDPR"
 msgstr "GDPR"
 
-#: includes/settings.view.php:266
+#: includes/settings.view.php:278
 msgid "Enable Google recaptcha?"
 msgstr "Kas lubate Google ' i retscha?"
 
-#: includes/settings.view.php:282
+#: includes/settings.view.php:297
 msgid "Enable hCaptcha?"
 msgstr "Kas lubada hCaptcha?"
 
-#: includes/settings.view.php:296
+#: includes/settings.view.php:311
 msgid "Display sharing icons?"
 msgstr "Kas kuvada ühiskasutuse ikoonid?"
 
-#: includes/settings.view.php:303
+#: includes/settings.view.php:318
+msgid "Mailchimp error reporting?"
+msgstr "Mailchimpi veateavitus?"
+
+#: includes/settings.view.php:326
 msgid "Enable Anedot.com?"
 msgstr "Kas lubada Anedot.com?"
 
-#: includes/settings.view.php:305
+#: includes/settings.view.php:328
 msgid "Anedot.com is a 3rd party fund raising site"
 msgstr "Anedot.com on 3rd Party fondi suurendamise sait"
 
-#: includes/settings.view.php:335
+#: includes/settings.view.php:333
+msgid "Debug mailchimp?"
+msgstr "Siluge mailchimp?"
+
+#: includes/settings.view.php:334
+msgid "if submissions not getting to mailchimp"
+msgstr "Kui esildised ei jõua MailChimpi"
+
+#: includes/settings.view.php:365
 msgid ""
 "These settings apply to signatures displayed on your site using the shortcode"
 msgstr ""
 "Need sätted rakenduvad teie saidil lühikoodi abil kuvatavatele allkirjadele"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "To style the signature list you are best using your theme's"
 msgstr "Allkirjaloendi laadimiseks kasutage kõige paremini oma kujunduse"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "Additional CSS"
 msgstr "Lisa CSS"
 
-#: includes/settings.view.php:348
+#: includes/settings.view.php:378
 msgid "setting"
 msgstr "Millega"
 
-#: includes/settings.view.php:352
+#: includes/settings.view.php:382
 msgid "0 to display all"
-msgstr "0 kõigi kuvamiseks"
+msgstr "0, et kuvada kõik"
 
-#: includes/settings.view.php:355
+#: includes/settings.view.php:385
 msgid "Changing to \"list\" will clear column settings below"
 msgstr "\"Loendiks\" muutmine kustutab allpool veeru seaded"
 
-#: includes/settings.view.php:357
+#: includes/settings.view.php:387
 msgid "table"
 msgstr "laud"
 
-#: includes/settings.view.php:359
+#: includes/settings.view.php:389
 msgid "inline blocks - very styleable"
 msgstr "inline plokid - väga stiilis"
 
-#: includes/settings.view.php:361
+#: includes/settings.view.php:391
 msgid "long list (comma separated)"
 msgstr "pikk nimekiri (komadega eraldatud)"
 
-#: includes/settings.view.php:368
+#: includes/settings.view.php:398
 msgid "Count"
 msgstr "Määrä"
 
-#: includes/settings.view.php:371 includes/settings.view.php:446
-#: includes/signatures.view.php:157 includes/signatures.view.php:185
+#: includes/settings.view.php:401 includes/settings.view.php:482
+#: includes/signatures.view.php:175 includes/signatures.view.php:206
 msgid "Name"
 msgstr "Nimi"
 
-#: includes/settings.view.php:374
+#: includes/settings.view.php:404
 msgid "Email address - unless disabled"
 msgstr "E-posti aadress - kui keelatud"
 
-#: includes/settings.view.php:389
+#: includes/settings.view.php:404
+msgid "Are you sure you want to publicly display email addresses?"
+msgstr "Kas olete kindel, et soovite e-posti aadresse avalikult kuvada?"
+
+#: includes/settings.view.php:419
 msgid "Custom Field 1"
 msgstr "Kohandatud väli 1"
 
-#: includes/settings.view.php:392
+#: includes/settings.view.php:422
 msgid "Custom Field 2"
 msgstr "Kohandatud väli 2"
 
-#: includes/settings.view.php:395
+#: includes/settings.view.php:425
 msgid "Custom Field 3"
 msgstr "Kohandatud väli 3"
 
-#: includes/settings.view.php:398
+#: includes/settings.view.php:428
 msgid "Custom Field 4"
 msgstr "Kohandatud väli 4"
 
-#: includes/settings.view.php:401
+#: includes/settings.view.php:431
 msgid "Custom drop-down field"
 msgstr "Kohandatud rippmenüü väli"
 
-#: includes/settings.view.php:404 includes/settings.view.php:496
+#: includes/settings.view.php:434 includes/settings.view.php:532
 msgid "Custom Checkbox 1"
 msgstr "Kohandatud märkeruut 1"
 
-#: includes/settings.view.php:407 includes/settings.view.php:500
+#: includes/settings.view.php:437 includes/settings.view.php:536
 msgid "Custom Checkbox 2"
 msgstr "Kohandatud märkeruut 2"
 
-#: includes/settings.view.php:413 includes/signatures.view.php:148
+#: includes/settings.view.php:440 includes/settings.view.php:540
+msgid "Custom Checkbox 3"
+msgstr "Kohandatud märkeruut 3"
+
+#: includes/settings.view.php:443 includes/settings.view.php:544
+msgid "Custom Checkbox 4"
+msgstr "Kohandatud märkeruut 4"
+
+#: includes/settings.view.php:449 includes/signatures.view.php:166
 msgid "Date"
 msgstr "Kuupäev"
 
-#: includes/settings.view.php:418
+#: includes/settings.view.php:454
 msgid "Display country flags?"
 msgstr "Kas näidata riigilippe?"
 
-#: includes/settings.view.php:422
+#: includes/settings.view.php:458
 msgid "requires Country column to be enabled above"
 msgstr "nõuab, et veerg Riik oleks ülal lubatud"
 
-#: includes/settings.view.php:429
+#: includes/settings.view.php:465
 msgid "enabled - only show first letter of surname"
 msgstr "Enabled-näidata ainult esimese kirja perekonnanimi"
 
-#: includes/settings.view.php:430
+#: includes/settings.view.php:466
 msgid "disabled"
 msgstr "keelatud"
 
-#: includes/settings.view.php:439
+#: includes/settings.view.php:475
 msgid "Settings for the dashboard signature list"
 msgstr "Armatuurlaua allkirjaloendi sätted"
 
-#: includes/settings.view.php:442
+#: includes/settings.view.php:478
 msgid "Columns to display"
 msgstr "Kuvatavad veerud"
 
-#: includes/settings.view.php:452
+#: includes/settings.view.php:488
 msgid "Petition info"
 msgstr "Petitsiooni info"
 
-#: includes/settings.view.php:468
+#: includes/settings.view.php:504
 msgid "Postal code"
 msgstr "Postiindeks"
 
-#: includes/settings.view.php:476 includes/signatures.view.php:139
+#: includes/settings.view.php:512 includes/signatures.view.php:155
 msgid "Custom field 1"
 msgstr "Kohandatud väli 1"
 
-#: includes/settings.view.php:480 includes/signatures.view.php:140
+#: includes/settings.view.php:516 includes/signatures.view.php:156
 msgid "Custom field 2"
 msgstr "Kohandatud väli 2"
 
-#: includes/settings.view.php:484 includes/signatures.view.php:141
+#: includes/settings.view.php:520 includes/signatures.view.php:157
 msgid "Custom field 3"
 msgstr "Kohandatud väli 3"
 
-#: includes/settings.view.php:488 includes/signatures.view.php:142
+#: includes/settings.view.php:524 includes/signatures.view.php:158
 msgid "Custom field 4"
 msgstr "Kohandatud väli 4"
 
-#: includes/settings.view.php:492 includes/signatures.view.php:143
+#: includes/settings.view.php:528 includes/signatures.view.php:159
 msgid "Custom field 5"
 msgstr "Kohandatud väli 5"
 
-#: includes/settings.view.php:503
+#: includes/settings.view.php:547
 msgid "Confirmed status"
 msgstr "Kinnitatud olek"
 
-#: includes/settings.view.php:509
+#: includes/settings.view.php:553
 msgid "Date signed"
 msgstr "Allkirjastamise kuupäev"
 
-#: includes/settings.view.php:513
+#: includes/settings.view.php:557
 msgid "Display time signed?"
 msgstr "Kas kuvada allkirjastatud aeg?"
 
-#: includes/settings.view.php:517
+#: includes/settings.view.php:561
 msgid "IP address"
 msgstr "IP aadress"
 
-#: includes/settings.view.php:521
+#: includes/settings.view.php:565
 msgid "CSV file includes"
 msgstr "CSV-fail sisaldab"
 
-#: includes/settings.view.php:523
+#: includes/settings.view.php:567
 msgid "All signatures"
 msgstr "Kõik allkirjad"
 
-#: includes/settings.view.php:525
+#: includes/settings.view.php:569
 msgid "Only opt-in signatures"
 msgstr "Ainult opt-in allkirjad"
 
-#: includes/settings.view.php:527
+#: includes/settings.view.php:571
 msgid "Only double opt-in signatures"
 msgstr "Ainult kahekordse opt-in allkirjad"
 
-#: includes/settings.view.php:527
+#: includes/settings.view.php:571
 msgid "opt-in + confirmed"
 msgstr "opt-in + kinnitatud"
 
-#: includes/settings.view.php:529
+#: includes/settings.view.php:573
 msgid "Only confirmed signatures"
 msgstr "Ainult kinnitatud allkirjad"
 
-#: includes/settings.view.php:541
+#: includes/settings.view.php:585
 msgid "rows - default = 20"
 msgstr "řidad - vaikimisi = 20"
 
-#: includes/settings.view.php:545
+#: includes/settings.view.php:589
 msgid "rows - default = 50"
 msgstr "ridad - vaikimisi = 50"
 
-#: includes/settings.view.php:555
+#: includes/settings.view.php:599
 msgid "Webhooks enabled"
 msgstr "Webhooks on lubatud"
 
 #: includes/settings.view.php:603
+msgid "Enable Wordpress updater"
+msgstr "Luba Wordpressi värskendaja"
+
+#: includes/settings.view.php:651
 msgid "Don't have a license"
 msgstr "Sul pole litsentsi."
 
-#: includes/settings.view.php:644
+#: includes/settings.view.php:692
 msgid "Anedot.com Donation Slug"
 msgstr "Anedot.com annetamise nälkjas"
 
-#: includes/settings.view.php:646
+#: includes/settings.view.php:694
 msgid ""
 "Input your Anedot.com \"Account Slug\" (from Settings > Brand), a slash, and "
 "then your Campaign Slug (from Campaigns > Edit > Basic)."
@@ -1670,11 +1758,11 @@ msgstr ""
 "Sisestage oma Anedot.com \"konto nälkjas\" (seaded > brändi), kaldkriipsu ja "
 "seejärel kampaania nälkjas (alates kampaaniad > Edit > Basic)."
 
-#: includes/settings.view.php:651
+#: includes/settings.view.php:699
 msgid "Anedot.com Embed Pref"
 msgstr "Anedot.com Manusta Pref"
 
-#: includes/settings.view.php:653
+#: includes/settings.view.php:701
 msgid ""
 "Enter \"true\" (without quotes) to show account name header on embedded "
 "campaigns."
@@ -1682,11 +1770,11 @@ msgstr ""
 "Sisestage \"true\" (ilma jutumärkideta), et kuvada manustatud kampaaniate "
 "kontonime päis."
 
-#: includes/settings.view.php:657
+#: includes/settings.view.php:705
 msgid "Anedot.com iframe Width"
 msgstr "Anedot.com IFRAME-laius"
 
-#: includes/settings.view.php:659
+#: includes/settings.view.php:707
 msgid ""
 "Width for donation form iframe, either as percent, e.g. \"100%\" (without "
 "quotes), or pixels, e.g. \"375\" (without quotes). Iframe is to be displayed "
@@ -1696,11 +1784,11 @@ msgstr ""
 "jutumärkideta) või pikslid, nt \"375\" (ilma jutumärkideta). IFRAME tuleb "
 "kuvada edu sõnumi piirkonnas pärast allkirjastamist avalduse."
 
-#: includes/settings.view.php:663
+#: includes/settings.view.php:711
 msgid "Anedot.com iframe Height"
 msgstr "Anedot.com IFRAME ' i kõrgus"
 
-#: includes/settings.view.php:665
+#: includes/settings.view.php:713
 msgid ""
 "Height for donation page iframe, either as pixels, e.g. \"1570\" (without "
 "quotes), or percent, e.g. \"100%\" (without quotes). Iframe is to be "
@@ -1710,17 +1798,13 @@ msgstr ""
 "jutumärkideta) või protsent, nt \"100%\" (ilma jutumärkideta). IFRAME tuleb "
 "kuvada edu sõnumi piirkonnas pärast allkirjastamist avalduse."
 
-#: includes/settings.view.php:671
+#: includes/settings.view.php:719
 msgid "Save Changes"
 msgstr "Salvesta muudatused"
 
-#: includes/settings.view.php:374
-msgid "Are you sure you want to publicly display email addresses?"
-msgstr "Kas olete kindel, et soovite e-posti aadresse avalikult kuvada?"
-
 #: includes/signatures.php:39 includes/signatures.php:86
-#: includes/signatures.php:122 includes/signatures.php:193
-#: includes/signatures.php:207
+#: includes/signatures.php:122 includes/signatures.php:195
+#: includes/signatures.php:209
 msgid "Total Signatures"
 msgstr "Allkirjad kokku"
 
@@ -1728,19 +1812,19 @@ msgstr "Allkirjad kokku"
 msgid "Confirmation emails sent."
 msgstr "Kinnitus kirju saata."
 
-#: includes/signatures.php:212
+#: includes/signatures.php:214
 msgid "Total"
 msgstr "Kokku"
 
-#: includes/signatures.view.php:15
+#: includes/signatures.view.php:19
 msgid "Display all signatures"
 msgstr "Kuva kõik allkirjad"
 
-#: includes/signatures.view.php:20
+#: includes/signatures.view.php:25
 msgid "Select petition"
 msgstr "Vali avaldus"
 
-#: includes/signatures.view.php:35
+#: includes/signatures.view.php:41
 msgid ""
 "Are you sure you want to do this? A separate confirmation email will be sent "
 "for each unconfirmed signature."
@@ -1748,7 +1832,7 @@ msgstr ""
 "Oled kindel, et tahad seda teha? Eraldi kinnitus e-posti saadetakse iga "
 "kinnitamata allkiri."
 
-#: includes/signatures.view.php:36
+#: includes/signatures.view.php:44
 msgid ""
 "Are you sure you want to do this? A separate confirmation email will be sent "
 "for each selected signature."
@@ -1756,91 +1840,99 @@ msgstr ""
 "Oled kindel, et tahad seda teha? Iga valitud allkirja kohta saadetakse "
 "eraldi kinnituskiri."
 
-#: includes/signatures.view.php:37
+#: includes/signatures.view.php:47
 msgid "Are you sure you want to do this? You will manually confirm "
 msgstr "Oled kindel, et tahad seda teha? Te kinnitate käsitsi "
 
-#: includes/signatures.view.php:38
+#: includes/signatures.view.php:50
 msgid "Are you sure you want to do this? You will delete "
 msgstr "Oled kindel, et tahad seda teha? Te kustutate "
 
-#: includes/signatures.view.php:39
+#: includes/signatures.view.php:53
 msgid "selected signature"
 msgstr "valitud allkiri"
 
-#: includes/signatures.view.php:51
+#: includes/signatures.view.php:66
 msgid "Reconfirm selected"
 msgstr "Kinnita uuesti valitud"
 
-#: includes/signatures.view.php:53
+#: includes/signatures.view.php:68
 msgid "Reconfirm selected: choose petition first"
 msgstr "Kinnita valitud: vali kõigepealt petitsioon"
 
-#: includes/signatures.view.php:55 includes/signatures.view.php:58
+#: includes/signatures.view.php:70 includes/signatures.view.php:73
 msgid "Reconfirm selected: choose signatures"
 msgstr "Kinnita valitud: signatuuride valimine"
 
-#: includes/signatures.view.php:63
+#: includes/signatures.view.php:77
 msgid "Force confirm selected"
 msgstr "Force Kinnita valitud"
 
-#: includes/signatures.view.php:65
+#: includes/signatures.view.php:79
 msgid "Force confirm selected - choose signatures"
 msgstr "Force Kinnita valitud-Vali allkirjad"
 
-#: includes/signatures.view.php:67
+#: includes/signatures.view.php:81
 msgid "Force confirm selected: choose petition first"
 msgstr "Kinnita valitud: vali kõigepealt petitsioon"
 
-#: includes/signatures.view.php:69 includes/signatures.view.php:71
+#: includes/signatures.view.php:83 includes/signatures.view.php:85
 msgid "Force confirm selected: choose signatures"
 msgstr "Valitud Force: Vali allkirjad"
 
-#: includes/signatures.view.php:75
+#: includes/signatures.view.php:89
 msgid "Delete selected"
 msgstr "Kustuta valitud"
 
-#: includes/signatures.view.php:77
+#: includes/signatures.view.php:91
 msgid "Delete selected: choose signatures"
 msgstr "Kustuta valitud: allkirjade valimine"
 
-#: includes/signatures.view.php:91
+#: includes/signatures.view.php:105
 msgid "Resend selected confirmations"
 msgstr "Valitud kinnituste uuesti"
 
-#: includes/signatures.view.php:100
+#: includes/signatures.view.php:114
 msgid "Choose signatures action"
 msgstr "Signatuuride valimise toiming"
 
-#: includes/signatures.view.php:101
+#: includes/signatures.view.php:117
 msgid "Download CSV - see settings/admin sig list"
 msgstr "Csv allalaadimine – vt settings/admin sig list"
 
-#: includes/signatures.view.php:102
+#: includes/signatures.view.php:120
 msgid "Display only unconfirmed"
 msgstr "Kuva ainult kinnitamata"
 
-#: includes/signatures.view.php:103
+#: includes/signatures.view.php:123
 msgid "Resend all unconfirmed"
 msgstr "Uuesti kõik kinnitamata"
 
-#: includes/signatures.view.php:108
+#: includes/signatures.view.php:129
 msgid "Apply"
 msgstr "Rakenda"
 
-#: includes/signatures.view.php:113
+#: includes/signatures.view.php:133
 msgid "Search signatures"
 msgstr "Otsi allkirju"
 
-#: includes/signatures.view.php:144
+#: includes/signatures.view.php:160
 msgid "Checkbox 1"
 msgstr "Märkeruut 1"
 
-#: includes/signatures.view.php:145
+#: includes/signatures.view.php:161
 msgid "Checkbox 2"
 msgstr "Märkeruut 2"
 
-#: includes/signatures.view.php:146
+#: includes/signatures.view.php:162
+msgid "Checkbox 3"
+msgstr "Märkeruut 3"
+
+#: includes/signatures.view.php:163
+msgid "Checkbox 4"
+msgstr "Märkeruut 4"
+
+#: includes/signatures.view.php:164
 msgid "Opt-in"
 msgstr "Opt-in"
 
@@ -1864,17 +1956,13 @@ msgstr "Tegevus"
 msgid "Confirm Email"
 msgstr "Kinnitage e-post"
 
-#: speakout-email-petitions.php:95
-msgid "Support"
-msgstr "Tugi"
-
 #. Plugin Name of the plugin/theme
 msgid "SpeakOut! Email Petitions Pro"
 msgstr "SpeakOut! E-posti petitsioonid Pro"
 
 #. Plugin URI of the plugin/theme
-msgid "https://speakout.123host.net.au/"
-msgstr "https://speakout.123host.net.au/"
+msgid "https://speakoutpetitions.com/"
+msgstr "https://speakoutpetitions.com/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -1891,15 +1979,21 @@ msgstr ""
 "muutmiseks on palju kohandatavaid võimalusi."
 
 #. Author of the plugin/theme
-msgid "Steve D - 123host.au"
-msgstr "Steve D-123host.au"
+msgid "Steve D"
+msgstr "Steve D"
 
 #. Author URI of the plugin/theme
-msgid "https://123Host.au"
-msgstr "https://123host.au"
+msgid "https://SpeakOutPetitions.com"
+msgstr "https://SpeakOutPetitions.com"
 
-#~ msgid "Import petitions from SpeakUp to SpeakOut!"
-#~ msgstr "Impordi Petitsioonid alates SpeakUp et SpeakOut!"
+#~ msgid "Support"
+#~ msgstr "Tugi"
+
+#~ msgid "Steve D - 123host.au"
+#~ msgstr "Steve D-123host.au"
+
+#~ msgid "https://123Host.au"
+#~ msgstr "https://123host.au"
 
 #~ msgid "Upgrade to Pro"
 #~ msgstr "Uuenda Pro-le"
@@ -2005,80 +2099,3 @@ msgstr "https://123host.au"
 
 #~ msgid "Dr."
 #~ msgstr "Dr"
-
-#, fuzzy
-#~| msgid "IP Address"
-#~ msgid "IP Adress"
-#~ msgstr "IP Aadress"
-
-#~ msgid "IP"
-#~ msgstr "IP"
-
-#~ msgid "You will be redirected momentarily."
-#~ msgstr "Sind suunatakse hetkega ümber."
-
-#~ msgid "instead of instant hide"
-#~ msgstr "selle asemel, et instant peita"
-
-#~ msgid "Privacy Policy URL"
-#~ msgstr "Privaatsuspoliitika URL"
-
-#~ msgid "You will need a pair of keys from"
-#~ msgstr "Teil on vaja paari klahve"
-
-#~ msgid "You can hide Facebook and Twitter icons"
-#~ msgstr "Võite peita Facebook ja Twitter ikoonid"
-
-#~ msgid "Example: If your donation page's URL is"
-#~ msgstr "Näide: kui teie annetuslehe URL on"
-
-#~ msgid "then your Donation Slug is:"
-#~ msgstr "siis teie annetus nälkjas on:"
-
-#~ msgid "Donate, please!"
-#~ msgstr "Annetage, palun!"
-
-#~ msgid "Force confirm selected: check 1 or more"
-#~ msgstr "Valitud Force (Kinnita): Kontrollige 1 või rohkem"
-
-#~ msgid "Delete selected: check 1 or more"
-#~ msgstr "Kustuta valitud: Kontrollige 1 või rohkem"
-
-#~ msgid "Error: You must include a valid id."
-#~ msgstr "Tõrge: peate lisama kehtiva ID."
-
-#~ msgid "All Signatures"
-#~ msgstr "Kõik allkirjad"
-
-#~ msgid "Signature deleted."
-#~ msgstr "Allkiri on kustutatud."
-
-#~ msgid "Download as CSV"
-#~ msgstr "Laadi alla CSV-vormingus"
-
-#~ msgid "Re-send confirmations"
-#~ msgstr "Saada kinnitused uuesti"
-
-#~ msgid "Donate"
-#~ msgstr "Toeta"
-
-#~ msgid "Search"
-#~ msgstr "Otsi"
-
-#~ msgid "Street Address"
-#~ msgstr "Tänav, maja"
-
-#~ msgid "Address fields required?"
-#~ msgstr "Kas aadressiväljad on nõutavad?"
-
-#~ msgid "Post Code"
-#~ msgstr "Postiindeks"
-
-#~ msgid "Steve D forked from speakup"
-#~ msgstr "Steve D kahvliga alates speakup"
-
-#~ msgid "GDRP"
-#~ msgstr "GDRP"
-
-#~ msgid "rows"
-#~ msgstr "rida"
