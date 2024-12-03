@@ -331,7 +331,7 @@ function dk_speakout_update() {
             $wpdb->query( $sql_update );
         }
          
-         $result = $wpdb->query( "SHOW COLUMNS FROM $db_petitions LIKE 'custom_field_truncated'" );      
+        $result = $wpdb->query( "SHOW COLUMNS FROM $db_petitions LIKE 'custom_field_truncated'" );      
         if(!$result){ 
             $sql_update = "ALTER TABLE $db_petitions        
                 ADD `custom_field_truncated` TINYINT NULL DEFAULT '0' AFTER `custom_field_location`, 
@@ -377,6 +377,7 @@ function dk_speakout_update() {
             $wpdb->query( $sql_update );
         }
      }
+	 
     if ( $installed_version != $dk_speakout_version ) {
         // options added after initial release
         if ( !array_key_exists( 'updater', $options ) ) {
