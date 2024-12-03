@@ -313,9 +313,6 @@ function dk_speakout_update() {
             ADD `thank_signer` TINYINT DEFAULT '0' NULL,
             ADD `thank_signer_content` LONGTEXT NULL AFTER `thank_signer`";
     $wpdb->query( $sql_update );
-		//becuase we can't have a default for a longtext
-		$sql_update = "Dear %firstname%,\r\n\r\nThanks for signing our petition, your participation makes a difference\r\n\r\nYours sincerely\r\n\r\n%petition_title%";
-	$wpdb->query( $sql_update );
     }
 
     if ( version_compare( $installed_version, '105.2.1', '<' ) == 1 ) {
