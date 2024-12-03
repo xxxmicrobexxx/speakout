@@ -140,7 +140,7 @@ function dk_speakout_install() {
             `sendy_server` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `sendy_list_id` VARCHAR(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `thank_signer` TINYINT DEFAULT '0' NULL,
-            `thank_signer_content` LONGTEXT DEFAULT 'Dear %first_name%,\r\n\r\nThanks for signing our petition, your participation makes a difference\r\n\r\nYours sincerely\r\n\r\n%petition_title%' NULL,
+            `thank_signer_content` LONGTEXT NULL,
 			UNIQUE KEY  `id` (`id`)
 		) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci ;
 
@@ -311,8 +311,11 @@ function dk_speakout_update() {
     if(!$result){ 
         $sql_update = "ALTER TABLE $db_petitions        
             ADD `thank_signer` TINYINT DEFAULT '0' NULL,
-            ADD `thank_signer_content` LONGTEXT DEFAULT 'Dear %firstname%,\r\n\r\nThanks for signing our petition, your participation makes a difference\r\n\r\nYours sincerely\r\n\r\n%petition_title%' NULL AFTER `thank_signer`";
+            ADD `thank_signer_content` LONGTEXT NULL AFTER `thank_signer`";
     $wpdb->query( $sql_update );
+		//becuase we can't have a default for a longtext
+		$sql_update = "Dear %firstname%,\r\n\r\nThanks for signing our petition, your participation makes a difference\r\n\r\nYours sincerely\r\n\r\n%petition_title%";
+	$wpdb->query( $sql_update );
     }
 
     if ( version_compare( $installed_version, '105.2.1', '<' ) == 1 ) {
