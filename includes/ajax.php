@@ -90,7 +90,7 @@ function dk_speakout_sendmail() {
             //add to CleverReach if enabled and optin checked
             if( $the_petition->cleverreach_enable && $the_signature->optin ){
                 $countryValue = $the_signature->country == "" ? "" : $the_signature->country;
-                dk_speakout_Mail::add2CleverReach( $the_petition->cleverreach_clientID, $the_petition->cleverreach_clientSecret, $the_petition->cleverreach_groupID, $the_signature->email, $the_signature->honorific, $the_signature->first_name, $the_signature->last_name, $the_petition->cleverreach_source);
+                dk_speakout_Mail::add2CleverReach( $the_petition->cleverreach_clientID, $the_petition->cleverreach_clientSecret, $the_petition->cleverreach_groupID, $the_petition->cleverreach_formID, $the_signature->email, $the_signature->honorific, $the_signature->first_name, $the_signature->last_name, $the_petition->cleverreach_source);
             }
 			
             //add to MailChimp if enabled and optin checked

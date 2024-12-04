@@ -823,7 +823,7 @@
                     </div>
                     
                     <div class="margin-20-left cleverreach-fields dk-speakout-subsection <?php if( $petition->cleverreach_enable != 1 ) echo 'dk-speakout-hidden'; ?>">	
-                        <div class="infoText">All fields are required. More info <a href="https://speakoutpetitions.com/cleverreach/" target="_new">here</a>.</div>
+                        <div class="infoText">Some fields are required. More info <a href="https://speakoutpetitions.com/cleverreach/" target="_new">here</a>.</div>
                         <label for="cleverreach-clientID"><?php _e( 'Client ID ', 'speakout'); ?></label>
                         <input type="text" id="cleverreach-clientID" name="cleverreach-clientID" value="<?php echo $petition->cleverreach_clientID; ?>" size="16"  <?php if ( $petition->cleverreach_enable == 1 ) echo ' required="required"'; ?> /><br> 
                         
@@ -831,7 +831,10 @@
                         <input type="text" id="cleverreach-clientSecret" name="cleverreach-clientSecret" value="<?php echo $petition->cleverreach_clientSecret; ?>" size="48" <?php if ( $petition->cleverreach_enable == 1 ) echo ' required="required"'; ?> /><br />
                         
                         <label for="cleverreach-groupID"><?php _e( 'Group ID', 'speakout'); ?></label>
-                        <input type="text" id="cleverreach-groupID" name="cleverreach-groupID" value="<?php echo $petition->cleverreach_groupID; ?>" size="16" <?php if ( $petition->cleverreach_enable == 1 ) echo ' required="required"'; ?> /><br />
+                        <input type="text" id="cleverreach-groupID" name="cleverreach-groupID" value="<?php echo $petition->cleverreach_groupID; ?>" size="8" <?php if ( $petition->cleverreach_enable == 1 ) echo ' required="required"'; ?> /><br />
+						
+						<label for="cleverreach-formID"><?php _e( 'Form ID', 'speakout'); ?></label>
+                        <input type="text" id="cleverreach-formID" name="cleverreach-formID" value="<?php echo $petition->cleverreach_formID; ?>" size="8" /><br />
                         
                         <label for="cleverreach-source"><?php _e( 'Source', 'speakout'); ?></label>
                         <input type="text" id="cleverreach-source" name="cleverreach-source" value="<?php echo $petition->cleverreach_source; ?>" size="16" <?php if ( $petition->cleverreach_enable == 1 ) echo ' required="required"'; ?> /><br />

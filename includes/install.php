@@ -108,6 +108,7 @@ function dk_speakout_install() {
             `cleverreach_clientID` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,  
             `cleverreach_clientSecret` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `cleverreach_groupID` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
+			`cleverreach_formID` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `cleverreach_source` VARCHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT 'Speakout! Petition',
             `mailchimp_enable` TINYINT NULL DEFAULT '0', 
             `mailchimp_api_key` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,  
@@ -295,6 +296,13 @@ function dk_speakout_update() {
     ///////////////////////////////////////////////
     //   update previous installs and Pro version
     ////////////////////////////////////////////////
+	
+	$result = $wpdb->query( "SHOW COLUMNS FROM $db_petitions LIKE 'cleverreach_formID'" );      
+    if(!$result){ 
+        $sql_update = "ALTER TABLE $db_petitions        
+            ADD `cleverreach_formID` VARCHAR(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL AFTER `cleverreach_groupID`";
+        $wpdb->query( $sql_update );
+     }
         
     $result = $wpdb->query( "SHOW COLUMNS FROM $db_petitions LIKE 'cleverreach_enable'" );      
     if(!$result){ 
