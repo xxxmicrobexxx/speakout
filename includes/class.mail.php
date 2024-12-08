@@ -247,7 +247,10 @@ class dk_speakout_Mail
 		
 	}
 	
-    /** add email to ActiveCampaign (if enabled) **/
+    /////////////////////////////////////////////////////////////////////////////////////////
+    /**           add email to ActiveCampaign (if enabled)                                **/
+    /////////////////////////////////////////////////////////////////////////////////////////
+
     public static function add2ActiveCampaign( 
         $apiKey, $server, $listID,
         $map1field,     $honorific,     $map2field,     $firstname, 
@@ -339,92 +342,64 @@ class dk_speakout_Mail
         }
     } // end Active Campaign.
 	
-    // Add email to CleverReach (if enabled)
-	public static function add2CleverReach( $clientID, $clientSecret, $groupID, $email, $honorific, $firstname, $lastname, $source ){
+    /////////////////////////////////////////////////////////////////////////////////////////
+    /**           add email to CleverReach (if enabled)                                     **/
+    /////////////////////////////////////////////////////////////////////////////////////////
+	public static function add2CleverReach( $clientID, $clientSecret, $groupID, $formID, $email, $honorific, $firstname, $lastname, $source ){
 	    
-        // The official CleverReach URL, no need to change this.
-        $token_url = "https://rest.cleverreach.com/oauth/token.php";
-        
-        // We use curl to make the request
-        $curl = curl_init();
-        curl_setopt($curl,CURLOPT_URL, $token_url);
-        curl_setopt($curl,CURLOPT_USERPWD, $clientID . ":" . $clientSecret);
-        curl_setopt($curl,CURLOPT_POSTFIELDS, array("grant_type" => "client_credentials"));
-        curl_setopt($curl,CURLOPT_RETURNTRANSFER, true);
-        $result = curl_exec($curl);
-        curl_close ($curl);
-        
-        // The final $result contains the access_token and some other information besides.
-        // For you to debug if necessary, we dump it out here.
-        // mail(get_option('admin_email'), "Success", "response = " . print_r($result) );
-
-
         // The CleverReach OAuth token endpoint
         $tokenUrl = 'https://rest.cleverreach.com/oauth/token.php';
 
-        // Step 1: Get OAuth access token
         $ch = curl_init();
-
         curl_setopt($ch, CURLOPT_URL, $tokenUrl);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
             'grant_type' => 'client_credentials',
-            'client_id' => 'ugdVfKvdSD',
-            'client_secret' => 'oHT3qowmSImPQDvQZdEHjo0OWDM5i15M'
+            'client_id' => $clientID,
+            'client_secret' =>  $clientSecret
         ]));
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/x-www-form-urlencoded'
         ]);
-
+        
+        // Get OAuth access token
         $response = curl_exec($ch);
 
         if (curl_errno($ch)) {
             mail(get_option('admin_email'), "CleverReach Access Error", 'Error retrieving access token in SpeakOut! plugin: ' . curl_error($ch)); 
             curl_close($ch); // Close before terminating the process
-            //return false; // Handle failure gracefully
-            exit;
+            return;
         }
-
-        // Close the connection
-        curl_close($ch);
 
         // Decode the JSON response to get the access token
         $tokenData = json_decode($response, true);
 
         if (!isset($tokenData['access_token'])) {
-                mail(get_option('admin_email'), "CleverReach Failure", "Failed to authorise conection to server in SpeakOut! plugin. Response: " . $response);
-            return false; // Handle failure gracefully
+            mail(get_option('admin_email'), "CleverReach Failure", "Failed to authorise conection to server in SpeakOut! plugin. Response: " . $response);
+            curl_close($ch); // Close before terminating the process
+            return; 
         }
 
         $accessToken = $tokenData['access_token'];
 
-        // CleverReach group (list) ID where you want to add the subscriber
-        $groupId = $groupID;
-
+        // The CleverReach API endpoint for adding a subscriber to a group
+        $apiUrl = "https://rest.cleverreach.com/v3/groups.json/{$groupID}/receivers";
+        
         // Subscriber data
         $subscriberData = [
             'email' => $email,
-            'source' => $source, // Indicate the source of this subscriber
+            'source' => $source, 
             'global_attributes' => array(
                 'salutation'=>$honorific,
                 'firstname'=>$firstname,
                 'lastname'=>$lastname,
             ),
-            'registered'=>time(),
-            'activated' => 1,  // Activate the subscriber immediately
+            'registered'=>time()
         ];
 
-        // Initialize cURL to send the subscriber data
-        $ch = curl_init();
-
-        // The CleverReach API endpoint for adding a subscriber to a group
-        $apiUrl = "https://rest.cleverreach.com/v3/groups.json/{$groupId}/receivers";
-
         curl_setopt($ch, CURLOPT_URL, $apiUrl);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
             'Authorization: Bearer ' . $accessToken,
@@ -436,22 +411,53 @@ class dk_speakout_Mail
         $response = curl_exec($ch);
 
         if (curl_errno($ch)) {
-            mail(get_option('admin_email'), "CleverReach Failure", "Failed to add connect or subscriber in SpeakOut! plugin. Response: " . $response);
+            mail(get_option('admin_email'), "CleverReach Failure", "Failed to connect in SpeakOut! plugin. Response: " . $response);
             curl_close($ch); // Close before terminating the process
+            return;
         } else {
             // Decode the response
             $result = json_decode($response, true);
 
-            if (isset($result['id'])) {
-                curl_close($ch);
-            } else {
+            if (!isset($result['id'])) { // if subscription fails
                 mail(get_option('admin_email'), "CleverReach Subscription Failure", "Failed to add subscriber in SpeakOut! plugin. Response: " . $response);
                 curl_close($ch);
+                return;
             }
         }
+        		
+        // send Double Opt In 
+        $apiUrl = "https://rest.cleverreach.com/v3/forms.json/{$formID}/send/activate";
+        
+        $subscriberData = '{
+            "email":"' .  $email . '",
+            "doidata": {
+                "user_ip": "' . $_SERVER["REMOTE_ADDR"] . '",
+                "referer": "' . $_SERVER["HTTP_REFERER"] . '",
+                "user_agent": "' . $_SERVER["HTTP_USER_AGENT"] . '"}
+        }';
+
+        curl_setopt($ch, CURLOPT_URL, $apiUrl);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $subscriberData);
+
+        // Execute the request
+        $response = curl_exec($ch);
+
+        if (curl_errno($ch)) {
+            mail(get_option('admin_email'), "CleverReach Failure", "Failed to connect for Double opt in in SpeakOut! plugin. Response: " . $response);
+        } 
+        else {
+            // Decode the response
+            $result = json_decode($response, true);
+            if (!isset($result['id'])) { // if DOI fails, email admin
+                mail(get_option('admin_email'), "CleverReach Double Opt In Failure", "Failed to send Double Opt In to " .$email . " in SpeakOut! plugin. Response: " . $response);
+            }
+        }
+        curl_close($ch); 
     } // end cleverreach
    
-    /** add email to mailchimp (if enabled) **/
+    /////////////////////////////////////////////////////////////////////////////////////////
+    /**           add email to mailchimp (if enabled)                                     **/
+    /////////////////////////////////////////////////////////////////////////////////////////
     public static function add2MailChimp( $email, $firstname, $lastname, $country, $listID, $apiKey, $server, $options){
 
         $postData = array(
