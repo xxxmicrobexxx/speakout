@@ -123,7 +123,7 @@ class dk_speakout_Mail
 		$headers .= "From: " . $from  . "\r\n";
         $headers .= 'Reply-To: ' . $from . "\r\n" .'X-Mailer: PHP/' . phpversion() . "\r\n";
         
-        self::send( $signature->email, "SUbject signer", $petition->thank_signer_content, $headers );
+        self::send( $signature->email, $petition->thank_signer_subject, $petition->thank_signer_content, $headers );
 		
         if ( $options['webhooks'] == 'on' ) {
             $id = $petition->target_email;
