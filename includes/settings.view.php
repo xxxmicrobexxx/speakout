@@ -157,9 +157,10 @@ jQuery(document).ready(function() {
 			<li><a class="dk-speakout-tab-03" rel="dk-speakout-tab-03"><?php _e( 'Public Signature List', 'speakout' ); ?></a></li>
             <li><a class="dk-speakout-tab-04" rel="dk-speakout-tab-04"><?php _e( 'Admin Signature List', 'speakout' ); ?></a></li>
 			<li><a class="dk-speakout-tab-05" rel="dk-speakout-tab-05"><?php _e( 'Admin Display', 'speakout' ); ?></a></li>
-			<li><a class="dk-speakout-tab-06" rel="dk-speakout-tab-06"><?php _e( 'Security', 'speakout' ); ?></a></li>
-            <li><a class="dk-speakout-tab-07" rel="dk-speakout-tab-07"><?php _e( 'License', 'speakout' ); ?></a></li>
-            <?php /*<li><a class="dk-speakout-tab-06" rel="dk-speakout-tab-06"><?php _e( '3rd Party extras', 'speakout' ); ?> */ ?></a></li>
+			<li><a class="dk-speakout-tab-06" rel="dk-speakout-tab-06"><?php _e( '3rd Party extras', 'speakout' ); ?>
+			<li><a class="dk-speakout-tab-07" rel="dk-speakout-tab-07"><?php _e( 'Security', 'speakout' ); ?></a></li>
+            <li><a class="dk-speakout-tab-08" rel="dk-speakout-tab-08"><?php _e( 'License', 'speakout' ); ?></a></li>
+            <?php /* */ ?></a></li>
             
 		<?php if ( $the_settings->display_anedot == 'on' ){ ?>
 			<li><a class="dk-speakout-tab-10" rel="dk-speakout-tab-10"><?php _e( 'Anedot.com Donation Form Embed', 'speakout' ); ?></a></li>
@@ -313,28 +314,6 @@ jQuery(document).ready(function() {
 						<label for="display-sharing" /><input type="checkbox" name="display_sharing" value="on" <?php if($the_settings->display_sharing == "enabled" || $the_settings->display_sharing == "on") echo 'checked="checked"';  ?> /> Uncheck to hide Facebook and X icons</label>
 					</td>
 				</tr>
-				
-				<tr valign="top">
-			        <th scope="row"><?php _e( 'Mailchimp error reporting?', 'speakout'); ?></th>
-                    <td><input type="hidden" name="mailchimp_error_reporting_enabled" value="off" >
-                        <input type="checkbox" name="mailchimp_error_reporting_enabled" value = "on" <?php if( $the_settings->mailchimp_error_reporting_enabled == "on" ) { echo "checked='checked'"; } ?>  /> Check to have Mailchimp errors emailed to you - if it is working, this isn't needed. 
-                     <a href="https://speakoutpetitions.com/mailchimp/#mailchimp-error" target="_blank">?</a>
-                     </td>
-                </tr>
-			
-				<tr valign="top">
-					<th scope="row"><?php _e( 'Enable Anedot.com?', 'speakout' ); ?></th>
-					<td><input type="hidden" name="display_anedot" value="off" >
-						<label for="display-anedot" /><input type="checkbox" name="display_anedot"  <?php if($the_settings->display_anedot == "on") echo 'checked="checked"';  ?> /> <?php _e( 'Anedot.com is a 3rd party fund raising site', 'speakout' ); ?></label>
-					</td>
-				</tr>
-				
-				<tr valign="top">
-					<th scope="row"><?php _e( 'Debug mailchimp?', 'speakout'); ?></th>
-					<td><input type="Checkbox" id="mailchimp_debug_enabled" name="mailchimp_debug_enabled" <?php if ( $the_settings->mailchimp_debug_enabled == "on" ) echo ' checked="checked"'; ?> /> <?php _e( 'if submissions not getting to mailchimp', 'speakout' ); ?> <a href="https://speakoutpetitions.com/faqconc/mailchimp/" target="blank" >?</a>
-					</td>
-				</tr>				
-				
 			</table>
 		</div>
 
@@ -591,8 +570,34 @@ jQuery(document).ready(function() {
                 
 			</table>
 		</div>
+
+		<div id="dk-speakout-tab-06" class="dk-speakout-hidden dk-speakout-tabcontent">
+			<h3><?php _e( '3rd Party extras', 'speakout' ); ?></h3>
+			<table class="form-table">
+				<tr valign="top">
+			        <th scope="row"><?php _e( 'Mailchimp error reporting?', 'speakout'); ?></th>
+                    <td><input type="hidden" name="mailchimp_error_reporting_enabled" value="off" >
+                        <input type="checkbox" name="mailchimp_error_reporting_enabled" value = "on" <?php if( $the_settings->mailchimp_error_reporting_enabled == "on" ) { echo "checked='checked'"; } ?>  /> Check to have Mailchimp errors emailed to you - if it is working, this isn't needed. 
+                     <a href="https://speakoutpetitions.com/mailchimp/#mailchimp-error" target="_blank">?</a>
+                     </td>
+                </tr>
+			
+				<tr valign="top">
+					<th scope="row"><?php _e( 'Debug mailchimp?', 'speakout'); ?></th>
+					<td><input type="Checkbox" id="mailchimp_debug_enabled" name="mailchimp_debug_enabled" <?php if ( $the_settings->mailchimp_debug_enabled == "on" ) echo ' checked="checked"'; ?> /> <?php _e( 'if submissions not getting to mailchimp', 'speakout' ); ?> <a href="https://speakoutpetitions.com/faqconc/mailchimp/" target="blank" >?</a>
+					</td>
+				</tr>
+				
+				<tr valign="top">
+					<th scope="row"><?php _e( 'Enable Anedot.com?', 'speakout' ); ?></th>
+					<td><input type="hidden" name="display_anedot" value="off" >
+						<label for="display-anedot" /><input type="checkbox" name="display_anedot"  <?php if($the_settings->display_anedot == "on") echo 'checked="checked"';  ?> /> <?php _e( 'Anedot.com is a 3rd party fund raising site', 'speakout' ); ?></label>
+					</td>
+				</tr>
+			</table>
+		</div>
 		
-        <div id="dk-speakout-tab-06" class="dk-speakout-hidden dk-speakout-tabcontent">
+        <div id="dk-speakout-tab-07" class="dk-speakout-hidden dk-speakout-tabcontent">
 			<h3><?php _e( 'Security', 'speakout' ); ?></h3>
 			<table class="form-table">
 				<tr valign="top">
@@ -606,7 +611,7 @@ jQuery(document).ready(function() {
 			</table>
 		</div>
 		
-         <div id="dk-speakout-tab-07" class="dk-speakout-hidden dk-speakout-tabcontent">
+         <div id="dk-speakout-tab-08" class="dk-speakout-hidden dk-speakout-tabcontent">
              
            <?php
             $licenseFields = "";
