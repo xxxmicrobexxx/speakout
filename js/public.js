@@ -283,7 +283,7 @@ jQuery( document ).ready( function( $ ) {
 							   window.location.href = redirect_url;
 					   	    }
 					   	    else{
-					   	            //this triggers blockup blockers :P
+					   	            /* //this triggers blockup blockers :P
 					   	            var redirectWindow = window.open(redirect_url, '_blank');
                                     $.ajax({
                                         type: 'POST',
@@ -291,7 +291,9 @@ jQuery( document ).ready( function( $ ) {
                                         success: function (data) {
                                             redirectWindow.location;
                                         }
-                                    });
+										*/
+                                    window.location.href = redirect_url;
+								});
 					   	    }
 						}, redirect_delay); //delay redirection by n milliseconds e.g. 5000 = 5 seconds
 					}
