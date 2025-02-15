@@ -141,7 +141,8 @@ function dk_speakout_install() {
             `sendy_server` VARCHAR(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `sendy_list_id` VARCHAR(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL,
             `thank_signer` TINYINT DEFAULT '0' NULL,
-            `thank_signer_content` LONGTEXT NULL,
+			`thank_signer_subject` VARCHAR(128) DEFAULT 'Thanks for signing our petition' NULL,
+            `thank_signer_content` LONGTEXT DEFAULT 'We appreciate your support' NULL,
 			UNIQUE KEY  `id` (`id`)
 		) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci ;
 
@@ -296,7 +297,13 @@ function dk_speakout_update() {
     ///////////////////////////////////////////////
     //   update previous installs and Pro version
     ////////////////////////////////////////////////
-	
+	$result = $wpdb->query( "SHOW COLUMNS FROM $db_petitions LIKE 'thank_signer_subject'" );      
+    if(!$result){ 
+        $sql_update = "ALTER TABLE $db_petitions        
+            ADD `thank_signer_subject` VARCHAR(128) DEFAULT 'Thanks for signing our petition' NULL AFTER `thank_signer`";
+        $wpdb->query( $sql_update );
+     }
+	 
 	$result = $wpdb->query( "SHOW COLUMNS FROM $db_petitions LIKE 'cleverreach_formID'" );      
     if(!$result){ 
         $sql_update = "ALTER TABLE $db_petitions        
