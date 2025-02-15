@@ -32,14 +32,16 @@ class dk_speakout_Mail
         $confirmation_url = '<a href="' . home_url() . '/?dkspeakoutconfirm=' . $signature->confirmation_code . '&b=' . $doBCC  . '&lang=' . get_bloginfo( 'language' ) . '">' . home_url() . '/?dkspeakoutconfirm=' . $signature->confirmation_code . '&b=' . $doBCC . '&lang=' . get_bloginfo( 'language' ) . '</a>'; 
 
 		
-		// replace user-supplied variables
+		// replace user-supplied variables in message and footer
 		$search  = array( '%honorific%', '%first_name%', '%last_name%', '%petition_title%', '%confirmation_link%', '%address%', '%city%', '%state%', '%postcode%', '%country%', '%custom1%');
 		$replace = array( strip_tags($signature->honorific), strip_tags($signature->first_name), strip_tags($signature->last_name), strip_tags($petition->title), $confirmation_url, strip_tags($signature->street_address), strip_tags($signature->city), strip_tags($signature->state), strip_tags($signature->postcode), strip_tags($signature->country), strip_tags($signature->custom_field) );
+		
 		$message = str_replace( $search, $replace, $message );
 		if( $options['speakout_editor'] != "html") {
             $message = $Parsedown->text($message);
         }
-		$footer = $petition->petition_footer;
+		
+		$footer = str_replace( $search, $replace, $petition->petition_footer );
 
 		// add new line after greeting if provided
 		$greeting = '';
