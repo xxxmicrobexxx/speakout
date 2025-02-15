@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: SpeakOut! Email Petitions\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 14:40+1000\n"
-"PO-Revision-Date: 2024-12-03 14:42+1000\n"
+"PO-Revision-Date: 2025-02-15 10:30+1000\n"
 "Last-Translator: Steve <Hello@SpeakOutPetitions.com>\n"
 "Language-Team: Marko Žagar <info@ma-seo.com>\n"
 "Language: sl_SI\n"
@@ -341,7 +341,7 @@ msgstr "Ulica"
 #: includes/settings.view.php:496 includes/signatures.view.php:151
 #: includes/widget.php:434
 msgid "City"
-msgstr "Mesto"
+msgstr "Kraj"
 
 #: includes/addnew.view.php:313 includes/emailpetition.php:492
 #: includes/settings.view.php:410 includes/widget.php:440
