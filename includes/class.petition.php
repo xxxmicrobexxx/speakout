@@ -573,7 +573,7 @@ public function populate_from_post()
         $this->petition_message = $_POST['petition_message'] ;
     }
     if ( isset( $_POST['petition_footer'] ) ) {
-        $this->petition_footer = sanitize_text_field( $_POST['petition_footer'] );
+        $this->petition_footer = esc_html( $_POST['petition_footer'] );
     }
     if ( isset( $_POST['bcc'] ) ) {
         $this->bcc = sanitize_text_field( $_POST['bcc'] );
