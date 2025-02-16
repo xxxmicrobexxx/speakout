@@ -32,7 +32,7 @@ class dk_speakout_Mail
         $confirmation_url = '<a href="' . home_url() . '/?dkspeakoutconfirm=' . $signature->confirmation_code . '&b=' . $doBCC  . '&lang=' . get_bloginfo( 'language' ) . '">' . home_url() . '/?dkspeakoutconfirm=' . $signature->confirmation_code . '&b=' . $doBCC . '&lang=' . get_bloginfo( 'language' ) . '</a>'; 
 
 		
-		// replace user-supplied variables in message and footer
+		// replace user-supplied variables in message, footer & email to signer
 		$search  = array( '%honorific%', '%first_name%', '%last_name%', '%petition_title%', '%confirmation_link%', '%address%', '%city%', '%state%', '%postcode%', '%country%', '%custom1%');
 		$replace = array( strip_tags($signature->honorific), strip_tags($signature->first_name), strip_tags($signature->last_name), strip_tags($petition->title), $confirmation_url, strip_tags($signature->street_address), strip_tags($signature->city), strip_tags($signature->state), strip_tags($signature->postcode), strip_tags($signature->country), strip_tags($signature->custom_field) );
 		
@@ -122,8 +122,9 @@ class dk_speakout_Mail
         $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";   
 		$headers .= "From: " . $from  . "\r\n";
         $headers .= 'Reply-To: ' . $from . "\r\n" .'X-Mailer: PHP/' . phpversion() . "\r\n";
+		$signer_content = str_replace( $search, $replace, $petition->thank_signer_content );
         
-        self::send( $signature->email, $petition->thank_signer_subject, $petition->thank_signer_content, $headers );
+        self::send( $signature->email, $petition->thank_signer_subject, $signer_content, $headers );
 		
         if ( $options['webhooks'] == 'on' ) {
             $id = $petition->target_email;
