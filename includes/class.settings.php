@@ -368,7 +368,12 @@ class dk_speakout_Settings
 	 */
 	private function _read_signaturelist_columns()
 	{
-		$signature_columns = unserialize( $this->signaturelist_columns );
+		// workaround for an unseralize() error
+		if( is_array($this->signaturelist_columns) ){
+			$signature_columns = $this->signaturelist_columns; }
+		else{
+			$signature_columns = unserialize( $this->signaturelist_columns, ['allowed_classes' => true] );
+		}
 
 		if ( in_array( 'sig_email', $signature_columns ) ) {
 			$this->sig_email = 1;
