@@ -176,7 +176,7 @@ jQuery( document ).ready( function( $ ) {
 			errors ++;
 		}
         else{
-            $( '#dk-speakout-custom-field9-' + id ).removeClass( 'dk-speakout-error' );
+            $( '#dk-speakout-custom-field8-' + id ).removeClass( 'dk-speakout-error' );
         }
         
         if ($('#dk-speakout-custom-field9-'+ id).prop('required')  && custom_field9 === false) {
