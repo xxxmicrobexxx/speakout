@@ -31,6 +31,8 @@ jQuery( document ).ready( function( $ ) {
             custom_field5   = $( '#dk-speakout-custom-field5-' + id ).val(),
             custom_field6   = 0,
             custom_field7   = 0,
+            custom_field8   = 0,
+            custom_field9   = 0,
 			custom_message  = $( '.dk-speakout-message-' + id ).val(),
 			optin           = '',
 			bcc             = '',
@@ -178,7 +180,7 @@ jQuery( document ).ready( function( $ ) {
             $( '#dk-speakout-custom-field8-' + id ).removeClass( 'dk-speakout-error' );
         }
         
-        if ($('#dk-speakout-custom-field9-'+ id).prop('required')  && custom_field7 === "") {
+        if ($('#dk-speakout-custom-field9-'+ id).prop('required')  && custom_field9 === "") {
             $( '#dk-speakout-custom-field9-'  + id ).addClass( 'dk-speakout-error' ); 
 			errors ++;
 		}
