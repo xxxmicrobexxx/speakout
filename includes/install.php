@@ -266,7 +266,7 @@ function dk_speakout_install() {
         "anedot_iframe_height" => "",
         "webhooks" => "off",
         "mailchimp_debug" => "off",
-        "updater"=>"off"
+        "updater"=>"on"
 
     );
 
@@ -396,7 +396,7 @@ function dk_speakout_update() {
     if ( $installed_version != $dk_speakout_version ) {
         // options added after initial release
         if ( !array_key_exists( 'updater', $options ) ) {
-            $options[ 'updater' ] = "off";
+            $options[ 'updater' ] = "on";
         }
         if ( !array_key_exists( 'mailchimp_debug', $options ) ) {
             $options[ 'mailchimp_debug' ] = "off";
