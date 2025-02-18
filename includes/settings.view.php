@@ -183,7 +183,7 @@ jQuery(document).ready(function() {
                     <th scope="row"><?php _e( 'Message editor style', 'speakout' ); ?> <span class="description"> <a href='https://speakoutpetitions.com/faqconc/can-i-format-the-petition-message/' target="_blank">?</a></th>
 					<td>
 						<label for="speakout-editor-html"><input type="radio" name="speakout_editor" id="speakout-editor-html" value="html" <?php if ( $the_settings->speakout_editor == 'html' ) echo 'checked="checked"'; ?> /> <?php _e( 'HTML', 'speakout' ); ?></label>
-						<label for="speakout-editor-markdown"><input type="radio" name="speakout_editor" id="speakout_editor-markdown" value="markdown" <?php if ( $the_settings->speakout_editor != 'html' ) echo 'checked="checked"'; ?> /> <?php _e( 'Markdown', 'speakout' ); ?> </span></label>
+						<label for="speakout-editor-markdown"><input type="radio" name="speakout_editor" id="speakout_editor-markdown" value="markdown" <?php if ( $the_settings->speakout_editor != 'html' ) echo 'checked="checked"'; ?> /> <?php _e( 'Markdown', 'speakout' ); ?> <a href="https://speakoutpetitions.com/markdown-guide/">(deprecated)</a></span></label>
 					</td>
 				</tr>
 				<tr>
