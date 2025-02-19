@@ -1,0 +1,25 @@
+name: Create ZIP with Custom Folder Name
+
+on:
+  push:
+    tags:
+      - "v*"  # Triggers on version tags like v1.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Rename Directory
+        run: mv $(basename $GITHUB_REPOSITORY) project
+
+      - name: Create ZIP
+        run: zip -r speakout.zip project
+
+      - name: Upload ZIP as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: speakout-zip
+          path: speakout.zip
