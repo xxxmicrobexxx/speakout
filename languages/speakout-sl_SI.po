@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: SpeakOut! Email Petitions\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 14:40+1000\n"
-"PO-Revision-Date: 2024-12-03 14:42+1000\n"
+"PO-Revision-Date: 2025-02-16 16:00+1000\n"
 "Last-Translator: Steve <Hello@SpeakOutPetitions.com>\n"
 "Language-Team: Marko Žagar <info@ma-seo.com>\n"
 "Language: sl_SI\n"
@@ -158,7 +158,7 @@ msgstr "Tega ni mogoče"
 
 #: includes/addnew.view.php:125 includes/help.php:17
 msgid "Allow public anonymous"
-msgstr "Dovoli javno anonimnost"
+msgstr "Dovoli anonimnost prijave"
 
 #: includes/addnew.view.php:134 includes/help.php:18
 msgid "Confirm signatures"
@@ -341,7 +341,7 @@ msgstr "Ulica"
 #: includes/settings.view.php:496 includes/signatures.view.php:151
 #: includes/widget.php:434
 msgid "City"
-msgstr "Mesto"
+msgstr "Kraj"
 
 #: includes/addnew.view.php:313 includes/emailpetition.php:492
 #: includes/settings.view.php:410 includes/widget.php:440
@@ -733,7 +733,7 @@ msgstr "SKP si"
 
 #: includes/emailpetition.php:676 includes/widget.php:545
 msgid "Hide name from public"
-msgstr "Skrij ime pred javnim"
+msgstr "Ne želim, da sta moje ime in priimek javno objavljena"
 
 #: includes/emailpetition.php:687 includes/widget.php:555
 msgid "Yes, I accept your "
@@ -1493,7 +1493,7 @@ msgstr "trenutno"
 
 #: includes/settings.view.php:270
 msgid "Display Privacy Policy accept?"
-msgstr "Zasebna politika zasebnosti sprejeti?"
+msgstr "Prikaži potrditveno polje pravilnika o zasebnosti?"
 
 #: includes/settings.view.php:272
 msgid "GDPR"

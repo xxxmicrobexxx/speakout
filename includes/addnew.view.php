@@ -217,6 +217,10 @@
     					<label for="thank_signer" id="thank_signer-label" class="dk-speakout-inline"><?php _e( 'Email to signer?', 'speakout'); ?></label> <a href="https://speakoutpetitions.com/faqconc/include-user-fields-in-thank-you-email/" target = "_blank">?</a>
     				</div>
     				<div class="margin-20-left dk-speakout-thanksigner dk-speakout-subsection <?php if ( $petition->thank_signer != 1 ) echo 'dk-speakout-hidden'; ?>">
+						<label for="thank_signer_subject"><?php _e( 'Email subject', 'speakout'); ?>:</label>
+						<input name="thank_signer_subject" id="thank_signer_subject" value="<?php echo $petition->thank_signer_subject ; ?>" size="40" maxlength="300" type="text" />
+					</div>
+					<div class="margin-20-left dk-speakout-thanksigner dk-speakout-subsection <?php if ( $petition->thank_signer != 1 ) echo 'dk-speakout-hidden'; ?>">
     					<label for="thank_signer_content"><?php _e( 'Email content', 'speakout'); ?>:</label>
                         <?php
                             $initial_data = htmlspecialchars_decode(stripslashes($petition->thank_signer_content));

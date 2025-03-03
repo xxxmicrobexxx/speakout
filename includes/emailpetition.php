@@ -273,9 +273,6 @@ function dk_speakout_emailpetition_shortcode( $attr ) {
                 $petition_form .= '<input type="hidden" id="dk-speakout-requires_confirmation-' . $petition->id . '" value="' . $petition->requires_confirmation . '" />' . "\n";
                 // Are we collecting email address?
                 $petition_form .= '<input type="hidden" id="dk-speakout-hide-email-field-' . $petition->id . '" value="' . $petition->hide_email_field . '" />' . "\n";
-                //default these checkboxes to off
-                //$petition_form .= '<input type="hidden" id="dk-speakout-custom-field6-' . $petition->id . '" value="0" />' . "\n";
-                //$petition_form .= '<input type="hidden" id="dk-speakout-custom-field7-' . $petition->id . '" value="0" />' . "\n";
 
                 //prepare for redirect URL
                 if ( $petition->redirect_url_option == 1 && $petition->redirect_url > "" ) {

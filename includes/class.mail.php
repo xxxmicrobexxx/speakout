@@ -19,8 +19,21 @@ class dk_speakout_Mail
             include_once( 'parsedown.php' );
         }
 
+    // format NL to <br>
+    function needsNl2br($string) {
+        // but not if using HTML editor
+        if ($options['speakout_editor'] != "html"){
+           return strpos($string, "\n") !== false || strpos($string, "\r\n") !== false;
+        }
+    }
+
 	    $Parsedown = new Parsedown();
 	    $options  = get_option( 'dk_speakout_options' );
+
+        // replace placeholders in message, footer & email to signer
+		$search  = array( '%honorific%', '%first_name%', '%last_name%', '%petition_title%', '%confirmation_link%', '%address%', '%city%', '%state%', '%postcode%', '%country%', '%custom1%');
+		$replace = array( strip_tags($signature->honorific), strip_tags($signature->first_name), strip_tags($signature->last_name), strip_tags($petition->title), $confirmation_url, strip_tags($signature->street_address), strip_tags($signature->city), strip_tags($signature->state), strip_tags($signature->postcode), strip_tags($signature->country), strip_tags($signature->custom_field) );
+
 
 		$subject = stripslashes( $petition->email_subject );
 
@@ -30,16 +43,13 @@ class dk_speakout_Mail
 			$message = $signature->custom_message;
 		}
         $confirmation_url = '<a href="' . home_url() . '/?dkspeakoutconfirm=' . $signature->confirmation_code . '&b=' . $doBCC  . '&lang=' . get_bloginfo( 'language' ) . '">' . home_url() . '/?dkspeakoutconfirm=' . $signature->confirmation_code . '&b=' . $doBCC . '&lang=' . get_bloginfo( 'language' ) . '</a>'; 
-
-		
-		// replace user-supplied variables
-		$search  = array( '%honorific%', '%first_name%', '%last_name%', '%petition_title%', '%confirmation_link%', '%address%', '%city%', '%state%', '%postcode%', '%country%', '%custom1%');
-		$replace = array( strip_tags($signature->honorific), strip_tags($signature->first_name), strip_tags($signature->last_name), strip_tags($petition->title), $confirmation_url, strip_tags($signature->street_address), strip_tags($signature->city), strip_tags($signature->state), strip_tags($signature->postcode), strip_tags($signature->country), strip_tags($signature->custom_field) );
+				
 		$message = str_replace( $search, $replace, $message );
 		if( $options['speakout_editor'] != "html") {
             $message = $Parsedown->text($message);
         }
-		$footer = $petition->petition_footer;
+		
+		$footer = str_replace( $search, $replace, $petition->petition_footer );
 
 		// add new line after greeting if provided
 		$greeting = '';
@@ -79,18 +89,17 @@ class dk_speakout_Mail
 		$email_message  = stripslashes( $greeting );
 		$email_message .= stripslashes($message) ;
         //we dont want to strip html messages
-        if ($options['speakout_editor'] != "html"){
-           // $email_message .= stripslashes( $message );
-        }
-        else{
-            
-        }
-		$email_message .= "\r\n\r\n--";
-		$email_message .= "\r\n" . stripslashes( $signature->honorific . " " . $signature->first_name . ' ' . $signature->last_name );
-		$email_message .= "\r\n" . "<br>" . $signature->email;
-		$email_message .=  "<br>" . self::format_street_address( $signature );
-        $email_message .=  "<br>" . $customFields;
-		$email_message .= "\r\n\r\n" .  "<br><br>" . stripslashes( $footer );
+        
+        
+		//$email_message .= "--";
+		$email_message .= "<br>" . stripslashes( $signature->honorific . " " . $signature->first_name . ' ' . $signature->last_name );
+		$email_message .= "<br>" . "<br>" . $signature->email;
+		$email_message .= "<br>"  . self::format_street_address( $signature );
+        $email_message .= "<br>" . $customFields;
+		$email_message .= "<br><br>" . stripslashes( $footer );
+		if (needsNl2br($email_message)) {
+            $email_message =  nl2br($email_message);
+        } 
 
 		$from = stripslashes( $signature->first_name ) . " " . stripslashes( $signature->last_name ) . " <" . $signature->email . ">" ;
         
@@ -120,8 +129,12 @@ class dk_speakout_Mail
         $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";   
 		$headers .= "From: " . $from  . "\r\n";
         $headers .= 'Reply-To: ' . $from . "\r\n" .'X-Mailer: PHP/' . phpversion() . "\r\n";
+		$signer_content = str_replace( $search, $replace, $petition->thank_signer_content );
+        if (needsNl2br($signer_content)) {
+            $signer_content =  nl2br($signer_content);
+        } 
         
-        self::send( $signature->email, "SUbject signer", $petition->thank_signer_content, $headers );
+        self::send( $signature->email, $petition->thank_signer_subject, stripslashes( $signer_content) , $headers );
 		
         if ( $options['webhooks'] == 'on' ) {
             $id = $petition->target_email;

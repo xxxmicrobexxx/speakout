@@ -131,6 +131,7 @@ class dk_speakout_Petition
     public $id; 
     public $signatures;
     public $thank_signer = 0;
+	public $thank_signer_subject;
     public $thank_signer_content;
     
 
@@ -326,7 +327,8 @@ public function create()
         'custom_field9_label'           => $this->custom_field9_label,
         'custom_field9_location'        => $this->custom_field9_location,  
         'thank_signer'                  => $this->thank_signer,
-        'thank_signer_content'          => $this->thank_signer_content,
+		'thank_signer_subject'          => $this->thank_signer_subject,
+		'thank_signer_content'          => $this->thank_signer_content,
  			
 		);
 
@@ -463,6 +465,7 @@ public function update( $id )
         'sendy_server'                  => $this->sendy_server,
         'sendy_list_id'                 => $this->sendy_list_id,
         'thank_signer'                  => $this->thank_signer,
+		'thank_signer_subject'          => $this->thank_signer_subject,
         'thank_signer_content'          => $this->thank_signer_content
         
     );
@@ -570,7 +573,7 @@ public function populate_from_post()
         $this->petition_message = $_POST['petition_message'] ;
     }
     if ( isset( $_POST['petition_footer'] ) ) {
-        $this->petition_footer = sanitize_text_field( $_POST['petition_footer'] );
+        $this->petition_footer = esc_html( $_POST['petition_footer'] );
     }
     if ( isset( $_POST['bcc'] ) ) {
         $this->bcc = sanitize_text_field( $_POST['bcc'] );
@@ -935,6 +938,9 @@ public function populate_from_post()
     if ( isset( $_POST['thank_signer'] ) ) {
         $this->thank_signer = 1 ;
     }
+	if ( isset( $_POST['thank_signer_subject'] ) ) {
+        $this->thank_signer_subject = $_POST['thank_signer_subject'] ;
+    }
     if ( isset( $_POST['thank_signer_content'] ) ) {
         $signer_content = $_POST['thank_signer_content'] ;
         $signer_content = htmlspecialchars($signer_content, ENT_QUOTES, 'UTF-8');
@@ -1222,6 +1228,7 @@ public function retrieveActiveCampaignFields( $url, $apikey)
         $this->sendy_server     = $petition->sendy_server;
         $this->sendy_list_id    = $petition->sendy_list_id;
         $this->thank_signer     = $petition->thank_signer;
+		$this->thank_signer_subject    = $petition->thank_signer_subject;
         $this->thank_signer_content    = $petition->thank_signer_content;
 	}
 
