@@ -190,7 +190,7 @@
     					@
     					<input id="hour" name="hour" value="<?php echo esc_attr( $x_date['hour'] ); ?>" size="2" maxlength="2" type="text" />
     					:
-    					<input id="minutes" name="minutes" value="<?php echo esc_attr( $x_date['minutes'] ); ?>" size="2" maxlength="2" type="text" />
+    					<input id="minutes" name="minutes" value="<?php echo esc_attr( $x_date['minutes'] ); ?>" size="2" maxlength="2" type="text" /> <?php _e( 'Server time', 'speakout'); ?>
     				</div>
     			</div>
     			
