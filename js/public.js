@@ -293,7 +293,7 @@ jQuery( document ).ready( function( $ ) {
                                         }
 										*/
                                     window.location.href = redirect_url;
-								});
+								};
 					   	    }
 						}, redirect_delay); //delay redirection by n milliseconds e.g. 5000 = 5 seconds
 					}
